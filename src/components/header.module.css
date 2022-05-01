@@ -1,0 +1,126 @@
+.container {
+    max-width: 1920px;
+    max-height: 941px;
+    position: relative;
+}
+
+/* .navbar {
+    position: absolute;
+    top: 64px;
+    left: 493px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    z-index: 999;
+    grid-gap: 70px;
+
+} */
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: var(--unnamed-font-family-poppins);
+    font-style: var(--unnamed-font-style-normal);
+    font-size: var(--unnamed-font-size-18);
+
+}
+
+.h1 {
+    position: absolute;
+    top: 484px;
+    left: 175px;
+    z-index: 9;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: var(--unnamed-font-weight-bolder);
+    color: red
+}
+
+.h2 {
+    position: absolute;
+    top: 580px;
+    left: 175px;
+    color: white;
+    font-weight: var(--unnamed-font-weight-normal);
+    line-height: 1.6;
+    z-index: 9;
+}
+
+/* .formContainer {
+    position: absolute;
+    top: 178px;
+    left: 1295px;
+    z-index: 99;
+} */
+
+.formImage {
+    position: absolute;
+    top: 178px;
+    left: 1295px;
+    z-index: 99;
+}
+
+/* .img {
+    height: 100vh;
+    background-image: url(../images/Header/shutterstock_615439679.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 941px;
+    background-position: center top;
+} */
+
+/* .img {
+    width: 100vw;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: auto;
+
+    position: relative;
+    background: url('../images/Header/shutterstock_615439679.png') center center / cover no-repeat
+        /* width: 1920px;
+    height: 941px;
+
+    background-image: url('../images/Header/shutterstock_615439679.png'), url('../images/Header/shutterstock_1790190785.png'), url('../images/Header/shutterstock_1090078049.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+.menu {
+    /* background-image: url('../images/Menu/menu.png'); */
+    position: absolute;
+    top: 64px;
+    left: 493px;
+    width: 1250.02px;
+    height: 39.5px;
+    z-index: 99;
+}
+
+.slideshow {
+    filter: brightness(59%);
+    z-index: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 42px;
+    left: 175px;
+    z-index: 999;
+}
+
+.next, .prev {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+
+.next {
+    left: 0;
+}
+
+.prev {
+    left: 160px;
+}
+
+.bar {
+    position: absolute;
+    left: 335px;
+    bottom: 53px;
+    z-index: 999;
+}
