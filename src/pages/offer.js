@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
-export default function index({ children }) {
+export default function Offer() {
 	return (
 		<Layout>
-			{children}
+			<div>Offer</div>
 		</Layout>
 	);
 }

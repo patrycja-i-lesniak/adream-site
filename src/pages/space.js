@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
-export default function index({ children }) {
+export default function Space() {
 	return (
 		<Layout>
-			{children}
+			<div>Space</div>
 		</Layout>
 	);
 }
