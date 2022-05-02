@@ -1,32 +1,43 @@
 .container {
   margin: 0 auto;
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 139.5px;
 }
 
 .wrapper {
   display: flex;
-  flex-direction: row;
-  gap: 110px;
+  flex-wrap: wrap;
+  column-gap: 110px;
   justify-content: center;
-  margin-top: 106.5px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  gap: 33px;
   max-width: 450px;
+  padding-top: 106.5px;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 75px;
+  color: #000000;
+  text-align: left;
+  font-family: Poppins;
 }
 
 .h3 {
   text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+  margin: 15px 0 19px;
 }
 
 .link {
@@ -37,4 +48,5 @@
 .photo {
   width: auto;
   height: 334px;
+  margin-bottom: 33px;
 }

@@ -6,13 +6,13 @@ import * as styles from './news.module.scss';
 export default function News() {
 	return (
 		<div class={styles.container}>
-			<h1>Aktualności</h1>
+			<h1 class={styles.h1}>Aktualności</h1>
 
 			<div class={styles.wrapper}>
 				<div class={styles.box}>
 					<StaticImage
 						class={styles.photo}
-						src="../images/News/shutterstock_1433594243/shutterstock_1433594243.png"
+						src="../images/News/shutterstock_1433594243.png"
 						alt="photo1"
 					/>
 					<paragraph>01.01.2021</paragraph>
