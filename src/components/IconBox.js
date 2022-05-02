@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import * as styles from './iconBox.module.css';
+import * as styles from './iconBox.module.scss';
 
 export default function IconBox() {
 	return (
