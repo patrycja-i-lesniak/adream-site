@@ -1,0 +1,39 @@
+.container {
+	margin: 0 auto;
+	max-width: 1920px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 110px;
+	justify-content: center;
+	margin-top: 106.5px;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 33px;
+	max-width: 450px;
+}
+
+.h3 {
+	text-align: left;
+}
+
+.link {
+	text-decoration: underline;
+	margin-top: 19px;
+}
+
+.photo {
+	width: auto;
+	height: 334px;
+}
