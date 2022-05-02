@@ -26,6 +26,7 @@
   color: #000000;
   text-align: left;
   font-family: Poppins;
+  z-index: 3;
 }
 
 .line {
@@ -35,10 +36,16 @@
   position: absolute;
   left: 175px;
   bottom: 75px;
+  z-index: 3;
 }
 
 .image {
   position: absolute;
   right: 0;
   top: 72.5px;
+}
+
+.innercontainer {
+  display: flex;
+  flex-wrap: no-wrap;
 }

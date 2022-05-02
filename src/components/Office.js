@@ -6,6 +6,7 @@ import * as styles from './office.module.scss';
 export default function Office() {
 	return (
 		<div className={styles.container}>
+			<div className={styles.innercontainer}>
 				<h1 className={styles.h1}>Lorem ipsum vs własne biuro</h1>
 				<StaticImage
 					className={styles.image}
@@ -18,6 +19,7 @@ export default function Office() {
 					alt="icon"
 				/>
 				<div className={styles.line} />
+			</div>
 		</div>
 	);
 }
