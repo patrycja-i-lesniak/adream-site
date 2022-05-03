@@ -1,3 +1,13 @@
 node_modules/
 .cache/
 public
+
+
+**/*.un~
+**/.DS_Store
+**/.gitignore
+**/.npmignore
+**/.babelrc
+**/yarn.lock
+**/node_modules
+../**/dist/**
