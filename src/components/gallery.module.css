@@ -6,7 +6,17 @@
   width: 1920px;
   height: 888px;
   position: relative;
-  background-color: orange;
+  margin-top: 145px;
+  flex: shrink 0;
+}
+
+.line {
+  border: 10px solid #000000;
+  width: 450px;
+  position: absolute;
+  top: 139px;
+  right: 175px;
+  z-index: 1;
 }
 
 .h1 {
@@ -15,6 +25,7 @@
   right: 175.5px;
   font-size: 65px;
   line-height: 75px;
+  font-weight: bold;
 }
 
 .prev,
@@ -28,23 +39,24 @@
 }
 
 .prev {
-  left: 0;
+  left: 15px;
 }
 
 .next {
-  right: 0;
+  right: 15px;
   transform: rotate(180deg);
 }
 
 .image1 {
   width: 625px;
   height: 888px;
-  margin: r;
+  margin-right: 30px;
 }
 
 .image2 {
   width: 770px;
   height: 547px;
+  margin-bottom: 20px;
 }
 
 .image3 {

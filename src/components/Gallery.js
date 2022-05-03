@@ -1,40 +1,77 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery } from 'gatsby';
 import * as styles from './gallery.module.scss';
+import Img from 'gatsby-image';
 
 export default function Gallery() {
+	const data = useStaticQuery(graphql`
+		query {
+			photo1: file(relativePath: { eq: "Gallery/Component 16 – 1.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 625, maxHeight: 888) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			photo2: file(relativePath: { eq: "Gallery/shutterstock_579651031.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 770, maxHeight: 547) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			photo3: file(relativePath: { eq: "Gallery/shutterstock_1187833249.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 770, maxHeight: 321) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			photo4: file(relativePath: { eq: "Gallery/shutterstock_763511722.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 565, maxHeight: 578) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+		}
+	`);
+
 	return (
 		<div className={styles.container}>
 			<h1 className={styles.h1}>Gallery</h1>
 			<div className={styles.line} />
-			<StaticImage
+			<Img
 				className={styles.image1}
-				src="../images/Gallery/Component 16 – 1.png"
-				alt="photo 1"
+				fluid={data.photo1.childImageSharp.fluid}
+				alt="This is the first Photo"
 			/>
-			<StaticImage
+			<Img
 				className={styles.image2}
-				src="../images/Gallery/shutterstock_579651031.png"
-				alt="photo 2"
+				fluid={data.photo2.childImageSharp.fluid}
+				alt="This is the second Photo"
 			/>
-
-			<StaticImage
+			<Img
 				className={styles.image3}
-				src="../images/Gallery/shutterstock_1187833249.png"
-				alt="photo 3"
+				fluid={data.photo3.childImageSharp.fluid}
+				alt="This is the third Image"
 			/>
-
-			<StaticImage
+			<Img
 				className={styles.image4}
-				src="../images/Gallery/shutterstock_763511722.png"
-				alt="photo 4"
+				fluid={data.photo4.childImageSharp.fluid}
+				alt="This is the fourth Image"
 			/>
 			<button className={styles.prev}>
-				<StaticImage className={styles.arrow} src="../static/prev.svg" alt="prev" />
+				<StaticImage src="../static/prev.svg" alt="prev" />
 			</button>
 			<button className={styles.next}>
 				{' '}
-				<StaticImage className={styles.arrow} src="../static/next.svg" alt="next" />
+				<StaticImage src="../static/next.svg" alt="next" />
 			</button>
 		</div>
 	);
