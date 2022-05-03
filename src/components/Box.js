@@ -17,7 +17,7 @@ export default function Box() {
 						<h3 className={styles.h3}>Biuro</h3>
 						<div className={styles.infoBox}>
 							<div className={styles.line} />
-							<p className={styles.paragraph}>od 1000 zł/msc</p>
+							<p>od 1000 zł/msc</p>
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@ export default function Box() {
 						</h3>
 						<div className={styles.infoBox}>
 							<div className={styles.line} />
-							<p className={styles.paragraph}>od 500 zł/msc</p>
+							<p>od 500 zł/msc</p>
 						</div>
 					</div>
 				</div>
@@ -53,7 +53,7 @@ export default function Box() {
 						<h3 className={styles.h3}>Biuro lorem</h3>
 						<div className={styles.infoBox}>
 							<div className={styles.line} />
-							<p className={styles.paragraph}>od 1000zł/h</p>
+							<p>od 1000zł/h</p>
 						</div>
 					</div>
 				</div>
@@ -70,7 +70,7 @@ export default function Box() {
 						<h3 className={styles.h3}>Lorem lorem ipsum Lorem</h3>
 						<div className={styles.infoBox}>
 							<div className={styles.line} />
-							<p className={styles.paragraph}>od 100 zł/h</p>
+							<p>od 100 zł/h</p>
 						</div>
 					</div>
 				</div>
