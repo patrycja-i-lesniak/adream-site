@@ -44,7 +44,7 @@ export default function Gallery() {
 
 	return (
 		<div className={styles.container}>
-			<h1 className={styles.h1}>Gallery</h1>
+			<h1 className={styles.h1}>Galeria</h1>
 			<div className={styles.line} />
 			<Img
 				className={styles.image1}

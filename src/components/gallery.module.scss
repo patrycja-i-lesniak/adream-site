@@ -6,7 +6,7 @@
 	width: 1920px;
 	height: 888px;
 	position: relative;
-	margin-top: 145px;
+	margin-top: 124px;
 	flex: shrink 0;;
 }
 
@@ -14,18 +14,19 @@
 	border: 10px solid #000000;
 	width: 450px;
 	position: absolute;
-	top: 139px;
+	top: 134px;
 	right: 175px;
 	z-index: 1;
 }
 
 .h1 {
 	position: absolute;
-	top: 0;
+	top: 12px;
 	right: 175.5px;
 	font-size: 65px;
 	line-height: 75px;
 	font-weight: bold;
+	margin: 0;
 }
 
 .prev,
