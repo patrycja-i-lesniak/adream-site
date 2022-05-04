@@ -12,18 +12,18 @@ export default function Footer() {
 				src="../static/Footer/Group 586@2x.png"
 				alt="graphic"
 			/>
-			<div className={styles.rightBox}>
+			{/* <div className={styles.rightBox}> */}
 				<div>
 					<p className={styles.logo}>logo</p>
 					<p className={styles.paragraph}>
 						ul. Towarowa 5/6<br />31-000 Kraków
 					</p>
-					<p className={`${styles.paragraph} ${styles.bold}`}>
+					<p className={styles.paragraphBold}>
 						+48 999 999 999<br />email@email.com
 					</p>
 				</div>
-				<p className={styles.info}>Polityka prywatności</p>
-			</div>
+				<p className={styles.policy}>Polityka prywatności</p>
+			{/* </div> */}
 			<div className={styles.footerNavigation}>
 				<div className={styles.nav}>
 					<Link className={styles.link} to="/">
@@ -48,14 +48,12 @@ export default function Footer() {
 					</Link>
 				</div>
 			</div>
-			<div className={styles.design}>
-				<p className={styles.info}>Proudly design by</p>
+				<p className={styles.info}>Proudly designed by</p>
 				<StaticImage
 					className={styles.aDreamLogo}
 					src="../static/Footer/logo_adream@2x.png"
 					alt="logo"
 				/>
-			</div>
 		</div>
 	);
 }
