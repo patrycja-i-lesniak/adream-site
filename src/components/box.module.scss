@@ -75,3 +75,15 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+.imgHoverZoom {
+	overflow: hidden;
+}
+
+.imgHoverZoom .image {
+	transition: transform .5s ease;
+}
+
+.imgHoverZoom:hover .image {
+	transform: scale(1.1);
+}

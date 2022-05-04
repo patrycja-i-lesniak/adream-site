@@ -1,15 +1,57 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery } from 'gatsby';
 import * as styles from './box.module.scss';
+import Img from 'gatsby-image';
 
 export default function Box() {
+	const data = useStaticQuery(graphql`
+		query {
+			box1: file(relativePath: { eq: "Box/shutterstock_1877634640.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 770) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			box2: file(relativePath: { eq: "Box/shutterstock_1723055614.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 770) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			box3: file(relativePath: { eq: "Box/shutterstock_1677941275.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 770) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			box4: file(relativePath: { eq: "Box/shutterstock_1433594243.png" }) {
+				id
+				childImageSharp {
+					fluid(maxWidth: 770) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+		}
+	`);
 	return (
 		<div className={styles.container}>
 			<div className={styles.box}>
-				<StaticImage
-					src="../static/Box/shutterstock_1877634640/shutterstock_1877634640.png"
-					alt="photo1"
-				/>
+				<div className={styles.imgHoverZoom}>
+					<Img
+						className={styles.image}
+						fluid={data.box1.childImageSharp.fluid}
+						alt="This is the first Box"
+					/>
+				</div>
+
 				<div className={styles.content}>
 					<div className={styles.yellowBox} />
 
@@ -24,10 +66,14 @@ export default function Box() {
 			</div>
 
 			<div className={styles.box}>
-				<StaticImage
-					src="../static/Box/shutterstock_1723055614/shutterstock_1723055614.png"
-					alt="photo2"
-				/>
+				<div className={styles.imgHoverZoom}>
+					<Img
+						className={styles.image}
+						fluid={data.box2.childImageSharp.fluid}
+						alt="This is the second Box"
+					/>
+				</div>
+
 				<div className={styles.content}>
 					<div className={styles.yellowBox} />
 					<div className={styles.info}>
@@ -43,10 +89,14 @@ export default function Box() {
 			</div>
 
 			<div className={styles.box}>
-				<StaticImage
-					src="../static/Box/shutterstock_1677941275/shutterstock_1677941275.png"
-					alt="photo3"
-				/>
+				<div className={styles.imgHoverZoom}>
+					<Img
+						className={styles.image}
+						fluid={data.box3.childImageSharp.fluid}
+						alt="This is the third Box"
+					/>
+				</div>
+
 				<div className={`${styles.content} ${styles.bottomBox}`}>
 					<div className={styles.yellowBox} />
 					<div className={styles.info}>
@@ -60,10 +110,13 @@ export default function Box() {
 			</div>
 
 			<div className={styles.box}>
-				<StaticImage
-					src="../static/Box/shutterstock_1433594243/shutterstock_1433594243.png"
-					alt="photo4"
-				/>
+				<div className={styles.imgHoverZoom}>
+					<Img
+						className={styles.image}
+						fluid={data.box4.childImageSharp.fluid}
+						alt="This is the fourth Box"
+					/>
+				</div>
 				<div className={`${styles.content} ${styles.bottomBox}`}>
 					<div className={styles.yellowBox} />
 					<div className={styles.info}>
