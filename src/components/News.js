@@ -15,7 +15,7 @@ export default function News() {
 						src="../images/News/shutterstock_1433594243.png"
 						alt="photo1"
 					/>
-					<p>01.01.2021</p>
+					<p className={styles.paragraph}> 01.01.2021</p>
 					<h3 className={styles.h3}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</h3>
@@ -30,7 +30,7 @@ export default function News() {
 						src="../images/News/shutterstock_1575692173.png"
 						alt="photo1"
 					/>
-					<p>01.01.2021</p>
+					<p className={styles.paragraph}>01.01.2021</p>
 					<h3 className={styles.h3}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</h3>
@@ -45,7 +45,7 @@ export default function News() {
 						src="../images/News/shutterstock_763511722.png"
 						alt="photo1"
 					/>
-					<p>01.01.2021</p>
+					<p className={styles.paragraph}>01.01.2021</p>
 					<h3 className={styles.h3}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</h3>

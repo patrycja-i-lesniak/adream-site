@@ -1,12 +1,11 @@
 .container {
-
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding-top: 139.5px;
+	padding-top: 145px;
 }
 
 .wrapper {
@@ -24,8 +23,6 @@
 }
 
 .h1 {
-	
-
 	font-weight: bold;
 	font-size: 65px;
 	line-height: 75px;
@@ -39,16 +36,20 @@
 	font-size: 28px;
 	font-weight:bold;
 	line-height: 38px;
-	margin: 15px 0 19px;
+	margin: 0px 0 19px;
 }
 
 .link {
 	text-decoration: underline;
-	margin-top: 19px;
+	margin-top: 10px;
+	font-size: 18px;
 }
 
 .photo {
 	width: auto;
 	height: 334px;
 	margin-bottom: 33px;
+}
+.paragraph {
+font-size: 18px;
 }
