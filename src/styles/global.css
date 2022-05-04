@@ -9,13 +9,16 @@
 body {
   overscroll-behavior: none;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: 100% "Poppins", sans-serif;
+  color: #000000;
 }
 
 :root {
   /* Colors: */
   --unnamed-color-000000: #000000;
   --unnamed-color-040506: #040506;
+  --unnamed-color-FFFFFF: #FFFFFF;
+  --unnamed-color-FFCC48: #FFCC48;
   /* Font/text values */
   --unnamed-font-family-poppins: Poppins;
   --unnamed-font-style-normal: normal;
@@ -43,7 +46,7 @@ body {
   color: var(--unnamed-color-040506);
 }
 
-.h4 {
+h4 {
   font-family: var(--unnamed-font-family-poppins);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -53,7 +56,7 @@ body {
   color: var(--unnamed-color-000000);
 }
 
-.h3 {
+h3 {
   font-family: var(--unnamed-font-family-poppins);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -63,7 +66,7 @@ body {
   color: var(--unnamed-color-000000);
 }
 
-.h2 {
+h2 {
   font-family: var(--unnamed-font-family-poppins);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -73,7 +76,7 @@ body {
   color: var(--unnamed-color-000000);
 }
 
-.h1 {
+h1 {
   font-family: var(--unnamed-font-family-poppins);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
