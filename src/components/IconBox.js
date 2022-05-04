@@ -104,12 +104,8 @@ export default function IconBox() {
 			</div>
 
 			<button className={styles.button}>
-				Dowiedz się więcej
-				<StaticImage
-					className={styles.buttonArrow}
-					src="../static/Icons/buttonArrow.svg"
-					alt="button arrow"
-				/>
+				<span>dowiedz się więcej</span>
+				<StaticImage src="../static/Icons/buttonArrow.svg" alt="button arrow" />
 			</button>
 		</div>
 	);

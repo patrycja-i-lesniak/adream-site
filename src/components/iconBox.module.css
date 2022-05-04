@@ -40,7 +40,6 @@
   font-size: 48px;
   line-height: 58px;
   font-weight: bold;
-  font-family: Poppins;
 }
 
 .paragraph {
@@ -69,4 +68,30 @@
   justify-content: space-around;
   align-items: center;
   margin-left: 175px;
+  position: relative;
+  transition: all .35s;
+}
+
+.button span, .buttonArrow {
+  position: relative;
+  z-index: 2;
+}
+
+.button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #FFCC48;
+  transition: all .35s;
+}
+
+.button:hover {
+  color: #000000;
+}
+
+.button:hover:after {
+  width: 80%;
 }
