@@ -21,5 +21,6 @@ export default function Form() {
 				<span>wyślij</span>
 			</button>
 		</div>
+
 	);
 }
