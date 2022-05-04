@@ -5,15 +5,16 @@
 	height: 547.21px;
 	margin-top: 140px;
 	position: relative;
-    max-width: 1920px;
+	max-width: 1920px;
 }
 
 .graphic {
 	position: absolute;
 	width: 290px;
 	height: 68px;
-   right: 175px;
-   top:-34px;
+	right: 175px;
+	top: -34px;
+	z-index: 9;
 }
 
 .rightBox {
@@ -40,11 +41,11 @@
 	font-weight: bold;
 }
 
-.info{
+.info {
 	font-size: 12px;
-    line-height: 28px;
-    color: #FFFFFF;
-    margin: 0;
+	line-height: 28px;
+	color: #ffffff;
+	margin: 0;
 }
 
 .footerNavigation {
@@ -68,14 +69,17 @@
 }
 
 .design {
-    position: absolute;
-bottom: 45.53px;
-right: 175px;
-display: flex;
-flex-direction: row;
+	position: absolute;
+	bottom: 45.53px;
+	right: 175px;
+	display: flex;
+	flex-direction: row;
 }
 
-.adreamLogo {
-    width: 70px;
-    height: 18px;
+.aDreamLogo {
+	width: 70px;
+	height: 18px;
+	position: absolute;
+	right: 175px;
+	bottom: 47.41px;
 }

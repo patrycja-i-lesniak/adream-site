@@ -14,6 +14,7 @@
   height: 68px;
   right: 175px;
   top: -34px;
+  z-index: 9;
 }
 
 .rightBox {
@@ -45,7 +46,7 @@
 .info {
   font-size: 12px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -78,7 +79,10 @@
   flex-direction: row;
 }
 
-.adreamLogo {
+.aDreamLogo {
   width: 70px;
   height: 18px;
+  position: absolute;
+  right: 175px;
+  bottom: 47.41px;
 }
