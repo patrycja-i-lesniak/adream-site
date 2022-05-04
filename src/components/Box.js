@@ -1,8 +1,9 @@
 import React from 'react';
-// import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
-import * as styles from './box.module.scss';
 import Img from 'gatsby-image';
+
+import * as styles from './box.module.scss';
+import AnimatedNextButton from './AnimatedNextButton'
 
 export default function Box() {
 	const data = useStaticQuery(graphql`
@@ -63,6 +64,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
+				<AnimatedNextButton/>
 			</div>
 
 			<div className={styles.box}>
@@ -86,6 +88,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
+					<AnimatedNextButton/>
 			</div>
 
 			<div className={styles.box}>
@@ -107,6 +110,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
+					<AnimatedNextButton/>
 			</div>
 
 			<div className={styles.box}>
@@ -127,6 +131,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
+					<AnimatedNextButton/>
 			</div>
 		</div>
 	);
