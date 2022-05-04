@@ -1,6 +1,6 @@
 .container {
 	max-width: 449px;
-	max-height: 638px;
+	height: 639px;
 	width: 100%;
 	background: #ffffff 0% 0% no-repeat padding-box;
 	padding: 25px;
@@ -12,6 +12,10 @@
 	z-index: 999;
 	padding: 28px 33px 33px;
 	color: #000000;
+}
+
+form {
+	padding-top: 30px;
 }
 
 .input {
@@ -29,42 +33,42 @@
 	height: 52px;
 	background-color: var(--unnamed-color-000000);
 	color: #ffffff;
-	margin-top: 21px;
+	margin-bottom: 2px;
 	display: block;
-  	line-height: 40px;
-  	font-size: 18px;
-  	font-weight: bold;
-  	text-transform: uppercase;
-  	border: none;
- 	letter-spacing: 2px;
- 	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	letter-spacing: 2px;
+	text-align: center;
 	position: relative;
- 	transition: all .35s;
-	 }
-
-.button span{
-  	position: relative;
-  	z-index: 2;
+	transition: all .35s;
 }
 
-.button:after{
-  	position: absolute;
-  	content: "";
-  	top: 0;
-  	left: 0;
-  	width: 0;
-  	height: 100%;
-  	background: #FFCC48;
-  	transition: all .35s;
+.button span {
+	position: relative;
+	z-index: 2;
 }
 
-.button:hover{
-  	// color: #ffffff;
-  	color: #000000;
+.button:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #ffcc48;
+	transition: all .35s;
 }
 
-.button:hover:after{
-  	width: 100%;
+.button:hover {
+	// color: #ffffff;
+	color: #000000;
+}
+
+.button:hover:after {
+	width: 100%;
 }
 
 .checkbox {
@@ -85,23 +89,29 @@
 
 .paragraph {
 	color: #727272;
+	font-size: 18px;
 }
 
 .h4 {
 	font-size: 18px;
 	font-weight: bold;
-	line-height: 28px;
+	line-height: 15px;
 }
 
 .checkboxWrapper {
 	font-size: 10px;
 	display: flex;
+	margin-bottom: 10px;
 }
 .checkbox {
 	border: 1px solid #000000;
 	border-radius: none;
-	margin-right: 20px;
-	width: 20px;
+	margin-right: 16px;
+	width: 24px;
 	height: 20px;
 	border-radius: 0;
+}
+
+::placeholder {
+	font-size: 18px;
 }
