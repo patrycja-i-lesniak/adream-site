@@ -1,0 +1,1 @@
+.next{position:absolute;bottom:0px;right:0px;z-index:999;background-color:#ffffff;width:130px;height:130px;border:none;padding:0px;flex:1}.next::after{position:absolute;content:"";top:0;width:0;height:100%;background:#000000;transition:all .35s}.next::after{left:0}.next::after .svg{fill:#fff}.next:hover::after{width:100%;z-index:1}
