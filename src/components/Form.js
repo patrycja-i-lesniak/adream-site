@@ -14,12 +14,12 @@ export default function Form() {
 			<input className={styles.input} placeholder="Lorem ipsum lorem ipsum" />
 			<div className={styles.checkboxWrapper}>
 				<input type="checkbox" className={styles.checkbox} />
-			<p className={styles.checkboxParagraph}>
-				Wyrażam dobrowolną zgodę na przetwarzanie moich danych osobowych więcej...
-			</p>
+				<p>Wyrażam dobrowolną zgodę na przetwarzanie moich danych osobowych więcej...</p>
 			</div>
-			<button className={styles.button}><span>wyślij
-				</span></button>
+
+			<button className={styles.button}>
+				<span>wyślij</span>
+			</button>
 		</div>
 	);
 }

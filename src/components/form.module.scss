@@ -1,6 +1,7 @@
 .container {
-	width: 449px;
-	height: 638px;
+	max-width: 449px;
+	max-height: 638px;
+	width: 100%;
 	background: #ffffff 0% 0% no-repeat padding-box;
 	padding: 25px;
 	display: flex;
@@ -24,50 +25,46 @@
 }
 
 .button {
-	width: 383px;
+	max-width: 383px;
 	height: 52px;
-	background-color: #000000;
+	background-color: var(--unnamed-color-000000);
 	color: #ffffff;
 	margin-top: 21px;
-display: block;
-  line-height: 40px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 200;
+	display: block;
+  	line-height: 40px;
+  	font-size: 18px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	border: none;
+ 	letter-spacing: 2px;
+ 	text-align: center;
+	position: relative;
+ 	transition: all .35s;
+	 }
 
-  border: none;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-
+.button span{
+  	position: relative;
+  	z-index: 2;
 }
 
-button span{
-  position: relative;
-  z-index: 2;
+.button:after{
+  	position: absolute;
+  	content: "";
+  	top: 0;
+  	left: 0;
+  	width: 0;
+  	height: 100%;
+  	background: #FFCC48;
+  	transition: all .35s;
 }
 
-button:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
- 
-  background: #FFCC48;
-  transition: all .35s;
+.button:hover{
+  	// color: #ffffff;
+  	color: #000000;
 }
 
-button:hover{
-  color: #fff;
-   color: #000000;
-}
-
-button:hover:after{
-  width: 100%;
+.button:hover:after{
+  	width: 100%;
 }
 
 .checkbox {
@@ -99,7 +96,6 @@ button:hover:after{
 .checkboxWrapper {
 	font-size: 10px;
 	display: flex;
-
 }
 .checkbox {
 	border: 1px solid #000000;
@@ -109,7 +105,3 @@ button:hover:after{
 	height: 20px;
 	border-radius: 0;
 }
-
-
-
-
