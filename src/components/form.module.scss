@@ -21,7 +21,7 @@ form {
 .input {
 	max-width: 383px;
 	width: 100%;
-	height: 52px;
+	height: 54px;
 	margin-bottom: 20px;
 	border: 1px solid #000000;
 	color: #727272;
@@ -49,6 +49,8 @@ form {
 .button span {
 	position: relative;
 	z-index: 2;
+	letter-spacing: 4px;
+	padding: 8px 0 0 8px;
 }
 
 .button:after {
