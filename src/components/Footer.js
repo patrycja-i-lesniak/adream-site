@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+
 import * as styles from './footer.module.scss';
 
 export default function Footer() {
@@ -8,12 +9,12 @@ export default function Footer() {
 		<div className={styles.container}>
 			<StaticImage
 				className={styles.graphic}
-				src="../images/Footer/Group586.png"
-				alt="footer graphic"
+				src="../static/Footer/Group 586@2x.png"
+				alt="graphic"
 			/>
 			<div className={styles.rightBox}>
 				<div>
-					<p className={styles.logo}>LOGO</p>
+					<p className={styles.logo}>logo</p>
 					<p className={styles.paragraph}>
 						ul. Towarowa 5/6<br />31-000 Kraków
 					</p>
@@ -49,7 +50,11 @@ export default function Footer() {
 			</div>
 			<div className={styles.design}>
 				<p className={styles.info}>Proudly design by</p>
-				<StaticImage className={styles.adreamLogo} src="../images/Footer/logo_adream.svg" alt="adream logo" />
+				<StaticImage
+					className={styles.aDreamLogo}
+					src="../static/Footer/logo_adream@2x.png"
+					alt="logo"
+				/>
 			</div>
 		</div>
 	);
