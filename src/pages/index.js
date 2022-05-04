@@ -17,7 +17,7 @@ export default function index({ children }) {
 				<IconBox />
 				<Office />
 				<News />
-				<Gallery/>
+				<Gallery />
 				{children}
 			</Layout>
 		</ThemeProvider>
