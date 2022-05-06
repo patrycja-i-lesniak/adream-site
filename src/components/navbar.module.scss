@@ -1,30 +1,100 @@
 .wrapper {
-	display: flex;
+	margin: 0 auto;
+	display: grid;
 	position: absolute;
-	// width: 1250px;
-	top: 64px;
-	left: 493px;
+	top: 0;
+	grid-template-columns: 135px 1fr 76px;
+	max-width: 1920px;
+	width: 100%;
+	padding: 40px 177px 0 175px;
+	align-items: center;
 	z-index: 999;
-	justify-content: space-between;
+
+	@media (max-width: 1400px) {
+		padding: 40px 100px 0 100px;
+	}
+	@media (max-width: 1200px) {
+		padding: 20px 40px 0 40px;
+	}
+
+	@media (max-width: 992px) {
+		grid-template-columns: 1fr auto;
+	}
+}
+
+.logo {
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+
+	@media (max-width: 1200px) {
+		font-size: 38px;;
+	}
+}
+
+.logo:hover {
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .links {
-	display: flex;
-	flex-direction: row;
+	padding: 5px 0 0 183px;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 57px;
+	justify-content: start;
+	@media (max-width: 1920px) {
+		padding-left: 100px;
+	}
 
+	@media (max-width: 1400px) {
+		padding: 5px 0 0 80px;
+		grid-gap: 30px;
+	}
+	@media (max-width: 1200px) {
+		padding: 5px 0 0 30px;
+		grid-gap: 20px;
+	}
+	@media (max-width: 992px) {
+		display: none;
+	}
 }
 
 .link {
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 16px;
-	line-height: 26px;
-	margin-right: 80px;
-	position: relative;
+	&:nth-child(3) {
+		padding-left: 6px;
+	}
+
+	&:nth-child(4) {
+		padding-left: 49px;
+	}
+
+	&:nth-child(5) {
+		padding-left: 50px;
+	}
+
+	@media (max-width: 1920px) {
+		&:nth-child(3) {
+			padding-left: 0;
+		}
+
+		&:nth-child(4) {
+			padding-left: 0;
+		}
+
+		&:nth-child(5) {
+			padding-left: 0;
+		}
+	}
 }
 
 .link:hover {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .link::before {
@@ -35,7 +105,7 @@
 	height: 2px;
 	bottom: -10px;
 	left: 0;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	transform: scaleX(0);
 	transition: transform 0.3s ease;
 }
@@ -45,15 +115,26 @@
 }
 
 .socials {
-	position: absolute;
-	right: 176.98px;
-	top: 64px;
+	display: grid;
+	grid-template-columns: 28px 28px;
+	gap: 20px;
+	padding-right: 177px;
+	color: red;
+	@media (max-width: 992px) {
+		display: none;
+	}
 }
 
-.facebook,
-.instagram {
-	width: 28px;
-	height: 28px;
-	margin-left: 20px;
-	z-index: 9;
+.hamburger {
+	font-size: 40px;
+	color: #ffffff;
+
+	&:hover {
+		border: 1 solid red;
+		border-radius: 5px;
+	}
+
+	@media (min-width: 992px) {
+		display: none;
+	}
 }
