@@ -11,7 +11,6 @@ export default function IconBox() {
 					<h3 className={styles.h3}>Lorem ipsum dolor sit amet, conse</h3>
 					<div className={styles.line} />
 				</div>
-
 				<div className={styles.box}>
 					<div>
 						<StaticImage
@@ -20,7 +19,6 @@ export default function IconBox() {
 							alt="icon"
 						/>
 					</div>
-
 					<p className={styles.paragraph}>Lorem ipsum</p>
 				</div>
 
@@ -32,8 +30,7 @@ export default function IconBox() {
 							alt="icon"
 						/>
 					</div>
-
-					<p className={styles.paragraph}>Lorem ipsum dolor sit amet conse</p>
+					<p className={styles.paragraph}>Lorem ipsum </p>
 				</div>
 
 				<div className={styles.box}>
@@ -44,8 +41,7 @@ export default function IconBox() {
 							alt="icon"
 						/>
 					</div>
-
-					<p className={styles.paragraph}>Lorem ipsum dolor sit amet conse</p>
+					<p className={styles.paragraph}>Lorem ipsum </p>
 				</div>
 
 				<div className={styles.box}>
@@ -56,8 +52,7 @@ export default function IconBox() {
 							alt="icon"
 						/>
 					</div>
-
-					<p className={styles.paragraph}>Lorem ipsum dolor sit amet conse</p>
+					<p className={styles.paragraph}>Lorem ipsum </p>
 				</div>
 
 				<div className={styles.box}>
@@ -70,7 +65,7 @@ export default function IconBox() {
 					</div>
 
 					<p className={styles.paragraph}>
-						Lorem ipsum dolor sit amet, conse lorem ipsum
+						Lorem ipsum dolor sit amet, conse lorem ipsum lorem
 					</p>
 				</div>
 
@@ -84,7 +79,7 @@ export default function IconBox() {
 					</div>
 
 					<p className={styles.paragraph}>
-						Lorem ipsum dolor sit amet, conse lorem ipsum
+						Lorem ipsum dolor sit amet, conse lorem ipsum lorem
 					</p>
 				</div>
 
@@ -97,9 +92,7 @@ export default function IconBox() {
 						/>
 					</div>
 
-					<p className={styles.paragraph}>
-						Lorem ipsum dolor sit amet, conse lorem ipsum
-					</p>
+					<p className={styles.paragraph}>Lorem ipsum dolor sit amet, conse</p>
 				</div>
 			</div>
 

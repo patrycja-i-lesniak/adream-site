@@ -1,16 +1,25 @@
 .container {
-	max-width: 1920px;
+	// max-width: 1920px;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
 	padding-top: 141px;
 }
 
 .wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 137px;
+	row-gap: 20px;
+	column-gap: 137px;
 	justify-content: center;
+	.box:nth-child(3) {
+		padding-top: 10px;
+	}
+	.box:nth-child(5) {
+		margin-top: -16px;
+	}
+	.box:nth-child(7) {
+		margin-top: -16px;
+	}
 }
 
 .titleBox {
@@ -24,84 +33,77 @@
 .box {
 	width: 290px;
 	height: 359px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 44px;
 }
 
 .line {
 	width: 130px;
 	height: 0;
 	border: 5px solid var(--unnamed-color-000000);
+	margin-bottom: 8px;
 }
 
 .h3 {
 	font-size: 48px;
 	line-height: 58px;
 	font-weight: bold;
-	// font-family: Poppins;
-	// font: normal normal bold 48px/58px Poppins;
+	margin: 0;
+	padding-top: 3px;
 }
 
 .paragraph {
 	font-size: 28px;
 	line-height: 38px;
 	font-family: Poppins;
+	margin-top: 46px;
 }
 
 .icon {
-	height: 100%;
+	margin-top: 100px;
 }
-
-// .h2 {
-//     line-height: var(--unnamed-line-spacing-58);
-//     margin: 0;
-
-// }
 
 .button {
 	background-color: var(--unnamed-color-000000);
 	color: #ffffff;
 	text-transform: uppercase;
-	font-size: 18;
-	letter-spacing: 3px;
+	font-size: 18px;
+	letter-spacing: 4px;
 	font-weight: bold;
 	width: 380px;
 	height: 78px;
 	border: none;
 	display: flex;
 	flex-direction: row;
-	gap: 50px;
 	justify-content: space-around;
 	align-items: center;
 	margin-left: 175px;
+	margin-top: 116px;
 	position: relative;
- 	transition: all .35s;
+	transition: all .35s;
 }
-.button span, .buttonArrow{
-  	position: relative;
-  	z-index: 2;
+.button span,
+.buttonArrow {
+	position: relative;
+	z-index: 2;
 }
 
-.button:after{
-  	position: absolute;
-  	content: "";
-  	top: 0;
-  	left: 0;
-  	width: 0;
-  	height: 100%;
-  	background: #FFCC48;
-  	transition: all .35s;
+.button:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #ffcc48;
+	transition: all .35s;
 }
 
 .button:hover {
-  	// color: #ffffff;
-  	color: #000000;
+	// color: #ffffff;
+	color: #000000;
 }
 
-.button:hover:after{
-  	width: 80%;
+.button:hover:after {
+	width: 80%;
 }
 
 // .buttonArrow {
