@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27">
-  <g id="Group_143" data-name="Group 143" transform="translate(-1666 -66)">
-    <g id="Group_142" data-name="Group 142" transform="translate(1666.474 66)">
-      <rect id="Rectangle_99" data-name="Rectangle 99" width="28" height="27" transform="translate(-0.474)" fill="#fff"/>
-    </g>
-    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M10.075,9.514l.47-3.061H7.607V4.467A1.531,1.531,0,0,1,9.333,2.813h1.335V.207A16.283,16.283,0,0,0,8.3,0c-2.419,0-4,1.466-4,4.12V6.453H1.609V9.514H4.3v7.4H7.607v-7.4Z" transform="translate(1674.168 71.427)"/>
-  </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 28 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="Group_143"><path id="Rectangle_99" d="M28,0l-28,0l0,27l28,0l0,-27Zm-9.757,14.941l0.47,-3.061l-2.938,0l-0,-1.986c-0.004,-0.045 -0.006,-0.091 -0.006,-0.136c-0,-0.84 0.691,-1.531 1.531,-1.531c0.067,-0 0.134,0.004 0.201,0.013l1.335,0l-0,-2.606c-0.783,-0.127 -1.575,-0.196 -2.368,-0.207c-2.419,0 -4,1.466 -4,4.12l-0,2.333l-2.691,0l-0,3.061l2.691,0l-0,7.4l3.307,0l-0,-7.4l2.468,0Z" style="fill:#fff9f9;"/></g></svg>
