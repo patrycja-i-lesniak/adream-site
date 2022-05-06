@@ -3,6 +3,9 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 141px;
+	@media (max-width: 576px) {
+		padding-top: 80px;
+	}
 }
 
 .wrapper {
@@ -20,6 +23,7 @@
 	.box:nth-child(7) {
 		margin-top: -16px;
 	}
+	
 }
 
 .titleBox {
@@ -28,11 +32,21 @@
 	justify-content: space-between;
 	display: flex;
 	flex-direction: column;
+	@media (max-width: 576px) {
+		width: 500px;
+			height: 200px;
+			text-align: center;
+	}
 }
 
 .box {
 	width: 290px;
 	height: 359px;
+	@media (max-width: 576px) {
+		width: 500px;
+			height: 300px;
+			text-align: center;
+	}
 }
 
 .line {
@@ -40,6 +54,10 @@
 	height: 0;
 	border: 5px solid var(--unnamed-color-000000);
 	margin-bottom: 8px;
+	@media (max-width: 576px) {
+		width: 330px;
+		margin-bottom: -20px;
+	}
 }
 
 .h3 {
@@ -79,6 +97,11 @@
 	margin-top: 116px;
 	position: relative;
 	transition: all .35s;
+
+	@media (max-width: 576px) {
+		margin-left: 50px;
+		margin-top: 80px;
+	}
 }
 .button span,
 .buttonArrow {

@@ -1,15 +1,16 @@
 .container {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 28px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 140px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-top: 40px;
+  }
 }
 
 .box {
@@ -18,13 +19,8 @@
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 25px;
   min-width: 224px;
   max-width: 324px;
@@ -45,19 +41,12 @@
 }
 
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   min-width: 174px;
   min-height: 109px;
   max-height: 145px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 8px 0 0 10px;
 }
 
@@ -92,16 +81,9 @@
 }
 
 .infoBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .imgHoverZoom {
@@ -109,14 +91,9 @@
 }
 
 .imgHoverZoom .image {
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .imgHoverZoom:hover .image {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-/*# sourceMappingURL=box.module.css.map */

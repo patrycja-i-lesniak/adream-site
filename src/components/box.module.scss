@@ -5,6 +5,9 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 140px;
+	@media (max-width: 576px) {
+		padding-top: 40px;
+	}
 }
 
 .box {

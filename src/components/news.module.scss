@@ -6,6 +6,10 @@
 	justify-content: center;
 	align-items: center;
 	padding-top: 105px;
+
+	@media (max-width: 576px) {
+			padding-top: 0;
+}
 }
 
 .wrapper {

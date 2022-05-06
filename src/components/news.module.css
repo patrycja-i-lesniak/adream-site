@@ -8,6 +8,12 @@
   padding-top: 105px;
 }
 
+@media (max-width: 576px) {
+  .container {
+    padding-top: 0;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
