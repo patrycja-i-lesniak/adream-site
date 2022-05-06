@@ -18,7 +18,7 @@
 .h1 {
 	position: absolute;
 	left: 175px;
-	top: 290px;
+	top: 250px;
 	max-width: 523px;
 	font-weight: bold;
 	font-size: 65px;
@@ -43,6 +43,7 @@
 	position: absolute;
 	right: 0;
 	top: 72.5px;
+	object-fit: cover;
 }
 
 .innercontainer {

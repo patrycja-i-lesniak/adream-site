@@ -11,7 +11,7 @@ export default function Office() {
 				<StaticImage
 					className={styles.image}
 					src="../images/Office/Group 258.png"
-					alt="icon"
+					alt="photo"
 				/>
 				<StaticImage
 					className={styles.graphic}
