@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CACpB;;AAED,AAAA,gBAAgB,CAAC;EAEZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EAEhB,uEAAuE;EACvE,eAAe,EAAE,KAAK;EACtB,gEAAgE;EAChE,gBAAgB,EAAE,WAAW;EAC7B,0EAA0E;EAC1E,iBAAiB,EAAE,4BAA4B;EAC/C,mBAAmB,EAAE,2BAA2B;EAChD,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "multipleBackground.module.scss"
+    ],
+    "names": [],
+    "file": "multipleBackground.module.css"
+}

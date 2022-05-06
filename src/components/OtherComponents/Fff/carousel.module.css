@@ -1,0 +1,15 @@
+.carousel {
+  -webkit-filter: brightness(61%);
+          filter: brightness(61%);
+  position: relative;
+}
+
+.h1 {
+  position: absolute;
+  bottom: 333px;
+  left: 175px;
+  color: #FFFFFF;
+  font-size: 65px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=carousel.module.css.map */
