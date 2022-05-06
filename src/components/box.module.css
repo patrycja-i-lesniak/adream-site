@@ -1,9 +1,14 @@
 .container {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 140px;
 }
 
@@ -13,12 +18,17 @@
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 25px;
-  min-width: 223px;
+  min-width: 224px;
   max-width: 324px;
-  min-height: 159px;
+  min-height: 160px;
   max-height: 195px;
   background-color: white;
   position: absolute;
@@ -35,12 +45,19 @@
 }
 
 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 174px;
   min-height: 109px;
   max-height: 145px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 8px 0 0 10px;
 }
 
@@ -54,11 +71,19 @@
   font-weight: bolder;
 }
 
+.paragraph {
+  margin: 38px 0 0;
+  font-size: 18px;
+}
+
 .line {
   width: 49px;
   z-index: 2;
   height: 0;
-  border: 2.5px solid var(--unnamed-color-000000);
+  border: 2.5px solid #000000;
+  position: absolute;
+  left: 35.5px;
+  bottom: 60px;
 }
 
 .bottomBox {
@@ -67,9 +92,16 @@
 }
 
 .infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .imgHoverZoom {
@@ -77,9 +109,14 @@
 }
 
 .imgHoverZoom .image {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .imgHoverZoom:hover .image {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+/*# sourceMappingURL=box.module.css.map */
