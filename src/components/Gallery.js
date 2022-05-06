@@ -43,7 +43,8 @@ export default function Gallery() {
 	`);
 
 	return (
-		<div className={styles.container}>
+		<div className=".container-fluid">
+<div className={styles.container}>
 			<h1 className={styles.h1}>Galeria</h1>
 			<div className={styles.line} />
 			<Img
@@ -74,5 +75,7 @@ export default function Gallery() {
 				<StaticImage src="../static/next.svg" alt="next" />
 			</button>
 		</div>
+		</div>
+		
 	);
 }
