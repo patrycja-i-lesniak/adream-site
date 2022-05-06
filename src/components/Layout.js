@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as styles from './layout.module.scss';
-import '../styles/base.scss';
+import '../styles/base.css';
 import Header from './Header';
 import Footer from './Footer';
 import Navbar from './Navbar'
