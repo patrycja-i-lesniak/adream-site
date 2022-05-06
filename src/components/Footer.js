@@ -7,12 +7,12 @@ import * as styles from './footer.module.scss';
 export default function Footer() {
 	return (
 		<div className={styles.container}>
+		
 			<StaticImage
 				className={styles.graphic}
 				src="../static/Footer/Group 586@2x.png"
 				alt="graphic"
 			/>
-			{/* <div className={styles.rightBox}> */}
 				<div>
 					<p className={styles.logo}>logo</p>
 					<p className={styles.paragraph}>
@@ -23,7 +23,6 @@ export default function Footer() {
 					</p>
 				</div>
 				<p className={styles.policy}>Polityka prywatności</p>
-			{/* </div> */}
 			<div className={styles.footerNavigation}>
 				<div className={styles.nav}>
 					<Link className={styles.link} to="/">

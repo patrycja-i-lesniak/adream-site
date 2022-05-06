@@ -26,21 +26,24 @@
   text-transform: uppercase;
   padding-bottom: 40px;
   margin: 0;
+  color: #FFFFFF;
 }
 
 .paragraph {
   position: absolute;
   left: 175px;
-  top: 212px;
+  top: 200px;
   font-size: 16px;
-  line-height: 25px;
+  z-index: 9;
+  color: #FFFFFF;
 }
 
 .paragraphBold {
   position: absolute;
   left: 175px;
-  top: 292px;
+  top: 278px;
   font-weight: bold;
+  color: #FFFFFF;
 }
 
 .policy, .info {
