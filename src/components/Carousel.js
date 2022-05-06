@@ -2,8 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-import * as styles from './Carousel.module.scss';
-// import { StaticImage } from 'gatsby-plugin-image';
+import * as styles from './carousel.module.scss';
 
 export default function NewCarousel() {
 	const { slide1, slide2, slide3, prev, next } = useStaticQuery(graphql`
