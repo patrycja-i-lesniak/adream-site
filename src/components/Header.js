@@ -1,13 +1,9 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
 
 import * as styles from './header.module.scss';
-import Navbar from './Navbar';
 import ContactForm from './ContactForm';
-import Carousel from './Carousel';
+// import Carousel from './Carousel';
 
 export default function Header() {
 	return (
@@ -22,7 +18,8 @@ export default function Header() {
 					src="../images/Header/progressBar.png"
 					alt="progress bar"
 				/> 
-				<Carousel />
+				{/* <Carousel /> */}
+				<StaticImage src="../images/Carousel/background1.png" alt=""/>
 				<ContactForm />
 			</div>
 		</div>
