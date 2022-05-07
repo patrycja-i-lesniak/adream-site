@@ -49,10 +49,8 @@ export default function NewCarousel() {
 			}
 		}
 	`);
- if(window !== "undefined"){
- window.location.replace(res.data) 
- }
-	 const buttons = document.querySelectorAll('[data-carousel-button]');
+
+	const buttons = document.querySelectorAll('[data-carousel-button]');
 
 	buttons.forEach((button) => {
 		button.addEventListener('click', () => {
@@ -72,7 +70,7 @@ export default function NewCarousel() {
 		<div className={styles.wrapper}>
 			<section aria-label="Newest Photos">
 				<div className={styles.carousel} data-carousel>
-					<div className={styles.buttons}>
+					<div >
 						<button
 							className={`${styles.carousel_button} ${styles.prev}`}
 							data-carousel-button="prev"
