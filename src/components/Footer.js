@@ -28,7 +28,7 @@ export default function Footer() {
 					<Link className={styles.link} to="/">
 						Strona główna
 					</Link>
-					<Link className={styles.link} to="/space">
+					<Link className={styles.link} to="/">
 						Poznaj przestrzeń
 					</Link>
 					<Link className={styles.link} to="/offer">

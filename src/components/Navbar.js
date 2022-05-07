@@ -15,7 +15,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className={styles.links}>
-					<Link className={styles.link} to="/space">
+					<Link className={styles.link} to="/">
 						Poznaj przestrzeń
 					</Link>
 					<Link className={styles.link} to="/offer">
