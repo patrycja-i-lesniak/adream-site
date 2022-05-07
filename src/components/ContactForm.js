@@ -5,9 +5,9 @@ import Button from 'react-bootstrap/Button';
 
 export default function ContactForm() {
 	return (
-		<div className={`${"container-fluid"} ${styles.container}`}>
+		<div className={`${'container-fluid'} ${styles.container}`}>
 			{/* <div className={styles.container}> */}
-			<form>
+			<form action="https://formsubmit.co/patrycja.lesniak@gmail.com" method="POST">
 				<div className="mb-3">
 					<h3 className={styles.h3}>
 						Lorem ipsum <br />Lorem ipsum lorem ipsum
@@ -18,34 +18,45 @@ export default function ContactForm() {
 					<input
 						className={`${'form-control'} ${styles.input}`}
 						type="text"
+						name="name"
+						required
 						placeholder="Imię i Nazwisko"
-						aria-label="default input example"
+						aria-label="name input "
 					/>
 
 					<input
 						className={`${'form-control'} ${styles.input}`}
 						type="text"
+						name="phone"
+						required
 						placeholder="Telefon"
-						aria-label="default input example"
+						aria-label="phone input"
 					/>
 
 					<input
 						type="email"
+						name="email"
+						required
 						className={`${'form-control'} ${styles.input}`}
 						placeholder="Email"
-						aria-describedby="emailHelp"
+						aria-describedby="email input"
 					/>
 
-					<input
+					<textarea
 						className={`${'form-control'} ${styles.input}`}
 						rows="1"
+						name="textarea"
+						required
 						placeholder="Lorem ipsum lorem ipsum"
+						aria-describedby="text input"
 					/>
 					<div className={styles.checkboxWrapper}>
 						<input
 							type="checkbox"
+							name="checkbox"
+							required
 							className={`${'form-check-input'} ${styles.checkbox}`}
-							id="exampleCheck1"
+							id="check"
 						/>
 						<div className={`${'form-text'} ${styles.text}`}>
 							Wyrażam dobrowolną zgodę na przetwarzanie moich danych osobowych
