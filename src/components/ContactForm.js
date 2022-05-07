@@ -1,7 +1,5 @@
 import React from 'react';
 import * as styles from './contactForm.module.scss';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 
 export default function ContactForm() {
 	return (
