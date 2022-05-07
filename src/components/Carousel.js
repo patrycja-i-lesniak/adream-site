@@ -49,8 +49,10 @@ export default function NewCarousel() {
 			}
 		}
 	`);
-
-	const buttons = document.querySelectorAll('[data-carousel-button]');
+ if(window !== "undefined"){
+ window.location.replace(res.data) 
+ }
+	 const buttons = document.querySelectorAll('[data-carousel-button]');
 
 	buttons.forEach((button) => {
 		button.addEventListener('click', () => {
