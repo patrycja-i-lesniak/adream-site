@@ -1,15 +1,7 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   overscroll-behavior: none;
   margin: 0 auto;
-  font-family: 100% "Poppins", sans-serif;
+  font-family: 100% var(--unnamed-font-family-poppins);
   color: var(--unnamed-color-000000);
 }
 
@@ -85,42 +77,3 @@ h1 {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-000000);
 }
-
-/*Breakpoints */
-@media (min-width: 0) {
-  .responsive-test {
-    color: red;
-  }
-}
-
-@media (min-width: 576px) {
-  .responsive-test {
-    color: blue;
-  }
-}
-
-@media (min-width: 768px) {
-  .responsive-test {
-    color: green;
-  }
-}
-
-@media (min-width: 992px) {
-  .responsive-test {
-    color: orange;
-  }
-}
-
-@media (min-width: 1200px) {
-  .responsive-test {
-    color: purple;
-  }
-}
-
-@media (min-width: 1400px) {
-  .responsive-test {
-    color: pink;
-  }
-}
-
-@impor;

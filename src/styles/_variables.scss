@@ -1,16 +1,11 @@
-*,
-::after,
-::before {
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+// _base.scss
+// $font-stack: 'Poppins', sans-serif;
 
 body {
 	overscroll-behavior: none;
 	margin: 0 auto;
-	font-family: 100% $font-stack;
-	color: $primary-color;
+	font-family: 100% var(--unnamed-font-family-poppins);
+	color: var(--unnamed-color-000000);
 }
 
 :root {
@@ -36,7 +31,6 @@ body {
 	--unnamed-line-spacing-75: 75px;
 }
 
- 
 /* Character Styles */
 .paragraph {
 	font-family: var(--unnamed-font-family-poppins);
