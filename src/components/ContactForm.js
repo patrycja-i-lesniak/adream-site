@@ -18,7 +18,7 @@ export default function ContactForm() {
 						type="text"
 						name="name"
 						required
-						placeholder="Imię i Nazwisko"
+						placeholder="Imię i nazwisko"
 						aria-label="name input "
 					/>
 
@@ -40,7 +40,7 @@ export default function ContactForm() {
 						aria-describedby="email input"
 					/>
 
-					<textarea
+					<input
 						className={`${'form-control'} ${styles.input}`}
 						rows="1"
 						name="textarea"
