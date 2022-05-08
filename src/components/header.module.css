@@ -1,9 +1,4 @@
 @charset "UTF-8";
-.wrapper {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 .container {
   max-width: 1920px;
   height: 941px;
