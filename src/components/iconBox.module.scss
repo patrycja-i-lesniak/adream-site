@@ -23,7 +23,6 @@
 	.box:nth-child(7) {
 		margin-top: -16px;
 	}
-	
 }
 
 .titleBox {
@@ -34,8 +33,8 @@
 	flex-direction: column;
 	@media (max-width: 576px) {
 		width: 500px;
-			height: 200px;
-			text-align: center;
+		height: 200px;
+		text-align: center;
 	}
 }
 
@@ -44,8 +43,8 @@
 	height: 359px;
 	@media (max-width: 576px) {
 		width: 500px;
-			height: 300px;
-			text-align: center;
+		height: 300px;
+		text-align: center;
 	}
 }
 
@@ -61,15 +60,15 @@
 }
 
 .h3 {
-	font-size: 48px;
+	font-size: var(--unnamed-font-size-48);
 	line-height: 58px;
-	font-weight: bold;
+	font-weight: var(--unnamed-font-weight-bold);
 	margin: 0;
 	padding-top: 3px;
 }
 
 .paragraph {
-	font-size: 28px;
+	font-size: var(--unnamed-font-size-28);
 	line-height: 38px;
 	font-family: Poppins;
 	margin-top: 46px;
@@ -81,11 +80,11 @@
 
 .button {
 	background-color: var(--unnamed-color-000000);
-	color: #ffffff;
+	color: var(--unnamed-color-FFFFFF);
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 4px;
-	font-weight: bold;
+	font-weight: var(--unnamed-font-weight-bold);
 	width: 380px;
 	height: 78px;
 	border: none;
@@ -116,13 +115,12 @@
 	left: 0;
 	width: 0;
 	height: 100%;
-	background: #ffcc48;
+	background: var(--unnamed-color-FFCC48);
 	transition: all .35s;
 }
 
 .button:hover {
-	// color: #ffffff;
-	color: #000000;
+	color: var(--unnamed-color-000000);
 }
 
 .button:hover:after {

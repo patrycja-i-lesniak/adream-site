@@ -20,10 +20,10 @@
 	left: 175px;
 	top: 250px;
 	max-width: 523px;
-	font-weight: bold;
-	font-size: 65px;
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-65);
 	line-height: 75px;
-	color: #000000;
+	color: var(--unnamed-color-000000);
 	text-align: left;
 	font-family: Poppins;
 	z-index: 3;

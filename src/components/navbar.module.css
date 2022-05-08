@@ -1,16 +1,12 @@
 .wrapper {
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
   position: absolute;
   top: 0;
-  -ms-grid-columns: 135px 1fr 76px;
   grid-template-columns: 135px 1fr 76px;
   max-width: 1920px;
   width: 100%;
   padding: 40px 177px 0 175px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 999;
 }
@@ -29,16 +25,15 @@
 
 @media (max-width: 992px) {
   .wrapper {
-    -ms-grid-columns: 1fr auto;
     grid-template-columns: 1fr auto;
   }
 }
 
 .logo {
-  font-size: 48px;
+  font-size: var(--unnamed-font-size-48);
   text-transform: uppercase;
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: var(--unnamed-font-weight-bold);
+  color: var(--unnamed-color-FFFFFF);
   text-decoration: none;
 }
 
@@ -49,19 +44,15 @@
 }
 
 .logo:hover {
-  color: #ffffff;
+  color: var(--unnamed-color-FFFFFF);
   cursor: pointer;
 }
 
 .links {
   padding: 5px 0 0 183px;
-  display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (auto)[5]; */
   grid-template-columns: repeat(5, auto);
   grid-gap: 57px;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: start;
 }
 
@@ -92,7 +83,7 @@
 }
 
 .link {
-  color: #ffffff;
+  color: var(--unnamed-color-FFFFFF);
   text-decoration: none;
   font-size: 16px;
 }
@@ -113,18 +104,16 @@
   .link:nth-child(3) {
     padding-left: 0;
   }
-
   .link:nth-child(4) {
     padding-left: 0;
   }
-
   .link:nth-child(5) {
     padding-left: 0;
   }
 }
 
 .link:hover {
-  color: #ffffff;
+  color: var(--unnamed-color-FFFFFF);
 }
 
 .link::before {
@@ -135,24 +124,17 @@
   height: 2px;
   bottom: -10px;
   left: 0;
-  background-color: #ffffff;
-  -webkit-transform: scaleX(0);
+  background-color: var(--unnamed-color-FFFFFF);
   transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .link:hover::before {
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 .socials {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 28px 28px;
   grid-template-columns: 28px 28px;
   gap: 20px;
   padding-right: 177px;
@@ -167,7 +149,7 @@
 
 .hamburger {
   font-size: 40px;
-  color: #ffffff;
+  color: var(--unnamed-color-FFFFFF);
 }
 
 .hamburger:hover {
@@ -180,5 +162,3 @@
     display: none;
   }
 }
-
-/*# sourceMappingURL=navbar.module.css.map */

@@ -4,7 +4,7 @@
 	gap: 28px;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 140px;
+	padding-top: 20px;
 	@media (max-width: 576px) {
 		padding-top: 40px;
 	}
@@ -32,7 +32,7 @@
 .yellowBox {
 	width: 42px;
 	height: 42px;
-	background: #ffcc48 0% 0% no-repeat padding-box;
+	background: var(--unnamed-color-FFCC48) 0% 0% no-repeat padding-box;
 	position: absolute;
 	z-index: 1;
 }
@@ -50,8 +50,8 @@
 .h3 {
 	text-align: left;
 	line-height: 38px;
-	font-weight: bold;
-	color: #000000;
+	font-weight: var(--unnamed-font-weight-bold);
+	color: var(--unnamed-color-000000);
 	z-index: 2;
 	margin: 0;
 	font-weight: bolder;
