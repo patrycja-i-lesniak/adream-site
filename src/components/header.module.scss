@@ -1,7 +1,12 @@
+.wrapper {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 .container {
 	max-width: 1920px;
 	height: 941px;
 	height: 100%;
+	padding-bottom: 0;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -10,14 +15,14 @@
 
 .h1 {
 	position: absolute;
-	bottom: 300px;
+	bottom: 418px;
 	left: 175px;
 	z-index: 99;
 	max-width: 880px;
 	letter-spacing: 0.3px;
 	font-weight: var(--unnamed-font-weight-bold);
 	font-size: 64px;
-	color: #ffffff;
+	color: var(--unnamed-color-FFFFFF);
 	@media (max-width: 1600px) {
 		bottom: 340px;
 		left: 100px;
@@ -52,14 +57,14 @@
 }
 .h2 {
 	position: absolute;
-	bottom: 130px;
+	bottom: 248px;
 	left: 175px;
 	z-index: 9;
 	max-width: 887px;
-	font-size: 48px;
+	font-size: var(--unnamed-font-size-48);
 	line-height: 77px;
 	font-weight: normal;
-	color: #ffffff;
+	color: var(--unnamed-color-FFFFFF);
 	letter-spacing: -0.15px;
 	@media (max-width: 1600px) {
 		bottom: 220px;
@@ -106,7 +111,7 @@
 	position: absolute;
 	width: 290px;
 	height: 19px;
-	bottom: 53px;
+	bottom: 168px;
 	left: 335px;
 	z-index: 9;
 	@media (max-width: 768px) {
@@ -117,7 +122,7 @@
 .next,
 .prev {
 	z-index: 999;
-	background-color: #ffffff;
+	background-color: var(--unnamed-color-FFFFFF);
 	max-height: 118px;
 	height: 100%;
 	border: none;
@@ -184,7 +189,7 @@
 .contentBox {
 	max-width: 700px;
 	text-align: center;
-	color: #ffffff;
+	color: var(--unnamed-color-FFFFFF);
 }
 
 ////

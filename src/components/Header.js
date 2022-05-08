@@ -3,11 +3,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import * as styles from './header.module.scss';
 import ContactForm from './ContactForm';
-// import Carousel from './Carousel';
+import HeroCarousel from './HeroCarousel';
 
 export default function Header() {
 	return (
-		<div>
+		<div className={styles.wrapper}>
 			<div className={styles.container}>
 				<h1 className={styles.h1}>Firma</h1>
 				<h2 className={styles.h2}>
@@ -17,9 +17,8 @@ export default function Header() {
 					className={styles.progressBar}
 					src="../images/Header/progressBar.png"
 					alt="progress bar"
-				/> 
-				{/* <Carousel /> */}
-				<StaticImage src="../images/Carousel/background1.png" alt=""/>
+				/>
+				<HeroCarousel />
 				<ContactForm />
 			</div>
 		</div>
