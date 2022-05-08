@@ -3,7 +3,7 @@
 	bottom: 0px;
 	right: 0px;
 	z-index: 999;
-	background-color: #ffffff;
+	background-color: var(--unnamed-color-FFFFFF);
 	width: 130px;
 	height: 130px;
 	border: none;
@@ -17,7 +17,7 @@
 	top: 0;
 	width: 0;
 	height: 100%;
-	background: #000000;
+	background: var(--unnamed-color-000000);;
 	transition: all .35s;
 }
 

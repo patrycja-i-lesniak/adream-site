@@ -21,13 +21,13 @@
 	position: absolute;
 	top: 78px;
 	left: 172px;
-	font-size: 65px;
+	font-size: var(--unnamed-font-size-65);
 	// line-height: 98px;
-	font-weight: bold;
+	font-weight: var(--unnamed-font-weight-bold);
 	text-transform: uppercase;
 	padding-bottom: 40px;
 	margin: 0;
-	color: #FFFFFF;
+	color: var(--unnamed-color-FFFFFF);
 }
 
 .paragraph {
@@ -36,24 +36,24 @@
 	top: 200px;
 	font-size: 16px;
 	z-index: 9;
-	color: #FFFFFF;
+	color: var(--unnamed-color-FFFFFF);
 }
 
 .paragraphBold {
 	position: absolute;
 	left: 175px;
 	top: 278px;
-	font-weight: bold;
-	color: #FFFFFF;
-
+	font-weight: var(--unnamed-font-weight-bold);
+	color: var(--unnamed-color-FFFFFF);
 }
 
-.policy, .info {
+.policy,
+.info {
 	position: absolute;
 	bottom: 40px;
 	font-size: 12px;
 	line-height: 28px;
-	color: #ffffff;
+	color: var(--unnamed-color-FFFFFF);
 	margin: 0;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .link {
-	color: #ffffff;
+	color: var(--unnamed-color-FFFFFF);
 	text-decoration: none;
 	line-height: 28px;
 	padding-bottom: 12px;
