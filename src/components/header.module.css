@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container {
   max-width: 1920px;
   height: 941px;
@@ -24,47 +23,30 @@
 
 @media (max-width: 1600px) {
   .h1 {
-    bottom: 340px;
+    bottom: 380px;
     left: 100px;
-    font-size: 54px;
+    font-size: 64px;
   }
 }
 
 @media (max-width: 1400px) {
   .h1 {
-    bottom: 320px;
+    bottom: 380px;
     font-size: 54px;
   }
 }
 
 @media (max-width: 1200px) {
   .h1 {
-    bottom: 360px;
+    top: 160px;
     font-size: 54px;
-    left: 50px;
   }
 }
 
 @media (max-width: 992px) {
   .h1 {
-    bottom: 450px;
-    font-size: 54px;
-  }
-}
-
-@media (max-width: 768px) {
-  .h1 {
-    top: 60px;
-    left: 270px;
-    font-size: 54px;
-  }
-}
-
-@media (max-width: 576px) {
-  .h1 {
-    top: 400px;
-    left: 200px;
-    font-size: 54px;
+    bottom: 560px;
+    font-size: 50px;
   }
 }
 
@@ -83,9 +65,9 @@
 
 @media (max-width: 1600px) {
   .h2 {
-    bottom: 220px;
+    bottom: 240px;
     left: 100px;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 50px;
     max-width: 600px;
   }
@@ -93,47 +75,22 @@
 
 @media (max-width: 1400px) {
   .h2 {
-    bottom: 180px;
-    max-width: 460px;
+    bottom: 220px;
+    max-width: 600px;
   }
 }
 
 @media (max-width: 1200px) {
   .h2 {
-    bottom: 180px;
-    font-size: 34px;
-    line-height: 50px;
-    left: 50px;
+    top: 240px;
+    max-width: 700px;
   }
 }
 
 @media (max-width: 992px) {
   .h2 {
-    bottom: 200px;
-    font-size: 36px;
-    max-width: 330px;
-    line-height: 46px;
-  }
-}
-
-@media (max-width: 768px) {
-  .h2 {
-    bottom: 20px;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 660px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .h2 {
-    bottom: 30px;
-    font-size: 44px;
-    line-height: 60px;
-    max-width: 500px;
-    text-align: center;
-    margin-left: 0;
+    bottom: 440px;
+    font-size: 28px;
   }
 }
 
@@ -146,156 +103,15 @@
   z-index: 9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .progressBar {
-    display: none;
+    bottom: 160px;
+    max-width: 700px;
   }
 }
 
-.next,
-.prev {
-  z-index: 999;
-  background-color: var(--unnamed-color-FFFFFF);
-  max-height: 118px;
-  height: 100%;
-  border: none;
-  padding: 0px;
-  position: relative;
-  transition: all .35s ease-in-out;
-  bottom: 118px;
-  flex: 1;
-  margin: 0;
-}
-
-.prev::after,
-.next:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #000000;
-  transition: all .35s;
-}
-
-.prev::after {
-  right: 0;
-}
-
-.next:after {
-  left: 0;
-}
-
-.prev:hover::after,
-.next:hover::after {
-  width: 100%;
-}
-
-.prev {
-  left: 0;
-  width: 160px;
-}
-
-.next {
-  left: 0px;
-  width: 145px;
-}
-
-.masthead {
-  max-width: 1920px;
-  height: 941px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 140px;
-}
-
-.blackOverlay {
-  display: flex;
-  display: -webkit-flex;
-  filter: brightness(61%);
-  height: 100%;
-  align-items: center;
-}
-
-.contentBox {
-  max-width: 700px;
-  text-align: center;
-  color: var(--unnamed-color-FFFFFF);
-}
-
-.slickNext,
-.slickPrev {
-  position: absolute;
-  display: block;
-  padding: 0;
-}
-
-.slickNext:before,
-.slickPrev:before {
-  font-family: slick;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slickNext,
-.slickPrev {
-  font-size: 0;
-  line-height: 0;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: 0;
-  background: 0 0;
-}
-
-.slickNext:focus,
-.slickNext:hover,
-.slickPrev:focus,
-.slickPrev:hover {
-  color: transparent;
-  outline: 0;
-  background: 0 0;
-}
-
-.slickNext:focus:before,
-.slickNext:hover:before,
-.slickPrev:focus:before,
-.slickPrev:hover:before {
-  opacity: 1;
-}
-
-.slickNext.slick-disabled:before,
-.slickPrev.slick-disabled:before {
-  opacity: .25;
-}
-
-.slickNext:before,
-.slickPrev:before {
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
-  color: #fff;
-}
-
-.slickPrev {
-  left: -25px;
-}
-
-.slickPrev:before {
-  content: '←';
-}
-
-.slickNext {
-  right: -25px;
-}
-
-.xx {
-  font-size: 10em;
+@media (max-width: 992px) {
+  .progressBar {
+    display: none;
+  }
 }
