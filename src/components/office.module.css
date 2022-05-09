@@ -15,6 +15,7 @@
 
 .graphic {
   width: 290px;
+  max-height: 144.99px;
   z-index: 2;
   position: absolute;
   top: 0;
