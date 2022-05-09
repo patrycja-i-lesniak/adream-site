@@ -5,7 +5,7 @@ export default function ContactForm() {
 	return (
 		<div className={`${'container-fluid'} ${styles.container}`}>
 			{/* <div className={styles.container}> */}
-			<form action="https://formsubmit.co/patrycja.lesniak@gmail.com" method="POST">
+			<form className={styles.form} action="https://formsubmit.co/patrycja.lesniak@gmail.com" method="POST">
 				<div className="mb-3">
 					<h3 className={styles.h3}>
 						Lorem ipsum <br />Lorem ipsum lorem ipsum
