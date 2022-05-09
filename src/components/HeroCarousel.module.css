@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  padding-bottom: 0;
 }
 
 .container img {
@@ -28,9 +27,8 @@
   top: 0;
   width: 0;
   height: 100%;
-  background: #000000;
+  background: var(--unnamed-color-000000);
   transition: all .35s;
-  opacity: 30%;
   left: 0;
 }
 
@@ -59,9 +57,8 @@
   top: 0;
   width: 0;
   height: 100%;
-  background: #000000;
+  background-color: #000000;
   transition: all .35s;
-  opacity: 30%;
   right: 0;
 }
 
@@ -73,9 +70,14 @@
   width: 38.27px;
   position: absolute;
   left: 58px;
+  z-index: 999;
 }
 
-.arrow:hover {
+.back .arrow::after {
+  width: 38.27px;
+  position: absolute;
+  left: 58px;
+  z-index: 999;
   background-color: red;
 }
 
