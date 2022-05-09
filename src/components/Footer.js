@@ -7,12 +7,13 @@ import * as styles from './footer.module.scss';
 export default function Footer() {
 	return (
 		<div className={styles.container}>
-		
-			<StaticImage
+		<div className={styles.graphicContainer}><StaticImage
 				className={styles.graphic}
 				src="../static/Footer/Group 586@2x.png"
 				alt="graphic"
 			/>
+		</div>
+			
 				<div>
 					<p className={styles.logo}>logo</p>
 					<p className={styles.paragraph}>

@@ -12,12 +12,19 @@
 	}
 }
 
-.graphic {
+.graphicContainer {
+	max-width: 1920px;
+	width: 100%;
+	display: flex;
 	position: absolute;
+	justify-content: flex-end;
+	top: -30px;
+}
+
+.graphicContainer .graphic {
 	width: 290px;
 	height: 68px;
-	right: 175px;
-	top: -30px;
+	margin-right: 175px;
 	z-index: 9;
 }
 
