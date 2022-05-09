@@ -1,20 +1,19 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import * as styles from './header.module.scss';
 import ContactForm from './ContactForm';
 import HeroCarousel from './HeroCarousel';
 
 export default function Header() {
 	return (
-		<div>
-			<div className={styles.container}>
-				<h1 className={styles.h1}>Firma</h1>
-				<h2 className={styles.h2}>
+		<div className='header'>
+			<div className='wrapper'>
+				<h1 className='h1'>Firma</h1>
+				<h2 className='h2'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
 				</h2>
 				<StaticImage
-					className={styles.progressBar}
+					className='progressBar'
 					src="../images/Header/progressBar.png"
 					alt="progress bar"
 				/>
