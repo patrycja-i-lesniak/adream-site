@@ -15,12 +15,14 @@ export default function Office() {
 					alt="photo"
 				/>
 				</div>
-				
-				<StaticImage
+				<div className={styles.graphicContainer}>
+					<StaticImage
 					className={styles.graphic}
 					src="../images/Office/Group 576.svg"
 					alt="icon"
 				/>
+				</div>
+				
 				<div className={styles.line} />
 			</div>
 		</div>

@@ -89,6 +89,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .paragraphBold {
+    left: 60px;
+  }
+}
+
 .policy,
 .info {
   position: absolute;
