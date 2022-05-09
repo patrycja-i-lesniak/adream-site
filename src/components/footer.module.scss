@@ -6,6 +6,10 @@
 	margin-top: 170px;
 	position: relative;
 	max-width: 1920px;
+
+	@media (max-width: 1400px) {
+		margin-top: 80px;
+	}
 }
 
 .graphic {
@@ -28,6 +32,12 @@
 	padding-bottom: 40px;
 	margin: 0;
 	color: var(--unnamed-color-FFFFFF);
+	@media (max-width: 992px) {
+		left: 100px;
+	}
+	@media (max-width: 576px) {
+		left: 60px;
+	}
 }
 
 .paragraph {
@@ -37,6 +47,12 @@
 	font-size: 16px;
 	z-index: 9;
 	color: var(--unnamed-color-FFFFFF);
+	@media (max-width: 992px) {
+		left: 100px;
+	}
+	@media (max-width: 576px) {
+		left: 60px;
+	}
 }
 
 .paragraphBold {
@@ -45,6 +61,9 @@
 	top: 278px;
 	font-weight: var(--unnamed-font-weight-bold);
 	color: var(--unnamed-color-FFFFFF);
+	@media (max-width: 992px) {
+		left: 100px;
+	}
 }
 
 .policy,
@@ -59,10 +78,16 @@
 
 .policy {
 	left: 175px;
+	@media (max-width: 992px) {
+		left: 40px;
+	}
 }
 
 .info {
 	right: 253px;
+	@media (max-width: 992px) {
+		right: 120px;
+	}
 }
 
 .footerNavigation {
@@ -71,12 +96,27 @@
 	top: 208px;
 	display: flex;
 	flex-direction: row;
+	@media (max-width: 1400px) {
+		left: 615px;
+		top: 208px;
+	}
+	@media (max-width: 992px) {
+		left: 515px;
+		top: 130px;
+		flex-direction: column;
+	}
+	@media (max-width: 576px) {
+		left: 315px;
+	}
 }
 
 .nav {
 	display: flex;
 	flex-direction: column;
 	width: 320px;
+	// @media (max-width: 992px) {
+	// 	width: 200px;
+	// }
 }
 
 .link {
@@ -92,6 +132,9 @@
 	right: 175px;
 	display: flex;
 	flex-direction: row;
+	@media (max-width: 992px) {
+		right: 40px;
+	}
 }
 
 .aDreamLogo {
@@ -100,4 +143,7 @@
 	position: absolute;
 	right: 175px;
 	bottom: 47.41px;
+	@media (max-width: 992px) {
+		right: 40px;
+	}
 }

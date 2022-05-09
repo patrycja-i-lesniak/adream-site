@@ -8,6 +8,12 @@
   max-width: 1920px;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    margin-top: 80px;
+  }
+}
+
 .graphic {
   position: absolute;
   width: 290px;
@@ -29,6 +35,18 @@
   color: var(--unnamed-color-FFFFFF);
 }
 
+@media (max-width: 992px) {
+  .logo {
+    left: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    left: 60px;
+  }
+}
+
 .paragraph {
   position: absolute;
   left: 175px;
@@ -38,12 +56,30 @@
   color: var(--unnamed-color-FFFFFF);
 }
 
+@media (max-width: 992px) {
+  .paragraph {
+    left: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .paragraph {
+    left: 60px;
+  }
+}
+
 .paragraphBold {
   position: absolute;
   left: 175px;
   top: 278px;
   font-weight: var(--unnamed-font-weight-bold);
   color: var(--unnamed-color-FFFFFF);
+}
+
+@media (max-width: 992px) {
+  .paragraphBold {
+    left: 100px;
+  }
 }
 
 .policy,
@@ -60,8 +96,20 @@
   left: 175px;
 }
 
+@media (max-width: 992px) {
+  .policy {
+    left: 40px;
+  }
+}
+
 .info {
   right: 253px;
+}
+
+@media (max-width: 992px) {
+  .info {
+    right: 120px;
+  }
 }
 
 .footerNavigation {
@@ -70,6 +118,27 @@
   top: 208px;
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 1400px) {
+  .footerNavigation {
+    left: 615px;
+    top: 208px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footerNavigation {
+    left: 515px;
+    top: 130px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .footerNavigation {
+    left: 315px;
+  }
 }
 
 .nav {
@@ -93,10 +162,22 @@
   flex-direction: row;
 }
 
+@media (max-width: 992px) {
+  .design {
+    right: 40px;
+  }
+}
+
 .aDreamLogo {
   width: 70px;
   height: 18px;
   position: absolute;
   right: 175px;
   bottom: 47.41px;
+}
+
+@media (max-width: 992px) {
+  .aDreamLogo {
+    right: 40px;
+  }
 }
