@@ -1,9 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
-import * as styles from './gallery.module.scss';
 import Img from 'gatsby-image';
-
 
 export default function Gallery() {
 	const data = useStaticQuery(graphql`
@@ -43,43 +41,39 @@ export default function Gallery() {
 		}
 	`);
 
-
 	return (
-	
-		<div className=".container-fluid">
-			
-
-			 <div className={styles.container}>
-				<h1 className={styles.h1}>Galeria</h1>
-				<div className={styles.line} />
+		<div className="gallery">
+			<div className='container'>
+				<h1 className='h1'>Galeria</h1>
+				<div className='line' />
 				<Img
-					className={styles.image1}
+					className='image1'
 					fluid={data.photo1.childImageSharp.fluid}
 					alt="This is the first Photo"
 				/>
 				<Img
-					className={styles.image2}
+					className='image2'
 					fluid={data.photo2.childImageSharp.fluid}
 					alt="This is the second Photo"
 				/>
 				<Img
-					className={styles.image3}
+					className='image3'
 					fluid={data.photo3.childImageSharp.fluid}
 					alt="This is the third Image"
 				/>
 				<Img
-					className={styles.image4}
+					className='image4'
 					fluid={data.photo4.childImageSharp.fluid}
 					alt="This is the fourth Image"
 				/>
-				<button className={styles.prev}>
+				<button className='prev'>
 					<StaticImage src="../static/prev.svg" alt="prev" />
 				</button>
-				<button className={styles.next}>
+				<button className='next'>
 					{' '}
 					<StaticImage src="../static/next.svg" alt="next" />
 				</button>
-			</div> 
-		 </div>
+			</div>
+		</div>
 	);
 }
