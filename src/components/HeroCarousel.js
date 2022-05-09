@@ -55,7 +55,7 @@ export default function HeroCarousel() {
 	return (
 		<CarouselProvider naturalSlideWidth={1920} naturalSlideHeight={941} totalSlides={3} infinite>
 			<Slider className={styles.container}>
-				<Slide index={0} className={styles.slide}>
+				<Slide index={0} >
 					<Img fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
 					{/* <div className="info">
 						<h1 className="h1">Firma</h1>
