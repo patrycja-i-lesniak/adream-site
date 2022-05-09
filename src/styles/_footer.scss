@@ -1,0 +1,135 @@
+.footer {
+	.container {
+		display: flex;
+		background-color: #000000;
+		width: 100%;
+		height: 548px;
+		margin-top: 170px;
+		position: relative;
+		max-width: 1920px;
+
+		@media (max-width: 1400px) {
+			margin-top: 80px;
+		}
+
+		.graphicContainer {
+			max-width: 1920px;
+			width: 100%;
+			display: flex;
+			position: absolute;
+			justify-content: flex-end;
+			top: -30px;
+
+			.graphic {
+				width: 290px;
+				height: 68px;
+				margin-right: 175px;
+				z-index: 9;
+			}
+		}
+
+		.logo {
+			position: absolute;
+			top: 78px;
+			left: 172px;
+			font-size: var(--unnamed-font-size-65);
+			// line-height: 98px;
+			font-weight: var(--unnamed-font-weight-bold);
+			text-transform: uppercase;
+			padding-bottom: 40px;
+			margin: 0;
+			color: var(--unnamed-color-FFFFFF);
+			@media (max-width: 992px) {
+				left: 100px;
+			}
+			@media (max-width: 576px) {
+				left: 60px;
+			}
+		}
+		.paragraph {
+			position: absolute;
+			left: 175px;
+			top: 200px;
+			font-size: 16px;
+			z-index: 9;
+			color: var(--unnamed-color-FFFFFF);
+			@media (max-width: 992px) {
+				left: 100px;
+			}
+			@media (max-width: 576px) {
+				left: 60px;
+			}
+		}
+		.bold {
+			top: 278px;
+			font-weight: var(--unnamed-font-weight-bold);
+		}
+
+		.policy,
+		.info {
+			position: absolute;
+			bottom: 40px;
+			font-size: 12px;
+			line-height: 28px;
+			color: var(--unnamed-color-FFFFFF);
+			margin: 0;
+		}
+
+		.policy {
+			left: 175px;
+			@media (max-width: 992px) {
+				left: 40px;
+			}
+		}
+
+		.info {
+			right: 253px;
+			@media (max-width: 992px) {
+				right: 120px;
+			}
+		}
+
+		.footerNavigation {
+			position: absolute;
+			left: 815px;
+			top: 208px;
+			display: flex;
+			flex-direction: row;
+			@media (max-width: 1400px) {
+				left: 615px;
+				top: 208px;
+			}
+			@media (max-width: 992px) {
+				left: 515px;
+				top: 130px;
+				flex-direction: column;
+			}
+			@media (max-width: 576px) {
+				left: 315px;
+			}
+
+			.nav {
+				display: flex;
+				flex-direction: column;
+				width: 320px;
+
+				.link {
+					color: var(--unnamed-color-FFFFFF);
+					text-decoration: none;
+					line-height: 28px;
+					padding-bottom: 12px;
+				}
+			}
+		}
+		.aDreamLogo {
+			width: 70px;
+			height: 18px;
+			position: absolute;
+			right: 175px;
+			bottom: 47.41px;
+			@media (max-width: 992px) {
+				right: 40px;
+			}
+		}
+	}
+}
