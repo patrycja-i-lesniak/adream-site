@@ -12,21 +12,24 @@
 	z-index: 999;
 	padding: 28px 33px 33px;
 	color: var(--unnamed-color-000000);
-	@media (max-width: 1200px) {
+	@media (max-width: 1920px) {
+		max-width: 430px;
+		max-height: 560px;
+		top: 158px;
+		padding: 20px;
+	}
+	@media (max-width: 1600px) {
+		max-width: 400px;
+	}
+	@media (max-width: 1400px) {
+		max-width: 350px;
+		max-height: 480px;
+		top: 128px;
+		padding: 25px;
 		right: 100px;
 	}
-	@media (max-width: 992px) {
-		max-width: 400px;
-		max-height: 600px;
-		right: 80px;
-	}
 
-	@media (max-width: 768px) {
-		max-width: 400px;
-		max-height: 600px;
-		right: 140px;
-	}
-	@media (max-width: 576px) {
+	@media (max-width: 1200px) {
 		display: none;
 	}
 }
@@ -41,6 +44,14 @@
 	padding-top: 12px;
 	font-size: 8px;
 	padding-left: 18px;
+	@media (max-width: 1920px) {
+		height: 40px;
+		margin-bottom: 15px;
+	}
+	@media (max-width: 1600px) {
+		height: 30px;
+		margin-bottom: 10px;
+	}
 	@media (max-width: 992px) {
 		margin-bottom: 10px;
 	}
@@ -63,6 +74,9 @@
 	text-align: center;
 	position: relative;
 	transition: all .35s;
+	@media (max-width: 1400px) {
+		height: 40px;
+	}
 }
 
 .button span {
@@ -111,12 +125,20 @@
 		line-height: 28px;
 		font-size: 24px;
 	}
+
+	@media (max-width: 1400px) {
+		line-height: 24px;
+	}
 }
 
 .paragraph {
 	color: #727272;
 	font-size: 18px;
 	margin: 10px 0 14px;
+	@media (max-width: 1600px) {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
 
 .h4 {
@@ -125,17 +147,27 @@
 	line-height: 15px;
 	padding-bottom: 38px;
 	margin: 0px;
+	@media (max-width: 1920px) {
+		padding-bottom: 20px;
+		font-size: 16px;
+	}
 }
 
 .text {
 	font-size: 10px;
 	margin-top: 1px;
+	@media (max-width: 1400px) {
+		font-size: 8px;
+	}
 }
 
 .checkboxWrapper {
 	font-size: 10px;
 	display: flex;
 	margin-bottom: 24px;
+	@media (max-width: 1400px) {
+		margin-bottom: 12px;
+	}
 }
 .checkbox {
 	border: 1px solid #000000;
@@ -143,8 +175,12 @@
 	width: 24px;
 	height: 22px;
 	margin: 0 16px 0 0;
+	@media (max-width: 1400px) {
+		width: 18px;
+		height: 18px;
+	}
 }
 
 ::placeholder {
-	font-size: 20px;
+	font-size: 16px;
 }
