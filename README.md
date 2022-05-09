@@ -13,9 +13,9 @@ I'm currently working on:
 
 ## Demo
 
-![ADream site](https://patrycja-i-lesniak.github.io/adream-site/)
+CLICK --> [ADream site](https://adreamsite.gtsb.io/)
 
-![ADreamSite homepage](src/assets/images/my-books-app.jpg)
+![ADreamSite homepage](/adream-site.png)
 
 ## Technologies
 
