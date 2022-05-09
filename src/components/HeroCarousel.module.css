@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .next {
     height: 70px;
     width: 95px;
@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .back {
     height: 70px;
     width: 100px;
@@ -105,7 +105,7 @@
   z-index: 999;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .arrow {
     left: 38px;
   }
