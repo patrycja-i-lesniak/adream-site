@@ -87,10 +87,4 @@
   position: absolute;
   right: 0;
   top: 72.5px;
-  object-fit: cover;
-}
-
-.innercontainer {
-  display: flex;
-  flex-wrap: no-wrap;
 }

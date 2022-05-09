@@ -6,7 +6,7 @@ import * as styles from './office.module.scss';
 export default function Office() {
 	return (
 		<div className={styles.container}>
-			<div className={styles.innercontainer}>
+			<div >
 				<h1 className={styles.h1}>Lorem ipsum vs własne biuro</h1>
 				<StaticImage
 					className={styles.image}
