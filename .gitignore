@@ -11,3 +11,5 @@ public
 **/yarn.lock
 **/node_modules
 ../**/dist/**
+
+localhost:8080/
