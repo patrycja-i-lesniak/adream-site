@@ -8,11 +8,14 @@ export default function Office() {
 		<div className={styles.container}>
 			<div >
 				<h1 className={styles.h1}>Lorem ipsum vs własne biuro</h1>
-				<StaticImage
+				<div className={styles.imageContainer}>
+					<StaticImage
 					className={styles.image}
 					src="../images/Office/Group 258.png"
 					alt="photo"
 				/>
+				</div>
+				
 				<StaticImage
 					className={styles.graphic}
 					src="../images/Office/Group 576.svg"
