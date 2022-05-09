@@ -5,8 +5,6 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-import * as styles from './heroCarousel.module.scss';
-
 export default function HeroCarousel() {
 	const { slide1, slide2, slide3, back, next } = useStaticQuery(graphql`
 		query {
@@ -53,9 +51,14 @@ export default function HeroCarousel() {
 		}
 	`);
 	return (
-		<CarouselProvider naturalSlideWidth={1920} naturalSlideHeight={941} totalSlides={3} infinite>
-			<Slider className={styles.container}>
-				<Slide index={0} >
+		<CarouselProvider className='carouselWrapper'
+			naturalSlideWidth={1920}
+			naturalSlideHeight={941}
+			totalSlides={3}
+			infinite
+		>
+			<Slider className="slider">
+				<Slide index={0}>
 					<Img fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
 					{/* <div className="info">
 						<h1 className="h1">Firma</h1>
@@ -83,8 +86,20 @@ export default function HeroCarousel() {
 					</div> */}
 				</Slide>
 			</Slider>
-			<ButtonBack className={styles.back}><Img className={styles.arrow} fluid={back.childImageSharp.fluid} alt="This is the back button" /></ButtonBack>
-			<ButtonNext className={styles.next}><Img className={styles.arrow} fluid={next.childImageSharp.fluid} alt="This is the next button" /></ButtonNext>
+			<ButtonBack className="buttonBack">
+				<Img
+					className="arrow"
+					fluid={back.childImageSharp.fluid}
+					alt="This is the back button"
+				/>
+			</ButtonBack>
+			<ButtonNext className="buttonNext">
+				<Img
+					className="arrow"
+					fluid={next.childImageSharp.fluid}
+					alt="This is the next button"
+				/>
+			</ButtonNext>
 		</CarouselProvider>
 	);
 }

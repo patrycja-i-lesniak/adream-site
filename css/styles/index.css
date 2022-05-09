@@ -808,3 +808,110 @@ body {
     display: none;
   }
 }
+
+.carouselWrapper .slider {
+  position: relative;
+}
+.carouselWrapper .slider img {
+  filter: brightness(61%);
+}
+.carouselWrapper .buttonNext {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  background-color: var(--unnamed-color-FFFFFF);
+  width: 145px;
+  height: 118px;
+  border: none;
+  padding: 0px;
+  position: relative;
+  transition: all 0.35s ease-in-out;
+  bottom: 118px;
+  left: 0px;
+}
+.carouselWrapper .buttonNext::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--unnamed-color-000000);
+  transition: all 0.35s;
+  left: 0;
+}
+.carouselWrapper .buttonNext:hover::after {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .carouselWrapper .buttonNext {
+    height: 100px;
+    width: 115px;
+    bottom: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .carouselWrapper .buttonNext {
+    height: 70px;
+    width: 95px;
+    bottom: 70px;
+  }
+}
+.carouselWrapper .buttonBack {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  background-color: var(--unnamed-color-FFFFFF);
+  width: 160px;
+  height: 118px;
+  border: none;
+  padding: 0px;
+  position: relative;
+  transition: all 0.35s ease-in-out;
+  bottom: 118px;
+  left: 0;
+}
+.carouselWrapper .buttonBack::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000000;
+  transition: all 0.35s;
+  right: 0;
+}
+.carouselWrapper .buttonBack:hover::after {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .carouselWrapper .buttonBack {
+    height: 100px;
+    width: 130px;
+    bottom: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .carouselWrapper .buttonBack {
+    height: 70px;
+    width: 100px;
+    bottom: 70px;
+  }
+}
+.carouselWrapper .arrow {
+  width: 38.27px;
+  position: absolute;
+  left: 58px;
+  z-index: 999;
+}
+@media (max-width: 1200px) {
+  .carouselWrapper .arrow {
+    left: 38px;
+  }
+}
+.carouselWrapper .buttonBack .arrow::after {
+  width: 38.27px;
+  position: absolute;
+  left: 58px;
+  z-index: 999;
+  background-color: red;
+}
