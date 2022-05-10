@@ -9,10 +9,25 @@
 		padding-top: 40px;
 	}
 
-	.box-small{
+	.box-small {
 		max-width: 770px;
 		width: 100%;
 		position: relative;
+
+		.box-zoom {
+			overflow: hidden;
+
+			.box-image {
+				transition: transform .5s ease;
+			}
+
+			&:hover {
+				.box-image {
+					transform: scale(1.1);
+				}
+			}
+		}
+
 		@media (max-width: 1725px) {
 			width: 100%;
 			max-width: 620px;
@@ -24,20 +39,6 @@
 		@media (max-width: 992px) {
 			width: 100%;
 			max-width: 900px;
-		}
-
-		.box-zoom {
-			overflow: hidden;
-
-			.box-image {
-				transition: transform .5s ease;
-			}
-
-			&:hover {
-				.image {
-					transform: scale(1.1);
-				}
-			}
 		}
 
 		.box-content {
@@ -76,7 +77,7 @@
 					margin: 0;
 				}
 
-				.box-text{
+				.box-text {
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
