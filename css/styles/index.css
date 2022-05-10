@@ -811,6 +811,17 @@ body {
 .carousel-wrapper .carousel-slider img {
   filter: brightness(61%);
 }
+.carousel-wrapper .carousel-slider .fade-animation {
+  transition: opacity 2500ms;
+}
+.carousel-wrapper .carousel-slider .fade-animation .hide {
+  transition: opacity 2500ms;
+  opacity: 0.7;
+}
+.carousel-wrapper .carousel-slider .fade-animation .show {
+  transition: opacity 2500ms;
+  opacity: 1;
+}
 .carousel-wrapper .carousel-button-next {
   position: absolute;
   bottom: 0;

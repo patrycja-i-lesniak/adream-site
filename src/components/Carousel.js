@@ -57,8 +57,8 @@ export default function Carousel() {
 			totalSlides={3}
 			infinite
 		>
-			<Slider className="carousel-slider">
-				<Slide index={0}>
+			<Slider className="carousel-slider" classNameAnimation="fade-animation">
+				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
 					<Img fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
 					{/* <div className="info">
 						<h1 className="h1">Firma</h1>
@@ -67,7 +67,7 @@ export default function Carousel() {
 						</h2>
 					</div> */}
 				</Slide>
-				<Slide index={0}>
+				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
 					<Img fluid={slide2.childImageSharp.fluid} alt="This is the second Image" />
 					{/* <div className="info">
 						<h1 className="h1">Firma</h1>
@@ -76,7 +76,7 @@ export default function Carousel() {
 						</h2>
 					</div> */}
 				</Slide>
-				<Slide index={0}>
+				<Slide classNameHidden="hide" classNameVisible="show" index={2}>
 					<Img fluid={slide3.childImageSharp.fluid} alt="This is the third Image" />
 					{/* <div className="info">
 						<h1 className="h1">Firma</h1>
