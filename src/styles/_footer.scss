@@ -1,5 +1,4 @@
-.footer {
-	.container {
+	.footer-container {
 		display: flex;
 		background-color: #000000;
 		width: 100%;
@@ -12,7 +11,7 @@
 			margin-top: 80px;
 		}
 
-		.graphicContainer {
+		.footer-graphic {
 			max-width: 1920px;
 			width: 100%;
 			display: flex;
@@ -20,7 +19,7 @@
 			justify-content: flex-end;
 			top: -30px;
 
-			.graphic {
+			.footer-image {
 				width: 290px;
 				height: 68px;
 				margin-right: 175px;
@@ -28,7 +27,7 @@
 			}
 		}
 
-		.logo {
+		.footer-logo {
 			position: absolute;
 			top: 78px;
 			left: 172px;
@@ -46,7 +45,7 @@
 				left: 60px;
 			}
 		}
-		.paragraph {
+		.footer-paragraph {
 			position: absolute;
 			left: 175px;
 			top: 200px;
@@ -60,13 +59,13 @@
 				left: 60px;
 			}
 		}
-		.bold {
+		.footer-bold {
 			top: 278px;
 			font-weight: var(--unnamed-font-weight-bold);
 		}
 
-		.policy,
-		.info {
+		.footer-policy,
+		.footer-info {
 			position: absolute;
 			bottom: 40px;
 			font-size: 12px;
@@ -75,21 +74,21 @@
 			margin: 0;
 		}
 
-		.policy {
+		.footer-policy {
 			left: 175px;
 			@media (max-width: 992px) {
 				left: 40px;
 			}
 		}
 
-		.info {
+		.footer-info {
 			right: 253px;
 			@media (max-width: 992px) {
 				right: 120px;
 			}
 		}
 
-		.footerNavigation {
+		.footer-navigation {
 			position: absolute;
 			left: 815px;
 			top: 208px;
@@ -108,12 +107,12 @@
 				left: 315px;
 			}
 
-			.nav {
+			.footer-link-box {
 				display: flex;
 				flex-direction: column;
 				width: 320px;
 
-				.link {
+				.footer-link {
 					color: var(--unnamed-color-FFFFFF);
 					text-decoration: none;
 					line-height: 28px;
@@ -121,7 +120,8 @@
 				}
 			}
 		}
-		.aDreamLogo {
+		
+		.footer-design {
 			width: 70px;
 			height: 18px;
 			position: absolute;
@@ -132,4 +132,4 @@
 			}
 		}
 	}
-}
+
