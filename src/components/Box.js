@@ -42,100 +42,98 @@ export default function Box() {
 		}
 	`);
 	return (
-	
-			<div className="box-container">
-				<div className="box-small">
-					<div className="box-zoom">
-						<Img
-							className="box-image"
-							fluid={data.box1.childImageSharp.fluid}
-							alt="This is the first Box"
-						/>
-					</div>
-
-					<div className="box-content">
-						<div className="box-yellow" />
-
-						<div className="box-info">
-							<h3 className="box-h3">Biuro</h3>
-							<div className="box-text">
-								<div className="box-line" />
-								<p className="box-paragraph">od 1000 zł/msc</p>
-							</div>
-						</div>
-					</div>
-					<AnimatedNextButton />
+		<div className="box-container">
+			<div className="box-small">
+				<div className="box-zoom">
+					<Img
+						className="box-image"
+						fluid={data.box1.childImageSharp.fluid}
+						alt="This is the first Box"
+					/>
 				</div>
 
-				<div className="box-small">
-					<div className="box-zoom">
-						<Img
-							className="box-image"
-							fluid={data.box2.childImageSharp.fluid}
-							alt="This is the second Box"
-						/>
-					</div>
+				<div className="box-content">
+					<div className="box-yellow" />
 
-					<div className="box-content">
-						<div className="box-yellow" />
-						<div className="box-info">
-							<h3 className="box-h3">
-								Lorem <br />ipsum
-							</h3>
-							<div className="box-text">
-								<div className="box-line" />
-								<p className="box-paragraph">od 500 zł/msc</p>
-							</div>
+					<div className="box-info">
+						<h3 className="box-h3">Biuro</h3>
+						<div className="box-text">
+							<div className="box-line" />
+							<p className="box-paragraph">od 1000 zł/msc</p>
 						</div>
 					</div>
-					<AnimatedNextButton />
 				</div>
-
-				<div className="box-small">
-					<div className="box-zoom">
-						<Img
-							className="box-image"
-							fluid={data.box3.childImageSharp.fluid}
-							alt="This is the third Box"
-						/>
-					</div>
-
-					<div className="box-content box-bottom">
-						<div className="box-yellow" />
-						<div className="box-info">
-							<h3 className="box-h3">
-								Biuro <br />lorem
-							</h3>
-							<div className="box-text">
-								<div className="box-line" />
-								<p className="box-paragraph">od 1000zł/h</p>
-							</div>
-						</div>
-					</div>
-					<AnimatedNextButton />
-				</div>
-
-				<div className="box-small">
-					<div className="box-zoom">
-						<Img
-							className="box-image"
-							fluid={data.box4.childImageSharp.fluid}
-							alt="This is the fourth Box"
-						/>
-					</div>
-					<div className="box-content box-bottom">
-						<div className="box-yellow" />
-						<div className="box-info">
-							<h3 className="box-h3">Biuro lorem ipsum Lorem</h3>
-							<div className="box-text">
-								<div className="box-line" />
-								<p className="box-paragraph">od 100 zł/h</p>
-							</div>
-						</div>
-					</div>
-					<AnimatedNextButton />
-				</div>
+				<AnimatedNextButton />
 			</div>
-		
+
+			<div className="box-small">
+				<div className="box-zoom">
+					<Img
+						className="box-image"
+						fluid={data.box2.childImageSharp.fluid}
+						alt="This is the second Box"
+					/>
+				</div>
+
+				<div className="box-content">
+					<div className="box-yellow" />
+					<div className="box-info">
+						<h3 className="box-h3">
+							Lorem <br />ipsum
+						</h3>
+						<div className="box-text">
+							<div className="box-line" />
+							<p className="box-paragraph">od 500 zł/msc</p>
+						</div>
+					</div>
+				</div>
+				<AnimatedNextButton />
+			</div>
+
+			<div className="box-small">
+				<div className="box-zoom">
+					<Img
+						className="box-image"
+						fluid={data.box3.childImageSharp.fluid}
+						alt="This is the third Box"
+					/>
+				</div>
+
+				<div className="box-content box-bottom">
+					<div className="box-yellow" />
+					<div className="box-info">
+						<h3 className="box-h3">
+							Biuro <br />lorem
+						</h3>
+						<div className="box-text">
+							<div className="box-line" />
+							<p className="box-paragraph">od 1000zł/h</p>
+						</div>
+					</div>
+				</div>
+				<AnimatedNextButton />
+			</div>
+
+			<div className="box-small">
+				<div className="box-zoom">
+					<Img
+						className="box-image"
+						fluid={data.box4.childImageSharp.fluid}
+						alt="This is the fourth Box"
+					/>
+				</div>
+				<div className="box-content box-bottom">
+					<div className="box-yellow" />
+					<div className="box-info">
+						<h3 className="box-h3">Biuro lorem ipsum Lorem</h3>
+						<div className="box-text">
+							<div className="box-line" />
+							<p className="box-paragraph">od 100 zł/h</p>
+						</div>
+					</div>
+				</div>
+				<AnimatedNextButton />
+			</div>
+		</div>
 	);
 }
