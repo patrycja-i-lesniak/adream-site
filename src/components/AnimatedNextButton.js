@@ -5,7 +5,7 @@ import '../styles/_animatedNextButton.scss';
 
 export default function AnimatedNextButton() {
 	return (
-		<button className="next">
+		<button className="animated-btn">
 			<StaticImage src="../static/nextSmall.svg" alt="next" />
 		</button>
 	);
