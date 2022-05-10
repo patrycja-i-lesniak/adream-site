@@ -43,7 +43,7 @@ export default function Box() {
 	`);
 	return (
 		<div className="box">
-			<div className="container">
+			<div className="boxContainer">
 				<div className="smallBox">
 					<div className="imgHoverZoom">
 						<Img
