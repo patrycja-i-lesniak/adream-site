@@ -8,7 +8,7 @@ export default function Header() {
 	return (
 		<div className='header'>
 			<div className='wrapper'>
-				<h1 className='h1'>Firma</h1>
+				<h1 className='headerTitle'>Firma</h1>
 				<h2 className='h2'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
 				</h2>

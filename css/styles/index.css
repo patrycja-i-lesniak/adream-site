@@ -602,7 +602,7 @@ body {
     max-width: 1200px;
   }
 }
-.gallery .container .h1 {
+.gallery .container .galleryTitle {
   position: absolute;
   top: 12px;
   right: 175.5px;
@@ -613,11 +613,11 @@ body {
   z-index: 1;
 }
 @media (max-width: 1200px) {
-  .gallery .container .h1 {
+  .gallery .container .galleryTitle {
     max-width: 1200px;
   }
 }
-.gallery .container .line {
+.gallery .container .galleryLine {
   border: 10px solid #000000;
   width: 450px;
   position: absolute;
@@ -699,7 +699,7 @@ body {
   grid-template-columns: 1fr;
   position: relative;
 }
-.header .wrapper .h1 {
+.header .wrapper .headerTitle {
   position: absolute;
   bottom: 418px;
   left: 175px;
@@ -711,31 +711,31 @@ body {
   color: var(--unnamed-color-FFFFFF);
 }
 @media (max-width: 1920px) {
-  .header .wrapper .h1 {
+  .header .wrapper .headerTitle {
     bottom: 500px;
   }
 }
 @media (max-width: 1600px) {
-  .header .wrapper .h1 {
+  .header .wrapper .headerTitle {
     bottom: 380px;
     left: 100px;
     font-size: 64px;
   }
 }
 @media (max-width: 1400px) {
-  .header .wrapper .h1 {
+  .header .wrapper .headerTitle {
     bottom: 380px;
     font-size: 54px;
   }
 }
 @media (max-width: 1200px) {
-  .header .wrapper .h1 {
+  .header .wrapper .headerTitle {
     top: 160px;
     font-size: 54px;
   }
 }
 @media (max-width: 992px) {
-  .header .wrapper .h1 {
+  .header .wrapper .headerTitle {
     bottom: 560px;
     font-size: 50px;
   }
@@ -992,7 +992,6 @@ body {
 .iconContainer .wrapper .box .paragraph {
   font-size: var(--unnamed-font-size-28);
   line-height: 38px;
-  font-family: Poppins;
   margin-top: 46px;
 }
 .iconContainer .button {
@@ -1018,26 +1017,26 @@ body {
     margin-left: 50px;
     margin-top: 80px;
   }
-  .iconContainer .button span {
-    position: relative;
-    z-index: 2;
-  }
-  .iconContainer .button:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--unnamed-color-FFCC48);
-    transition: all 0.35s;
-  }
-  .iconContainer .button:hover {
-    color: var(--unnamed-color-000000);
-  }
-  .iconContainer .button:hover:after {
-    width: 80%;
-  }
+}
+.iconContainer .button span {
+  position: relative;
+  z-index: 2;
+}
+.iconContainer .button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--unnamed-color-FFCC48);
+  transition: all 0.35s;
+}
+.iconContainer .button:hover {
+  color: var(--unnamed-color-000000);
+}
+.iconContainer .button:hover:after {
+  width: 80%;
 }
 
 .layout {
@@ -1191,20 +1190,20 @@ body {
     padding-top: 0;
   }
 }
-.newsContainer .h1 {
+.newsContainer .title {
   font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-65);
   line-height: 75px;
   color: var(--unnamed-color-000000);
   text-align: left;
 }
-.newsContainer .wrapper {
+.newsContainer .newsWrapper {
   display: flex;
   flex-wrap: wrap;
   column-gap: 110px;
   justify-content: center;
 }
-.newsContainer .wrapper .box {
+.newsContainer .newsWrapper .box {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1213,32 +1212,174 @@ body {
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
-  .newsContainer .wrapper .box {
+  .newsContainer .newsWrapper .box {
     max-width: 650px;
   }
 }
 @media (max-width: 576px) {
-  .newsContainer .wrapper .box {
+  .newsContainer .newsWrapper .box {
     max-width: 470px;
   }
 }
-.newsContainer .wrapper .box .photo {
+.newsContainer .newsWrapper .box .photo {
   width: auto;
   height: 334px;
   margin-bottom: 12px;
 }
-.newsContainer .wrapper .box .h3 {
+.newsContainer .newsWrapper .box .h3 {
   text-align: left;
   font-size: var(--unnamed-font-size-28);
   font-weight: var(--unnamed-font-weight-bold);
   line-height: 38px;
   margin: 0px 0 19px;
 }
-.newsContainer .wrapper .box .paragraph {
+.newsContainer .newsWrapper .box .paragraph {
   font-size: 18px;
 }
-.newsContainer .wrapper .box .link {
+.newsContainer .newsWrapper .box .link {
   text-decoration: underline;
   margin-top: 10px;
   font-size: 18px;
+}
+
+.officeContainer {
+  display: flex;
+  margin-top: 140px;
+  justify-content: flex-end;
+  position: relative;
+  height: 714.5px;
+}
+@media (max-width: 1200px) {
+  .officeContainer {
+    margin-top: 80px;
+    height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .officeContainer {
+    margin-top: 80px;
+    height: 250px;
+  }
+}
+
+.graphicContainer {
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: flex-end;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.graphicContainer .graphic {
+  width: 290px;
+  max-height: 145px;
+  z-index: 2;
+  margin-right: 175px;
+}
+@media (max-width: 1600px) {
+  .graphicContainer .graphic {
+    width: 200px;
+    margin: 20px 125px 0 0;
+  }
+}
+@media (max-width: 992px) {
+  .graphicContainer .graphic {
+    width: 120px;
+    margin: 42px 125px 0 0;
+  }
+}
+
+.h1 {
+  position: absolute;
+  left: 175px;
+  top: 250px;
+  max-width: 523px;
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-65);
+  line-height: 75px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font-family: Poppins;
+  z-index: 3;
+}
+@media (max-width: 1920px) {
+  .h1 {
+    top: 170px;
+    left: 155px;
+  }
+}
+@media (max-width: 1600px) {
+  .h1 {
+    top: 140px;
+    font-size: 56px;
+  }
+}
+@media (max-width: 1200px) {
+  .h1 {
+    top: 120px;
+    left: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .h1 {
+    font-size: 30px;
+    max-width: 300px;
+    line-height: 40px;
+    top: 100px;
+    left: 60px;
+  }
+}
+
+.line {
+  width: 610px;
+  height: 0;
+  border: 10px solid #000000;
+  position: absolute;
+  left: 175px;
+  bottom: 82px;
+  z-index: 3;
+}
+@media (max-width: 1920px) {
+  .line {
+    width: 550px;
+    top: 540px;
+  }
+}
+@media (max-width: 1600px) {
+  .line {
+    left: 155px;
+    top: 450px;
+    width: 470px;
+  }
+}
+@media (max-width: 1200px) {
+  .line {
+    left: 100px;
+    top: 400px;
+    width: 300px;
+    border: 7px solid #000000;
+  }
+}
+@media (max-width: 992px) {
+  .line {
+    left: 60px;
+    top: 250px;
+    width: 200px;
+    border: 5px solid #000000;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  margin: 72.5px 0 0 335px;
+}
+@media (max-width: 1200px) {
+  .imageContainer {
+    margin: 72.5px 0 0 150px;
+  }
+}
+
+.imageContainer .image {
+  max-width: 1585px;
 }

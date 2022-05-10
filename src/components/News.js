@@ -5,9 +5,9 @@ import { Link } from 'gatsby';
 export default function News() {
 	return (
 		<div className='newsContainer'>
-			<h1 className='h1'>Aktualności</h1>
+			<h1 className='title'>Aktualności</h1>
 
-			<div className='wrapper'>
+			<div className='newsWrapper'>
 				<div className='box'>
 					<StaticImage
 						className='photo'

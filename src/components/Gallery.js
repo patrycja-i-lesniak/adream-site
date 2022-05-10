@@ -44,8 +44,8 @@ export default function Gallery() {
 	return (
 		<div className="gallery">
 			<div className='container'>
-				<h1 className='h1'>Galeria</h1>
-				<div className='line' />
+				<h1 className='galleryTitle'>Galeria</h1>
+				<div className='galleryLine' />
 				<Img
 					className='image1'
 					fluid={data.photo1.childImageSharp.fluid}
