@@ -1,5 +1,5 @@
 .header {
-	.wrapper {
+	.header-wrapper {
 		max-width: 1920px;
 		height: 941px;
 		height: 100%;
@@ -9,7 +9,7 @@
 		grid-template-columns: 1fr;
 		position: relative;
 
-		.h1 {
+		.header-h1 {
 			position: absolute;
 			bottom: 418px;
 			left: 175px;
@@ -40,7 +40,7 @@
 				font-size: 50px;
 			}
 		}
-		.h2 {
+		.header-h2 {
 			position: absolute;
 			bottom: 248px;
 			left: 175px;
@@ -77,7 +77,7 @@
 			}
 		}
 
-		.progressBar {
+		.header-progress-bar {
 			position: absolute;
 			width: 290px;
 			height: 19px;
