@@ -1,9 +1,11 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function Carousel() {
 	const { slide1, slide2, slide3, back, next } = useStaticQuery(graphql`
@@ -51,7 +53,8 @@ export default function Carousel() {
 		}
 	`);
 	return (
-		<CarouselProvider className='carousel-wrapper'
+		<CarouselProvider
+			className="carousel-wrapper"
 			naturalSlideWidth={1920}
 			naturalSlideHeight={941}
 			totalSlides={3}
@@ -86,19 +89,15 @@ export default function Carousel() {
 					</div> */}
 				</Slide>
 			</Slider>
-			<ButtonBack className="carousel-button-back">
-				<Img
-					className="carousel-arrow"
-					fluid={back.childImageSharp.fluid}
-					alt="This is the back button"
-				/>
+			<ButtonBack className="carousel-back-button">
+				<span>
+					<FiArrowLeft className="carousel-arrow-left" />
+				</span>
 			</ButtonBack>
-			<ButtonNext className="carousel-button-next">
-				<Img
-					className="carousel-arrow"
-					fluid={next.childImageSharp.fluid}
-					alt="This is the next button"
-				/>
+			<ButtonNext className="carousel-next-button">
+				<span>
+					<FiArrowRight className="carousel-arrow-right" />
+				</span>
 			</ButtonNext>
 		</CarouselProvider>
 	);

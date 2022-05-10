@@ -1,12 +1,12 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-
-import '../styles/_animatedNextButton.scss';
+import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function AnimatedNextButton() {
 	return (
-		<button className="animated-btn">
-			<StaticImage src="../static/nextSmall.svg" alt="next" />
+		<button className="next-button">
+			<span>
+				<FiArrowRight className="arrow-right" />
+			</span>
 		</button>
 	);
 }
