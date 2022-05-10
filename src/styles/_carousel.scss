@@ -1,5 +1,5 @@
-.carouselWrapper {
-	.slider {
+.carousel-wrapper {
+	.carousel-slider {
 		position: relative;
 		img {
 			filter: brightness(61%);
@@ -22,7 +22,7 @@
 		// }
 	}
 
-	.buttonNext {
+	.carousel-button-next {
 		position: absolute;
 		bottom: 0;
 		z-index: 999;
@@ -64,7 +64,7 @@
 		}
 	}
 
-	.buttonBack {
+	.carousel-button-back {
 		position: absolute;
 		bottom: 0;
 		z-index: 999;
@@ -106,25 +106,13 @@
 		}
 	}
 
-	.arrow {
+	.carousel-arrow {
 		width: 38.27px;
 		position: absolute;
 		left: 58px;
 		z-index: 999;
 		@media (max-width: 1200px) {
 			left: 38px;
-		}
-	}
-
-	.buttonBack {
-		.arrow {
-			&::after {
-				width: 38.27px;
-				position: absolute;
-				left: 58px;
-				z-index: 999;
-				background-color: red;
-			}
 		}
 	}
 }

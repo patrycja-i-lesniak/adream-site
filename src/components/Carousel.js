@@ -5,7 +5,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-export default function HeroCarousel() {
+export default function Carousel() {
 	const { slide1, slide2, slide3, back, next } = useStaticQuery(graphql`
 		query {
 			slide1: file(relativePath: { eq: "Carousel/background1.png" }) {
@@ -51,13 +51,13 @@ export default function HeroCarousel() {
 		}
 	`);
 	return (
-		<CarouselProvider className='carouselWrapper'
+		<CarouselProvider className='carousel-wrapper'
 			naturalSlideWidth={1920}
 			naturalSlideHeight={941}
 			totalSlides={3}
 			infinite
 		>
-			<Slider className="slider">
+			<Slider className="carousel-slider">
 				<Slide index={0}>
 					<Img fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
 					{/* <div className="info">
@@ -86,16 +86,16 @@ export default function HeroCarousel() {
 					</div> */}
 				</Slide>
 			</Slider>
-			<ButtonBack className="buttonBack">
+			<ButtonBack className="carousel-button-back">
 				<Img
-					className="arrow"
+					className="carousel-arrow"
 					fluid={back.childImageSharp.fluid}
 					alt="This is the back button"
 				/>
 			</ButtonBack>
-			<ButtonNext className="buttonNext">
+			<ButtonNext className="carousel-button-next">
 				<Img
-					className="arrow"
+					className="carousel-arrow"
 					fluid={next.childImageSharp.fluid}
 					alt="This is the next button"
 				/>

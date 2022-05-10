@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Form from './Form';
-import HeroCarousel from './HeroCarousel';
+import Carousel from './Carousel';
 
 export default function Header() {
 	return (
@@ -17,7 +17,7 @@ export default function Header() {
 					src="../images/Header/progressBar.png"
 					alt="progress bar"
 				/>
-				<HeroCarousel />
+				<Carousel />
 				<Form />
 			</div>
 		</div>
