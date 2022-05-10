@@ -42,38 +42,36 @@ export default function Gallery() {
 	`);
 
 	return (
-		<div className="gallery">
-			<div className='container'>
-				<h1 className='galleryTitle'>Galeria</h1>
-				<div className='galleryLine' />
-				<Img
-					className='image1'
-					fluid={data.photo1.childImageSharp.fluid}
-					alt="This is the first Photo"
-				/>
-				<Img
-					className='image2'
-					fluid={data.photo2.childImageSharp.fluid}
-					alt="This is the second Photo"
-				/>
-				<Img
-					className='image3'
-					fluid={data.photo3.childImageSharp.fluid}
-					alt="This is the third Image"
-				/>
-				<Img
-					className='image4'
-					fluid={data.photo4.childImageSharp.fluid}
-					alt="This is the fourth Image"
-				/>
-				<button className='prev'>
-					<StaticImage src="../static/prev.svg" alt="prev" />
-				</button>
-				<button className='next'>
-					{' '}
-					<StaticImage src="../static/next.svg" alt="next" />
-				</button>
-			</div>
+		<div className="gallery-container">
+			<h1 className="gallery-title">Galeria</h1>
+			<div className="gallery-line" />
+			<Img
+				className="gallery-image1"
+				fluid={data.photo1.childImageSharp.fluid}
+				alt="This is the first Photo"
+			/>
+			<Img
+				className="gallery-image2"
+				fluid={data.photo2.childImageSharp.fluid}
+				alt="This is the second Photo"
+			/>
+			<Img
+				className="gallery-image3"
+				fluid={data.photo3.childImageSharp.fluid}
+				alt="This is the third Image"
+			/>
+			<Img
+				className="gallery-image4"
+				fluid={data.photo4.childImageSharp.fluid}
+				alt="This is the fourth Image"
+			/>
+			<button className="gallery-prev">
+				<StaticImage src="../static/prev.svg" alt="prev" />
+			</button>
+			<button className="gallery-next">
+				{' '}
+				<StaticImage src="../static/next.svg" alt="next" />
+			</button>
 		</div>
 	);
 }
