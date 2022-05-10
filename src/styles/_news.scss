@@ -1,4 +1,4 @@
-.newsContainer {
+.news-container {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -11,7 +11,7 @@
 		padding-top: 0;
 	}
 
-	.h1 {
+	.news-h1 {
 		font-weight: var(--unnamed-font-weight-bold);
 		font-size: var(--unnamed-font-size-65);
 		line-height: 75px;
@@ -19,12 +19,12 @@
 		text-align: left;
 	}
 
-	.wrapper {
+	.news-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		column-gap: 110px;
 		justify-content: center;
-		.box {
+		.news-box {
 			display: flex;
 			flex-direction: column;
 			overflow: hidden;
@@ -37,22 +37,22 @@
 			@media (max-width: 576px) {
 				max-width: 470px;
 			}
-			.photo {
+			.news-photo {
 				width: auto;
 				height: 334px;
 				margin-bottom: 12px;
 			}
-			.h3 {
+			.news-paragraph {
+				font-size: 18px;
+			}
+			.news-h3 {
 				text-align: left;
 				font-size: var(--unnamed-font-size-28);
 				font-weight: var(--unnamed-font-weight-bold);
 				line-height: 38px;
 				margin: 0px 0 19px;
 			}
-			.paragraph {
-				font-size: 18px;
-			}
-			.link {
+			.news-link {
 				text-decoration: underline;
 				margin-top: 10px;
 				font-size: 18px;
