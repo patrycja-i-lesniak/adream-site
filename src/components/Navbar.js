@@ -5,40 +5,40 @@ import { CgMenu } from 'react-icons/cg';
 
 export default function Navbar() {
 	return (
-		<div className="navbarWrapper">
-			<div className='logoWrapper'>
-				<Link className="logo" to="/">
+		<div className="navbar-container">
+			<div className='navbar-logo'>
+				<Link className="navbar-logo-image" to="/">
 					Logo
 				</Link>
 			</div>
-			<div className="links">
-				<Link className="link" to="/">
+			<div className="navbar-links">
+				<Link className='navbar-link' to="/">
 					Poznaj przestrzeń
 				</Link>
-				<Link className="link" to="/offer">
+				<Link className='navbar-link' to="/offer">
 					Oferta
 				</Link>
-				<Link className="link" to="/location">
+				<Link className='navbar-link' to="/location">
 					Lokalizacja
 				</Link>
 
-				<Link className="link" to="/office">
+				<Link className='navbar-link' to="/office">
 					Własne biuro
 				</Link>
-				<Link className="link" to="/contact">
+				<Link className='navbar-link' to="/contact">
 					Kontakt
 				</Link>
 			</div>
-			<div className="socials">
-				<Link className="link" to="/">
+			<div className="navbar-socials">
+				<Link className='navbar-link' to="/">
 					<StaticImage src="../static/facebook.png" alt="facebook" />
 				</Link>
-				<Link className="link" to="/">
+				<Link className='navbar-link' to="/">
 					<StaticImage src="../static/instagram.png" alt="instagram" />
 				</Link>
 			</div>
 			<div>
-				<Link className="hamburger" to="/">
+				<Link className="navbar-hamburger" to="/">
 					<CgMenu />
 				</Link>
 			</div>

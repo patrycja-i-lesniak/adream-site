@@ -1,4 +1,4 @@
-.navbarWrapper {
+.navbar-container {
 	margin: 0 auto;
 	display: grid;
 	position: absolute;
@@ -21,8 +21,8 @@
 		grid-template-columns: 1fr auto;
 	}
 
-	.logoWrapper {
-		.logo {
+	.navbar-logo {
+		.navbar-logo-image {
 			font-size: var(--unnamed-font-size-48);
 			text-transform: uppercase;
 			font-weight: var(--unnamed-font-weight-bold);
@@ -38,7 +38,7 @@
 			}
 		}
 	}
-	.links {
+	.navbar-links {
 		padding: 5px 0 0 183px;
 		display: grid;
 		grid-template-columns: repeat(5, auto);
@@ -60,7 +60,7 @@
 			display: none;
 		}
 
-		.link {
+		.navbar-link {
 			color: var(--unnamed-color-FFFFFF);
 			text-decoration: none;
 			font-size: 16px;
@@ -117,7 +117,7 @@
 			// }
 		}
 	}
-	.socials {
+	.navbar-socials {
 		display: grid;
 		grid-template-columns: 28px 28px;
 		gap: 20px;
@@ -128,7 +128,7 @@
 		}
 	}
 
-	.hamburger {
+	.navbar-hamburger {
 		font-size: 40px;
 		color: var(--unnamed-color-FFFFFF);
 
