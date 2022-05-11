@@ -78,25 +78,11 @@
 			&:hover{
 				color: lightcyan;
 			}
-			
+
 			&.navbar-break {
 				padding-left: 54px;
 			}
 
-
-			@media (max-width: 1920px) {
-				&:nth-child(3) {
-					padding-left: 0;
-				}
-
-				&:nth-child(4) {
-					padding-left: 0;
-				}
-
-				&:nth-child(5) {
-					padding-left: 0;
-				}
-			}
 			// &:hover {
 			// 	color: var(--unnamed-color-FFFFFF);
 
