@@ -12,4 +12,6 @@ public
 **/node_modules
 ../**/dist/**
 
-localhost:8080/
+localhost:8080
+
+commons.css*
