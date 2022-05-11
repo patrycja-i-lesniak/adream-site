@@ -1,25 +1,10 @@
 .carousel-wrapper {
+	
 	.carousel-slider {
 		position: relative;
 		img {
 			filter: brightness(61%);
 		}
-
-		// 	.info {
-		// .h1 {
-		// 	color: var(--unnamed-color-FFFFFF);
-		// 	font-size: var(--unnamed-font-size-65);
-		// 	font-weight: var(--unnamed-font-weight-bold);
-		// 	margin: 350px 0 0 175px;
-		// 	z-index: 9;
-		// }
-		// .h2 {
-		// 	color: red;
-		// 	font-size: 45px;
-		// 	margin: 40px 0 0 175px;
-		// 	font-weight: normal;
-		// 	z-index: 9;
-		// }
 
 		.fade-animation {
 			transition: opacity 2500ms;
@@ -45,17 +30,15 @@
 		width: 145px;
 		height: 118px;
 		border: none;
-	
+		padding: 0;
 		transition: all .35s ease-in-out;
 
 		span {
 			position: relative;
-		
 
 			.carousel-arrow-right {
 				color: var(--unnamed-color-000000);
 				font-size: 60px;
-			
 			}
 		}
 
@@ -68,49 +51,40 @@
 			height: 100%;
 			background: var(--unnamed-color-000000);
 			transition: all .35s;
-			z-index:-2;
+			z-index: -2;
 		}
 
 		&:hover {
 			.carousel-arrow-right {
-			 color: var(--unnamed-color-FFFFFF);
+				color: var(--unnamed-color-FFFFFF);
 			}
 			&::after {
 				width: 100%;
 			}
 		}
-		// @media (max-width: 1400px) {
-		// 	height: 100px;
-		// 	width: 115px;
-		// 	bottom: 100px;
-		// }
-		// @media (max-width: 1200px) {
-		// 	height: 70px;
-		// 	width: 95px;
-		// 	bottom: 70px;
-		// }
+		@media (max-width: 576px) {
+		display: none;
+		}
 	}
 
-	.carousel-back-button{
+	.carousel-back-button {
 		position: absolute;
 		bottom: 0;
+		left: 0;
 		z-index: 999;
 		background-color: var(--unnamed-color-FFFFFF);
 		width: 160px;
 		height: 118px;
 		border: none;
+		padding: 0;
 		transition: all .35s ease-in-out;
-		bottom: 0px;
-		left: 0;
 
 		span {
 			position: relative;
-		
 
-			.carousel-arrow-left{
+			.carousel-arrow-left {
 				color: var(--unnamed-color-000000);
 				font-size: 60px;
-			
 			}
 		}
 
@@ -123,26 +97,20 @@
 			background-color: var(--unnamed-color-000000);
 			transition: all .35s;
 			right: 0;
-		z-index:-2;
+			z-index: -2;
 		}
 		&:hover {
 			.carousel-arrow-left {
-			 color: var(--unnamed-color-FFFFFF);
+				color: var(--unnamed-color-FFFFFF);
 			}
 			&::after {
 				width: 100%;
 			}
 		}
 
-		@media (max-width: 1400px) {
-			height: 100px;
-			width: 130px;
-			bottom: 100px;
-		}
-		@media (max-width: 1200px) {
-			height: 70px;
-			width: 100px;
-			bottom: 70px;
+		@media (max-width: 576px) {
+		display: none;
 		}
 	}
 }
+

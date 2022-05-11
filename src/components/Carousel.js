@@ -1,16 +1,16 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function Carousel() {
-	const { slide1, slide2, slide3, back, next } = useStaticQuery(graphql`
+	const { slide1, slide2, slide3 } = useStaticQuery(graphql`
 		query {
-			slide1: file(relativePath: { eq: "Carousel/background1.png" }) {
+			slide1: file(relativePath: { eq: "Carousel/slide1.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 1920) {
@@ -18,7 +18,7 @@ export default function Carousel() {
 					}
 				}
 			}
-			slide2: file(relativePath: { eq: "Carousel/background2.png" }) {
+			slide2: file(relativePath: { eq: "Carousel/slide2.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 1920) {
@@ -26,26 +26,10 @@ export default function Carousel() {
 					}
 				}
 			}
-			slide3: file(relativePath: { eq: "Carousel/background3.png" }) {
+			slide3: file(relativePath: { eq: "Carousel/slide3.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 1920) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-			back: file(relativePath: { eq: "Carousel/prev.png" }) {
-				id
-				childImageSharp {
-					fluid(maxWidth: 47) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-			next: file(relativePath: { eq: "Carousel/next.png" }) {
-				id
-				childImageSharp {
-					fluid(maxWidth: 47) {
 						...GatsbyImageSharpFluid
 					}
 				}
@@ -62,31 +46,13 @@ export default function Carousel() {
 		>
 			<Slider className="carousel-slider" classNameAnimation="fade-animation">
 				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
-					<Img fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
-					{/* <div className="info">
-						<h1 className="h1">Firma</h1>
-						<h2 className="h2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
-						</h2>
-					</div> */}
+					<Img className='carousel-image' fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
-					<Img fluid={slide2.childImageSharp.fluid} alt="This is the second Image" />
-					{/* <div className="info">
-						<h1 className="h1">Firma</h1>
-						<h2 className="h2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
-						</h2>
-					</div> */}
+					<Img className='carousel-image' fluid={slide2.childImageSharp.fluid} alt="This is the second Image" />
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={2}>
-					<Img fluid={slide3.childImageSharp.fluid} alt="This is the third Image" />
-					{/* <div className="info">
-						<h1 className="h1">Firma</h1>
-						<h2 className="h2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
-						</h2>
-					</div> */}
+					<Img className='carousel-image' fluid={slide3.childImageSharp.fluid} alt="This is the third Image" />
 				</Slide>
 			</Slider>
 			<ButtonBack className="carousel-back-button">
