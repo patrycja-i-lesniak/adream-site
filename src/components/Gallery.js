@@ -1,7 +1,9 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
+import AnimatedButton from './AnimatedButton';
 
 export default function Gallery() {
 	const data = useStaticQuery(graphql`
@@ -65,13 +67,19 @@ export default function Gallery() {
 				fluid={data.photo4.childImageSharp.fluid}
 				alt="This is the fourth Image"
 			/>
-			<button className="gallery-prev">
+			{/* <button className="gallery-prev">
 				<StaticImage src="../static/prev.svg" alt="prev" />
 			</button>
 			<button className="gallery-next">
 				{' '}
 				<StaticImage src="../static/next.svg" alt="next" />
-			</button>
+			</button> */}
+			<AnimatedButton className='animated-button animated-button-back'>
+				<FiArrowLeft className="arrow-left" />
+			</AnimatedButton>
+			<AnimatedButton className='animated-button animated-button-next'>
+				<FiArrowRight className="arrow-right" />
+			</AnimatedButton>
 		</div>
 	);
 }
