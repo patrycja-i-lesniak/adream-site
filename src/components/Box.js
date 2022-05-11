@@ -2,7 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import Img from 'gatsby-image';
-import AnimatedNextButton from './AnimatedNextButton';
+import AnimatedButton from './AnimatedButton';
+import { FiArrowRight } from 'react-icons/fi';
 
 export default function Box() {
 	const data = useStaticQuery(graphql`
@@ -63,7 +64,9 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedNextButton />
+				<AnimatedButton >
+					<FiArrowRight className="arrow-right" />
+				</AnimatedButton>
 			</div>
 
 			<div className="box-small">
@@ -87,7 +90,9 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedNextButton />
+				<AnimatedButton >
+					<FiArrowRight className="arrow-right" />
+				</AnimatedButton>
 			</div>
 
 			<div className="box-small">
@@ -111,7 +116,9 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedNextButton />
+				<AnimatedButton >
+					<FiArrowRight className="arrow-right" />
+				</AnimatedButton>
 			</div>
 
 			<div className="box-small">
@@ -132,7 +139,9 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedNextButton />
+				<AnimatedButton >
+					<FiArrowRight className="arrow-right" />
+				</AnimatedButton>
 			</div>
 		</div>
 	);
