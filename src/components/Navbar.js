@@ -22,10 +22,10 @@ export default function Navbar() {
 					Lokalizacja
 				</Link>
 
-				<Link className='navbar-link' to="/office">
+				<Link className='navbar-link navbar-break' to="/office">
 					Własne biuro
 				</Link>
-				<Link className='navbar-link' to="/contact">
+				<Link className='navbar-link navbar-break' to="/contact">
 					Kontakt
 				</Link>
 			</div>
