@@ -18,7 +18,7 @@ export default function News() {
 					<h3 className='news-h3'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</h3>
-					<p as={Link} className='news-link' to="/">
+					<p as={Link} className='news-paragraph link' to="/">
 						Więcej
 					</p>
 				</div>
@@ -33,7 +33,7 @@ export default function News() {
 					<h3 className='news-h3'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</h3>
-					<p as={Link} className='news-link' to="/">
+					<p as={Link} className='news-paragraph link' to="/">
 						Więcej
 					</p>
 				</div>
@@ -48,7 +48,7 @@ export default function News() {
 					<h3 className='news-h3'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</h3>
-					<p as={Link} className='news-link' to="/">
+					<p as={Link} className='news-paragraph link' to="/">
 						Więcej
 					</p>
 				</div>
