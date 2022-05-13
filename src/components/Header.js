@@ -14,12 +14,14 @@ export default function Header() {
 					alt="progress bar"
 				/>
 				<Carousel />
-				<h1 className="header-h1">Firma</h1>
-				<h2 className="header-h2">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
-				</h2>
+				<div className="header-text-wrapper">
+					<h1 className="header-text-h1">Firma</h1>
+					<h2 className="header-text-h2">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
+					</h2>
+				</div>
+
 				<Form />
-				
 			</div>
 		</div>
 	);
