@@ -7,9 +7,9 @@ export default function Navbar() {
 	return (
 		<div className="navbar-container">
 			<div className='navbar-logo'>
-				<Link className="navbar-logo-image" to="/">
+				<h2 as={Link} className="navbar-logo-h2" to="/">
 					Logo
-				</Link>
+				</h2>
 			</div>
 			<div className="navbar-links">
 				<Link className='navbar-link' to="/">
