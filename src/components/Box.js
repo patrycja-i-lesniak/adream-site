@@ -8,7 +8,7 @@ import { FiArrowRight } from 'react-icons/fi';
 export default function Box() {
 	const data = useStaticQuery(graphql`
 		query {
-			box1: file(relativePath: { eq: "Box/shutterstock_1877634640.png" }) {
+			box1: file(relativePath: { eq: "Box/shutterstock_1877634640@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 770) {
@@ -16,7 +16,7 @@ export default function Box() {
 					}
 				}
 			}
-			box2: file(relativePath: { eq: "Box/shutterstock_1723055614.png" }) {
+			box2: file(relativePath: { eq: "Box/shutterstock_1723055614@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 770) {
@@ -24,7 +24,7 @@ export default function Box() {
 					}
 				}
 			}
-			box3: file(relativePath: { eq: "Box/shutterstock_1677941275.png" }) {
+			box3: file(relativePath: { eq: "Box/shutterstock_1677941275@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 770) {
@@ -32,7 +32,7 @@ export default function Box() {
 					}
 				}
 			}
-			box4: file(relativePath: { eq: "Box/shutterstock_1433594243.png" }) {
+			box4: file(relativePath: { eq: "Box/shutterstock_1433594243@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 770) {
@@ -64,7 +64,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedButton >
+				<AnimatedButton>
 					<FiArrowRight className="arrow-right" />
 				</AnimatedButton>
 			</div>
@@ -90,7 +90,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedButton >
+				<AnimatedButton>
 					<FiArrowRight className="arrow-right" />
 				</AnimatedButton>
 			</div>
@@ -116,7 +116,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedButton >
+				<AnimatedButton>
 					<FiArrowRight className="arrow-right" />
 				</AnimatedButton>
 			</div>
@@ -139,7 +139,7 @@ export default function Box() {
 						</div>
 					</div>
 				</div>
-				<AnimatedButton >
+				<AnimatedButton>
 					<FiArrowRight className="arrow-right" />
 				</AnimatedButton>
 			</div>

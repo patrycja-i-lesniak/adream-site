@@ -16,7 +16,7 @@ export default function Gallery() {
 					}
 				}
 			}
-			photo2: file(relativePath: { eq: "Gallery/shutterstock_579651031.png" }) {
+			photo2: file(relativePath: { eq: "Gallery/shutterstock_579651031@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 770, maxHeight: 547) {
@@ -24,7 +24,7 @@ export default function Gallery() {
 					}
 				}
 			}
-			photo3: file(relativePath: { eq: "Gallery/shutterstock_1187833249.png" }) {
+			photo3: file(relativePath: { eq: "Gallery/shutterstock_1187833249@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 770, maxHeight: 321) {
@@ -32,7 +32,7 @@ export default function Gallery() {
 					}
 				}
 			}
-			photo4: file(relativePath: { eq: "Gallery/shutterstock_763511722.png" }) {
+			photo4: file(relativePath: { eq: "Gallery/shutterstock_763511722@2x.webp" }) {
 				id
 				childImageSharp {
 					fluid(maxWidth: 565, maxHeight: 578) {
