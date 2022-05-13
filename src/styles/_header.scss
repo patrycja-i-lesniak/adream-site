@@ -29,21 +29,22 @@
 			}
 
 			@media (max-width: 1400px) {
+				bottom: 140px;
 				left: 50px;
 				gap: 3vw;
 			}
 			@media (max-width: 992px) {
 				gap: 1.5vw;
 				left: 40px;
-				bottom: 480px;
+				bottom: 450px;
 			}
 			@media (max-width: 768px) {
-				bottom: 460px;
+				bottom: 420px;
 			}
 
 			@media (max-width: 576px) {
 				left: 20px;
-				bottom: 440px;
+				bottom: 410px;
 			}
 
 			.header-text-h1 {
@@ -116,12 +117,15 @@
 			}
 
 			@media (max-width: 992px) {
-				right: 40px;
-				bottom: 420px;
+				left: 180px;
+				bottom: 385px;
+			}
+				@media (max-width: 768px) {
+				left: 140px;
+				bottom: 375px;
 			}
 
 			@media (max-width: 576px) {
-			
 				display: none;
 			}
 		}

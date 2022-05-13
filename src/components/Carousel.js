@@ -43,6 +43,8 @@ export default function Carousel() {
 			naturalSlideHeight={941}
 			totalSlides={3}
 			infinite
+			interval={10000}
+			isPlaying={true}
 		>
 			<Slider className="carousel-slider" classNameAnimation="fade-animation">
 				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
@@ -68,3 +70,4 @@ export default function Carousel() {
 		</CarouselProvider>
 	);
 }
+
