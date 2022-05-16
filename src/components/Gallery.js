@@ -1,85 +1,180 @@
-import React from 'react';
-// import { StaticImage } from 'gatsby-plugin-image';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import React, { CSSProperties } from 'react';
+
+import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery, Link } from 'gatsby';
+
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 import AnimatedButton from './AnimatedButton';
 
-export default function Gallery() {
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+
+import 'photoswipe/dist/photoswipe.css';
+
+import { Gallery, Item } from 'react-photoswipe-gallery';
+
+export default function NewGallery() {
 	const data = useStaticQuery(graphql`
 		query {
-			photo1: file(relativePath: { eq: "Gallery/Component 16 – 1.png" }) {
-				id
-				childImageSharp {
-					fluid(maxWidth: 625, maxHeight: 888) {
-						...GatsbyImageSharpFluid
+			gallery: allFile(
+				filter: { relativeDirectory: { eq: "Gallery" } }
+				sort: { fields: base, order: ASC }
+			) {
+				edges {
+					node {
+						id
+						base
+						publicURL
+						childImageSharp {
+							gatsbyImageData(
+								transformOptions: { fit: COVER }
+								placeholder: BLURRED
+								webpOptions: { quality: 50 }
+							)
+						}
 					}
 				}
 			}
-			photo2: file(relativePath: { eq: "Gallery/shutterstock_579651031@2x.webp" }) {
-				id
-				childImageSharp {
-					fluid(maxWidth: 770, maxHeight: 547) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-			photo3: file(relativePath: { eq: "Gallery/shutterstock_1187833249@2x.webp" }) {
-				id
-				childImageSharp {
-					fluid(maxWidth: 770, maxHeight: 321) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-			photo4: file(relativePath: { eq: "Gallery/shutterstock_763511722@2x.webp" }) {
-				id
-				childImageSharp {
-					fluid(maxWidth: 565, maxHeight: 578) {
-						...GatsbyImageSharpFluid
+			featured: allFile(
+				filter: { relativeDirectory: { eq: "Gallery/featured" } }
+				sort: { fields: base, order: ASC }
+			) {
+				edges {
+					node {
+						id
+						base
+						publicURL
+						childImageSharp {
+							gatsbyImageData(
+								transformOptions: { fit: COVER }
+								placeholder: BLURRED
+								webpOptions: { quality: 50 }
+							)
+						}
 					}
 				}
 			}
 		}
 	`);
 
+	// const images = [
+	//   {
+	//     src: '../images/Gallery/shutterstock_1197402031.webp"',
+	//     thumbnail:
+	//       '../images/Gallery/shutterstock_1197402031-thumb.webp"',
+	//     caption: 'This is the 1 photo',
+	//     width: 1920,
+	//     height: 'auto'
+	//   },
+	// ]
+
+	const options = {
+		overlayColor: 'rgb(25, 136, 124)',
+		captionStyle: {
+			captionColor: '#FFFFFF',
+			captionFontFamily: 'Poppins, sans-serif',
+			captionFontSize: '40px',
+			captionFontStyle: 'capitalize'
+		},
+		autoplaySpeed: 2500,
+		transitionSpeed: 900,
+		buttonsStyle: {
+			buttonsBackgroundColor: '#FFFFFF',
+			buttonsIconColor: '#000000'
+		}
+	};
+
 	return (
-		<div className="gallery-container">
-			<h1 className="gallery-title">Galeria</h1>
-			<div className="gallery-line" />
-			<Img
-				className="gallery-image1"
-				fluid={data.photo1.childImageSharp.fluid}
-				alt="This is the first Photo"
-			/>
-			<Img
-				className="gallery-image2"
-				fluid={data.photo2.childImageSharp.fluid}
-				alt="This is the second Photo"
-			/>
-			<Img
-				className="gallery-image3"
-				fluid={data.photo3.childImageSharp.fluid}
-				alt="This is the third Image"
-			/>
-			<Img
-				className="gallery-image4"
-				fluid={data.photo4.childImageSharp.fluid}
-				alt="This is the fourth Image"
-			/>
-			{/* <button className="gallery-prev">
-				<StaticImage src="../static/prev.svg" alt="prev" />
+		<div className="gallery">
+			<SimpleReactLightbox>
+				<h1 className="gallery-h1">Galeria</h1>
+				<div className="gallery-line" />
+
+				<SRLWrapper options={options}>
+					<div className="scrolling-wrapper">
+						<div className="card">
+							<a
+								href="../images/Gallery/shutterstock_1197402031.webp"
+								data-attribute="SRL"
+							>
+								<StaticImage
+									alt="This is the 1 photo"
+									src="../images/Gallery/shutterstock_1197402031-thumb.webp"
+									style={({ height: '888px' }, { width: '625px' })}
+								/>
+							</a>
+						</div>
+						<div className="card">
+							<a
+								href="../images/Gallery/shutterstock_579651031.webp"
+								data-attribute="SRL"
+							>
+								<StaticImage
+									alt="This is the 2 photo"
+									src="../images/Gallery/shutterstock_579651031-thumb.webp"
+								/>
+							</a>
+						</div>
+						<div className="card">
+							<a
+								href="../images/Gallery/shutterstock_1187833249.webp"
+								data-attribute="SRL"
+							>
+								<StaticImage
+									alt="This is the 3 photo"
+									src="../images/Gallery/shutterstock_1187833249-thumb.webp"
+								/>
+							</a>
+						</div>
+						<div className="card double">
+							{' '}
+							<div className="white-box" />
+							<a
+								href="../images/Gallery/shutterstock_763511701.webp"
+								data-attribute="SRL"
+							>
+								<StaticImage
+									alt="This is the 5 photo"
+									src="../images/Gallery/shutterstock_763511701-thumb.webp"
+									style={{ height: '290px' }}
+								/>
+							</a>
+							<div className="white-box" style={{ width: '600px' }} />
+						</div>
+						<div className="card double">
+							<a
+								href="../images/Gallery/shutterstock_763511722.webp"
+								data-attribute="SRL"
+							>
+								<StaticImage
+									alt="This is the 4 photo"
+									src="../images/Gallery/shutterstock_763511722-thumb.webp"
+									style={{ height: '577px' }}
+								/>
+							</a>
+							<a
+								href="../images/Gallery/shutterstock_610938071.webp"
+								data-attribute="SRL"
+							>
+								<StaticImage
+									alt="This is the 6 photo"
+									src="../images/Gallery/shutterstock_610938071-thumb.webp"
+									style={({ width: '1227' }, { height: '577px' })}
+								/>
+							</a>
+						</div>
+					</div>
+				</SRLWrapper>
+			</SimpleReactLightbox>
+			<button className="gallery-back-button">
+				<span>
+					<FiArrowLeft className="gallery-arrow-left" />
+				</span>
 			</button>
-			<button className="gallery-next">
-				{' '}
-				<StaticImage src="../static/next.svg" alt="next" />
-			</button> */}
-			<AnimatedButton className='animated-button animated-button-back'>
-				<FiArrowLeft className="arrow-left" />
-			</AnimatedButton>
-			<AnimatedButton className='animated-button animated-button-next'>
-				<FiArrowRight className="arrow-right" />
-			</AnimatedButton>
+			<button className="gallery-next-button">
+				<span>
+					<FiArrowRight className="gallery-arrow-right" />
+				</span>
+			</button>
 		</div>
 	);
 }
