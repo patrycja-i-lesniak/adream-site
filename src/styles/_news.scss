@@ -14,7 +14,7 @@
 	.news-h1 {
 		color: var(--unnamed-color-000000);
 		text-align: left;
-		padding-bottom: 72px;
+		padding-bottom: 52px;
 
 		@media (max-width: 992px) {
 			padding: 40px;
@@ -25,7 +25,7 @@
 	.news-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		column-gap: 110px;
+		column-gap: 70px;
 		justify-content: center;
 
 		@media (max-width: 1200px) {
@@ -45,7 +45,14 @@
 		}
 		.news-box {
 			overflow: hidden;
-			max-width: 450px;
+			max-width: 490px;
+			padding: 20px;
+
+			&:hover {
+				-webkit-box-shadow: -4px 4px 14px -2px rgba(66, 68, 90, 1);
+				-moz-box-shadow: -4px 4px 14px -2px rgba(66, 68, 90, 1);
+				box-shadow: -4px 4px 14px -2px rgba(66, 68, 90, 1);
+			}
 
 			@media (max-width: 768px) {
 				max-width: auto;
@@ -68,7 +75,6 @@
 					font-size: 16px;
 					margin: 8px 0;
 				}
-		
 			}
 			.link {
 				text-decoration: underline;
@@ -82,9 +88,7 @@
 					font-size: var(--unnamed-font-size-18);
 					line-height: var(--unnamed-line-spacing-28);
 				}
-				
 			}
-			
 		}
 	}
 }
