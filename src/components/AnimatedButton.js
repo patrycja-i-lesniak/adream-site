@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function AnimatedButton({children}) {
 	return (
-		<button className="animated-button animated-button-back animated-button-next">
+		<button className="animated-button ">
 			<span>
 				{children}
 			</span>
