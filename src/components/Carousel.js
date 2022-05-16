@@ -48,13 +48,25 @@ export default function Carousel() {
 		>
 			<Slider className="carousel-slider" classNameAnimation="fade-animation">
 				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
-					<Img className='carousel-image' fluid={slide1.childImageSharp.fluid} alt="This is the first Image" />
+					<Img
+						className="carousel-image"
+						fluid={slide1.childImageSharp.fluid}
+						alt="This is the first Image"
+					/>
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
-					<Img className='carousel-image' fluid={slide2.childImageSharp.fluid} alt="This is the second Image" />
+					<Img
+						className="carousel-image"
+						fluid={slide2.childImageSharp.fluid}
+						alt="This is the second Image"
+					/>
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={2}>
-					<Img className='carousel-image' fluid={slide3.childImageSharp.fluid} alt="This is the third Image" />
+					<Img
+						className="carousel-image"
+						fluid={slide3.childImageSharp.fluid}
+						alt="This is the third Image"
+					/>
 				</Slide>
 			</Slider>
 			<ButtonBack className="carousel-back-button">
@@ -67,7 +79,12 @@ export default function Carousel() {
 					<FiArrowRight className="carousel-arrow-right" />
 				</span>
 			</ButtonNext>
+			{/* <div className="progress-bar-container">
+				<div className="progress-bar-item">
+					<h3>Slide 1</h3>
+					<span data-slick-index="0" className="progress-bar" />
+				</div>
+			</div> */}
 		</CarouselProvider>
 	);
 }
-
