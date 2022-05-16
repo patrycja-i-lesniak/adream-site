@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function Gallery() {
+	let scrl = useRef(null);
+	const [ scrollX, setscrollX ] = useState(0);
+	const [ scrolEnd, setscrolEnd ] = useState(false);
+
+	const slide = (shift) => {
+		scrl.current.scrollLeft += shift;
+		setscrollX(scrollX + shift);
+
+		if (
+			Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
+			scrl.current.offsetWidth
+		) {
+			setscrolEnd(true);
+		} else {
+			setscrolEnd(false);
+		}
+	};
+
+	const scrollCheck = () => {
+		setscrollX(scrl.current.scrollLeft);
+		if (
+			Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
+			scrl.current.offsetWidth
+		) {
+			setscrolEnd(true);
+		} else {
+			setscrolEnd(false);
+		}
+	};
+
 	// const data = useStaticQuery(graphql`
 	// 	query {
 	// 		gallery: allFile(
@@ -71,7 +101,12 @@ export default function Gallery() {
 				<div className="gallery-line" />
 
 				<SRLWrapper options={options}>
-					<div className="scrolling-wrapper">
+					<div
+						id="container"
+						className="scrolling-wrapper"
+						ref={scrl}
+						onScroll={scrollCheck}
+					>
 						<div className="card gallery-zoom">
 							<Link to="../images/Gallery/featured/image1.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
@@ -132,10 +167,7 @@ export default function Gallery() {
 									/>
 								</div>
 							</Link>
-							<Link
-								to="../images/Gallery/featured/image6.webp"
-								data-attribute="SRL"
-							>
+							<Link to="../images/Gallery/featured/image6.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -149,16 +181,20 @@ export default function Gallery() {
 					</div>
 				</SRLWrapper>
 			</SimpleReactLightbox>
-			<button className="gallery-back-button">
-				<span>
-					<FiArrowLeft className="gallery-arrow-left" />
-				</span>
-			</button>
-			<button className="gallery-next-button">
-				<span>
-					<FiArrowRight className="gallery-arrow-right" />
-				</span>
-			</button>
+			{scrollX !== 0 && (
+				<button id="buttonBack" className="gallery-back-button" onClick={() => slide(-300)}>
+					<span>
+						<FiArrowLeft className="gallery-arrow-left" />
+					</span>
+				</button>
+			)}
+			{!scrolEnd && (
+				<button id="buttonNext" className="gallery-next-button" onClick={() => slide(+300)}>
+					<span>
+						<FiArrowRight className="gallery-arrow-right" />
+					</span>
+				</button>
+			)}
 		</div>
 	);
 }
