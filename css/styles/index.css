@@ -1215,6 +1215,27 @@ body {
   }
 }
 
+.carousel-progress-bar {
+  position: absolute;
+  bottom: 56px;
+  left: 375px;
+  z-index: 999;
+  width: 210px;
+  height: 8px;
+  background-color: 0;
+}
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 22px;
+  /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -1502,6 +1523,22 @@ body {
   color: var(--unnamed-color-FFFFFF);
   text-decoration: none;
   font-size: 16px;
+  line-height: 50px;
+  position: relative;
+}
+.navbar-container .navbar-links .navbar-link::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0;
+  bottom: 50px;
+  background: transparent;
+  transition: all 0.3s;
+}
+.navbar-container .navbar-links .navbar-link:hover::after {
+  width: 100%;
+  background: #ffffff;
 }
 .navbar-container .navbar-links .navbar-link.navbar-break {
   padding-left: 54px;
