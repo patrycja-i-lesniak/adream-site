@@ -24,7 +24,7 @@ export default function Gallery() {
 			: setscrolEnd(false);
 	};
 
-	const {thumbs, featured} = useStaticQuery(graphql`
+	const { thumbs, featured } = useStaticQuery(graphql`
 		query {
 			thumbs: allFile(
 				filter: { relativeDirectory: { eq: "Gallery/thumbs" } }
@@ -67,12 +67,35 @@ export default function Gallery() {
 		}
 	`);
 
+	const options = {
+		buttons: {
+			backgroundColor: 'rgba(30,30,36,0.8)',
+			iconColor: 'rgba(255, 255, 255, 0.8)',
+			iconPadding: '10px',
+			showAutoplayButton: true,
+			showCloseButton: true,
+			showDownloadButton: true,
+			showFullscreenButton: true,
+			showNextButton: true,
+			showPrevButton: true,
+			showThumbnailsButton: true,
+			size: '50px'
+		},
+		caption: {
+			captionColor: '#FFFFFF',
+			captionFontSize: 20,
+			captionFontFamily: 'Poppins, sans-serif',
+			captionFontWeight: '400',
+			captionTextTransform: 'uppercase'
+		}
+	};
+
 	return (
 		<div className="gallery">
 			<SimpleReactLightbox>
 				<h1 className="gallery-h1">Galeria</h1>
 				<div className="gallery-line" />
-				<SRLWrapper>
+				<SRLWrapper options={options}>
 					<div
 						id="container"
 						className="scrolling-wrapper"
@@ -80,26 +103,20 @@ export default function Gallery() {
 						onScroll={scrollCheck}
 					>
 						<div className="card gallery-zoom">
-							<a
-								href={featured.edges[0].node.publicURL}
-								data-attribute="SRL"
-							>
+							<a href={featured.edges[0].node.publicURL} data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										srl_gallery_image="true"
 										className="gallery-image"
 										alt="This is the 1 photo"
-										src='../images/Gallery/thumbs/thumb1.webp'
+										src="../images/Gallery/thumbs/thumb1.webp"
 										style={({ height: '888px' }, { width: '625px' })}
 									/>
 								</div>
 							</a>
 						</div>
 						<div className="card gallery-zoom">
-							<a
-								href={featured.edges[1].node.publicURL}
-								data-attribute="SRL"
-							>
+							<a href={featured.edges[1].node.publicURL} data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										srl_gallery_image="true"
