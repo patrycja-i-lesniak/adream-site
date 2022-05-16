@@ -72,75 +72,75 @@ export default function Gallery() {
 
 				<SRLWrapper options={options}>
 					<div className="scrolling-wrapper">
-						<div className="card">
-							<a
-								href="../images/Gallery/shutterstock_1197402031.webp"
-								data-attribute="SRL"
-							>
-								<StaticImage
-									alt="This is the 1 photo"
-									src="../images/Gallery/shutterstock_1197402031-thumb.webp"
-									style={({ height: '888px' }, { width: '625px' })}
-								/>
+						<div className="card gallery-zoom">
+							<a href="../images/Gallery/featured/image1.webp" data-attribute="SRL">
+								<div className="gallery-zoom">
+									<StaticImage
+										className="gallery-image"
+										alt="This is the 1 photo"
+										src="../images/Gallery/thumbs/thumb1.webp"
+										style={({ height: '888px' }, { width: '625px' })}
+									/>
+								</div>
 							</a>
 						</div>
-						<div className="card">
-							<a
-								href="../images/Gallery/shutterstock_579651031.webp"
-								data-attribute="SRL"
-							>
-								<StaticImage
-									alt="This is the 2 photo"
-									src="../images/Gallery/shutterstock_579651031-thumb.webp"
-								/>
+						<div className="card gallery-zoom">
+							<a href="../images/Gallery/featured/image2.webp" data-attribute="SRL">
+								<div className="gallery-zoom">
+									<StaticImage
+										className="gallery-image"
+										alt="This is the 2 photo"
+										src="../images/Gallery/thumbs/thumb2.webp"
+									/>
+								</div>
 							</a>
 						</div>
-						<div className="card">
-							<a
-								href="../images/Gallery/shutterstock_1187833249.webp"
-								data-attribute="SRL"
-							>
-								<StaticImage
-									alt="This is the 3 photo"
-									src="../images/Gallery/shutterstock_1187833249-thumb.webp"
-								/>
+						<div className="card gallery-zoom">
+							<a href="../images/Gallery/featured/image3.webp" data-attribute="SRL">
+								<div className="gallery-zoom">
+									<StaticImage
+										className="gallery-image"
+										alt="This is the 3 photo"
+										src="../images/Gallery/thumbs/thumb3.webp"
+									/>
+								</div>
 							</a>
 						</div>
-						<div className="card double">
+						<div className="card gallery-zoom double">
 							{' '}
 							<div className="white-box" />
-							<a
-								href="../images/Gallery/shutterstock_763511701.webp"
-								data-attribute="SRL"
-							>
-								<StaticImage
-									alt="This is the 5 photo"
-									src="../images/Gallery/shutterstock_763511701-thumb.webp"
-									style={{ height: '290px' }}
-								/>
+							<a href="../images/Gallery/featured/image5.webp" data-attribute="SRL">
+								<div className="gallery-zoom">
+									<StaticImage
+										className="gallery-image"
+										alt="This is the 5 photo"
+										src="../images/Gallery/thumbs/thumb5.webp"
+										style={{ height: '290px' }}
+									/>
+								</div>
 							</a>
 							<div className="white-box" style={{ width: '600px' }} />
 						</div>
-						<div className="card double">
-							<a
-								href="../images/Gallery/shutterstock_763511722.webp"
-								data-attribute="SRL"
-							>
-								<StaticImage
-									alt="This is the 4 photo"
-									src="../images/Gallery/shutterstock_763511722-thumb.webp"
-									style={{ height: '577px' }}
-								/>
+						<div className="card gallery-zoom double">
+							<a href="../images/Gallery/featured/image4.webp" data-attribute="SRL">
+								<div className="gallery-zoom">
+									<StaticImage
+										className="gallery-image"
+										alt="This is the 4 photo"
+										src="../images/Gallery/thumbs/thumb4.webp"
+										style={{ height: '577px' }}
+									/>
+								</div>
 							</a>
-							<a
-								href="../images/Gallery/shutterstock_610938071.webp"
-								data-attribute="SRL"
-							>
-								<StaticImage
-									alt="This is the 6 photo"
-									src="../images/Gallery/shutterstock_610938071-thumb.webp"
-									style={({ width: '1227' }, { height: '577px' })}
-								/>
+							<a href="../images/Gallery/featured/image6.webp" data-attribute="SRL">
+								<div className="gallery-zoom">
+									<StaticImage
+										className="gallery-image"
+										alt="This is the 6 photo"
+										src="../images/Gallery/thumbs/thumb6.webp"
+										style={({ width: '1227' }, { height: '577px' })}
+									/>
+								</div>
 							</a>
 						</div>
 					</div>
