@@ -1,5 +1,5 @@
-import React, { CSSProperties } from 'react';
-import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
@@ -73,7 +73,7 @@ export default function Gallery() {
 				<SRLWrapper options={options}>
 					<div className="scrolling-wrapper">
 						<div className="card gallery-zoom">
-							<a href="../images/Gallery/featured/image1.webp" data-attribute="SRL">
+							<Link to="../images/Gallery/featured/image1.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -82,10 +82,10 @@ export default function Gallery() {
 										style={({ height: '888px' }, { width: '625px' })}
 									/>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="card gallery-zoom">
-							<a href="../images/Gallery/featured/image2.webp" data-attribute="SRL">
+							<Link to="../images/Gallery/featured/image2.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -93,10 +93,10 @@ export default function Gallery() {
 										src="../images/Gallery/thumbs/thumb2.webp"
 									/>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="card gallery-zoom">
-							<a href="../images/Gallery/featured/image3.webp" data-attribute="SRL">
+							<Link to="../images/Gallery/featured/image3.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -104,12 +104,12 @@ export default function Gallery() {
 										src="../images/Gallery/thumbs/thumb3.webp"
 									/>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="card gallery-zoom double">
 							{' '}
 							<div className="white-box" />
-							<a href="../images/Gallery/featured/image5.webp" data-attribute="SRL">
+							<Link to="../images/Gallery/featured/image5.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -118,11 +118,11 @@ export default function Gallery() {
 										style={{ height: '290px' }}
 									/>
 								</div>
-							</a>
+							</Link>
 							<div className="white-box" style={{ width: '600px' }} />
 						</div>
 						<div className="card gallery-zoom double">
-							<a href="../images/Gallery/featured/image4.webp" data-attribute="SRL">
+							<Link to="../images/Gallery/featured/image4.webp" data-attribute="SRL">
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -131,8 +131,11 @@ export default function Gallery() {
 										style={{ height: '577px' }}
 									/>
 								</div>
-							</a>
-							<a href="../images/Gallery/featured/image6.webp" data-attribute="SRL">
+							</Link>
+							<Link
+								to="../images/Gallery/featured/image6.webp"
+								data-attribute="SRL"
+							>
 								<div className="gallery-zoom">
 									<StaticImage
 										className="gallery-image"
@@ -141,7 +144,7 @@ export default function Gallery() {
 										style={({ width: '1227' }, { height: '577px' })}
 									/>
 								</div>
-							</a>
+							</Link>
 						</div>
 					</div>
 				</SRLWrapper>
