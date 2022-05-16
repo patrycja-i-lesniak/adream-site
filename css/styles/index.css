@@ -1503,9 +1503,6 @@ body {
   text-decoration: none;
   font-size: 16px;
 }
-.navbar-container .navbar-links .navbar-link:hover {
-  color: lightcyan;
-}
 .navbar-container .navbar-links .navbar-link.navbar-break {
   padding-left: 54px;
 }
@@ -1607,9 +1604,10 @@ body {
   padding: 20px;
 }
 .news-container .news-wrapper .news-box:hover {
-  -webkit-box-shadow: -4px 4px 14px -2px rgb(66, 68, 90);
-  -moz-box-shadow: -4px 4px 14px -2px rgb(66, 68, 90);
-  box-shadow: -4px 4px 14px -2px rgb(66, 68, 90);
+  -webkit-box-shadow: -8px 8px 24px 0px rgb(198, 200, 209);
+  -moz-box-shadow: -8px 8px 24px 0px rgb(198, 200, 209);
+  box-shadow: -8px 8px 24px 0px rgb(198, 200, 209);
+  transition: all 0.5s;
 }
 @media (max-width: 768px) {
   .news-container .news-wrapper .news-box {
