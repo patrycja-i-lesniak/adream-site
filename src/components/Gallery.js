@@ -1,71 +1,52 @@
 import React, { CSSProperties } from 'react';
-
 import { StaticImage, GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-
-import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
-import AnimatedButton from './AnimatedButton';
-
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
-import 'photoswipe/dist/photoswipe.css';
-
-import { Gallery, Item } from 'react-photoswipe-gallery';
-
-export default function NewGallery() {
-	const data = useStaticQuery(graphql`
-		query {
-			gallery: allFile(
-				filter: { relativeDirectory: { eq: "Gallery" } }
-				sort: { fields: base, order: ASC }
-			) {
-				edges {
-					node {
-						id
-						base
-						publicURL
-						childImageSharp {
-							gatsbyImageData(
-								transformOptions: { fit: COVER }
-								placeholder: BLURRED
-								webpOptions: { quality: 50 }
-							)
-						}
-					}
-				}
-			}
-			featured: allFile(
-				filter: { relativeDirectory: { eq: "Gallery/featured" } }
-				sort: { fields: base, order: ASC }
-			) {
-				edges {
-					node {
-						id
-						base
-						publicURL
-						childImageSharp {
-							gatsbyImageData(
-								transformOptions: { fit: COVER }
-								placeholder: BLURRED
-								webpOptions: { quality: 50 }
-							)
-						}
-					}
-				}
-			}
-		}
-	`);
-
-	// const images = [
-	//   {
-	//     src: '../images/Gallery/shutterstock_1197402031.webp"',
-	//     thumbnail:
-	//       '../images/Gallery/shutterstock_1197402031-thumb.webp"',
-	//     caption: 'This is the 1 photo',
-	//     width: 1920,
-	//     height: 'auto'
-	//   },
-	// ]
+export default function Gallery() {
+	// const data = useStaticQuery(graphql`
+	// 	query {
+	// 		gallery: allFile(
+	// 			filter: { relativeDirectory: { eq: "Gallery" } }
+	// 			sort: { fields: base, order: ASC }
+	// 		) {
+	// 			edges {
+	// 				node {
+	// 					id
+	// 					base
+	// 					publicURL
+	// 					childImageSharp {
+	// 						gatsbyImageData(
+	// 							transformOptions: { fit: COVER }
+	// 							placeholder: BLURRED
+	// 							webpOptions: { quality: 50 }
+	// 						)
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 		featured: allFile(
+	// 			filter: { relativeDirectory: { eq: "Gallery/featured" } }
+	// 			sort: { fields: base, order: ASC }
+	// 		) {
+	// 			edges {
+	// 				node {
+	// 					id
+	// 					base
+	// 					publicURL
+	// 					childImageSharp {
+	// 						gatsbyImageData(
+	// 							transformOptions: { fit: COVER }
+	// 							placeholder: BLURRED
+	// 							webpOptions: { quality: 50 }
+	// 						)
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// `);
 
 	const options = {
 		overlayColor: 'rgb(25, 136, 124)',
