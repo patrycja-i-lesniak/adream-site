@@ -35,7 +35,7 @@ body {
 }
 
 /* Character Styles */
-.paragraph {
+p, .paragraph {
 	font-family: var(--unnamed-font-family-poppins);
 	font-style: var(--unnamed-font-style-normal);
 	font-weight: var(--unnamed-font-weight-normal);
