@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkadream_site=self.webpackChunkadream_site||[]).push([[272],{4651:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var u=t(7294),r=t(9787);function a(){return u.createElement(r.Z,null,u.createElement("div",null,"Office"))}}}]);
+//# sourceMappingURL=component---src-pages-office-js-361f577ea29bc0e4bb84.js.map
