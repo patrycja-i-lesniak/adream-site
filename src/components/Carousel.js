@@ -1,7 +1,6 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-// import { StaticImage } from 'gatsby-plugin-image';
 
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
@@ -54,6 +53,7 @@ export default function Carousel() {
 						alt="This is the first Image"
 					/>
 				</Slide>
+
 				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
 					<Img
 						className="carousel-image"
