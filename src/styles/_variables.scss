@@ -1,19 +1,10 @@
-// _base.scss
-// $font-stack: 'Poppins', sans-serif;
-
-body {
-	overscroll-behavior: none;
-	margin: 0 auto;
-	font-family: 100% var(--unnamed-font-family-poppins);
-	color: var(--unnamed-color-000000);
-}
-
 :root {
 	/* Colors: */
 	--unnamed-color-000000: #000000;
 	--unnamed-color-040506: #040506;
 	--unnamed-color-FFFFFF: #ffffff;
 	--unnamed-color-FFCC48: #ffcc48;
+	--unnamed-color-727272: #727272;
 
 	/* Font/text values */
 	--unnamed-font-family-poppins: Poppins;
