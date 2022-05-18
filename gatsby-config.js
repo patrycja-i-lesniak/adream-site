@@ -1,7 +1,7 @@
-const path = require(`path`)
+const path = require(`path`);
 
 module.exports = {
-	pathPrefix: "/patrycja-i-lesniak",
+	pathPrefix: '/adream-site',
 	siteMetadata: {
 		title: `aDream site`,
 		description: `recruitment project`,
@@ -31,11 +31,11 @@ module.exports = {
 			}
 		},
 		{
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `carousel`,
-      path: `${__dirname}/src/images/Carousel`, 
-    },
-  }
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `carousel`,
+				path: `${__dirname}/src/images/Carousel`
+			}
+		}
 	]
 };
