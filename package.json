@@ -9,7 +9,7 @@
     "gatsby"
   ],
   "scripts": {
-     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -53,7 +53,8 @@
     "react-slick": "^0.29.0",
     "sass": "^1.51.0",
     "simple-react-lightbox": "^3.6.9-0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "trim": "^1.0.1"
   },
   "devDependencies": {
     "@types/sanitize-html": "^2.6.2",
