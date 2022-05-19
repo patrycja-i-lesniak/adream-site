@@ -1,35 +1,10 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
-import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function Carousel() {
-	const { carousel } = useStaticQuery(graphql`
-		query {
-			carousel: allFile(
-				filter: { relativeDirectory: { eq: "Carousel" } }
-				sort: { fields: base, order: ASC }
-			) {
-				edges {
-					node {
-						id
-						base
-						publicURL
-						childImageSharp {
-							gatsbyImageData(
-								transformOptions: { fit: COVER }
-								placeholder: BLURRED
-								webpOptions: { quality: 50 }
-							)
-						}
-					}
-				}
-			}
-		}
-	`);
 
 	return (
 		<CarouselProvider
@@ -43,24 +18,24 @@ export default function Carousel() {
 		>
 			<Slider className="carousel-slider" classNameAnimation="fade-animation">
 				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
-					<GatsbyImage
+					<StaticImage
 						className="carousel-image"
-						image={carousel.edges[0].node.childImageSharp.gatsbyImageData}
+						src='../images/Carousel/slide1.webp'
 						alt="This is the first Image"
 					/>
 				</Slide>
 
 				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
-					<GatsbyImage
+					<StaticImage
 						className="carousel-image"
-						image={carousel.edges[1].node.childImageSharp.gatsbyImageData}
+						src='../images/Carousel/slide2.webp'
 						alt="This is the second Image"
 					/>
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={2}>
-					<GatsbyImage
+					<StaticImage
 						className="carousel-image"
-						image={carousel.edges[2].node.childImageSharp.gatsbyImageData}
+						src='../images/Carousel/slide3.webp'
 						alt="This is the third Image"
 					/>
 				</Slide>
