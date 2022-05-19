@@ -6,11 +6,13 @@ import Navbar from './Navbar';
 
 const Layout = ({ children }) => {
 	return (
-		<div className='layout'>
-			<Navbar />
-			<Header />
-			<div>{children}</div>
-			<Footer />
+		<div className="container">
+			<div className="layout">
+				<Navbar />
+				<Header />
+				<div>{children}</div>
+				<Footer />
+			</div>
 		</div>
 	);
 };
