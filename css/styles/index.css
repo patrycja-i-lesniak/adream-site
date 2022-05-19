@@ -2095,7 +2095,7 @@ body {
   text-align: left;
   padding-bottom: 52px;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .news-container .news-h1 {
     padding: 40px;
     font-size: var(--unnamed-font-size-48);
@@ -2174,9 +2174,9 @@ body {
   text-align: left;
   margin: 0px 0 19px;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .news-container .news-wrapper .news-box .news-h3 {
-    font-size: var(--unnamed-font-size-18);
+    font-size: 22px;
     line-height: var(--unnamed-line-spacing-28);
   }
 }
