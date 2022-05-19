@@ -24,7 +24,7 @@ export default function Gallery() {
 			: setscrolEnd(false);
 	};
 
-	const { thumbs, featured } = useStaticQuery(graphql`
+	const { featured } = useStaticQuery(graphql`
 		query {
 			featured: allFile(
 				filter: { relativeDirectory: { eq: "Gallery/featured" } }
@@ -132,7 +132,7 @@ export default function Gallery() {
 											className="gallery-image"
 											alt="This is the 5 photo"
 											src="../images/Gallery/thumbs/thumb5.webp"
-											style={{ height: '288px' }, {width:'800px'}}
+											style={({ height: '288px' }, { width: '800px' })}
 										/>
 									</div>
 								</a>
