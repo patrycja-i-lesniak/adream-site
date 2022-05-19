@@ -79,7 +79,7 @@ export default function IconBox() {
 				</div>
 			</div>
 
-			<button className="icon-button">
+			<button className="icon-button" aria-label="more inf button">
 				<span>dowiedz się więcej</span>
 				<StaticImage src="../static/Icons/buttonArrow.svg" alt="button arrow" />
 			</button>

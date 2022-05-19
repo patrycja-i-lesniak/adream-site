@@ -173,14 +173,14 @@ export default function Gallery() {
 				</SRLWrapper>
 			</SimpleReactLightbox>
 			{scrollX !== 0 && (
-				<button id="buttonBack" className="gallery-back-button" onClick={() => slide(-300)}>
+				<button id="buttonBack" className="gallery-back-button" aria-label="Left arrow button" onClick={() => slide(-300)}>
 					<span>
 						<FiArrowLeft className="gallery-arrow" />
 					</span>
 				</button>
 			)}
 			{!scrolEnd && (
-				<button id="buttonNext" className="gallery-next-button" onClick={() => slide(+300)}>
+				<button id="buttonNext" className="gallery-next-button" aria-label="Right arrow button"onClick={() => slide(+300)}>
 					<span>
 						<FiArrowRight className="gallery-arrow" />
 					</span>

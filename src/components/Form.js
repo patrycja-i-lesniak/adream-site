@@ -60,7 +60,7 @@ export default function Form() {
 						</div>
 					</div>
 
-					<button type="submit" className="form-button">
+					<button type="submit" className="form-button"aria-label="Send button">
 						<span>wyślij</span>
 					</button>
 				</div>

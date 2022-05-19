@@ -63,12 +63,12 @@ export default function Carousel() {
 					/>
 				</Slide>
 			</Slider>
-			<ButtonBack className="carousel-back-button">
+			<ButtonBack className="carousel-back-button" aria-label="Right left">
 				<span>
 					<FiArrowLeft className="carousel-arrow-left" />
 				</span>
 			</ButtonBack>
-			<ButtonNext className="carousel-next-button">
+			<ButtonNext className="carousel-next-button" aria-label="Right right">
 				<span>
 					<FiArrowRight className="carousel-arrow-right" />
 				</span>
