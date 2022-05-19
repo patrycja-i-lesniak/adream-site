@@ -22,7 +22,7 @@ export default function Carousel() {
 							gatsbyImageData(
 								transformOptions: { fit: COVER }
 								placeholder: BLURRED
-								webpOptions: { quality: 25 }
+								webpOptions: { quality: 50 }
 							)
 						}
 					}
