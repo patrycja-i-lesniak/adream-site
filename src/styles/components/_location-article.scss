@@ -1,0 +1,30 @@
+.location {
+     display: flex;
+
+    .location-article {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+    margin: 50px 100px;
+    max-width: 1300px;
+    .location-h2{
+        text-align: center;
+    }
+    .location-date {
+        text-align: center;
+    }
+    .location-h4 {
+        margin-bottom: 20px;
+    }
+    .location-image {
+        margin: 0 40px;
+    } 
+}
+.location-right-box {
+    display: flex;
+    width: 350px;
+    height: 700px;
+    background-color: grey;
+}
+}
