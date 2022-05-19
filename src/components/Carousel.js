@@ -5,7 +5,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function Carousel() {
-
 	return (
 		<CarouselProvider
 			className="carousel-wrapper"
@@ -20,7 +19,7 @@ export default function Carousel() {
 				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
 					<StaticImage
 						className="carousel-image"
-						src='../images/Carousel/slide1.webp'
+						src="../images/Carousel/slide1.webp"
 						alt="This is the first Image"
 					/>
 				</Slide>
@@ -28,14 +27,14 @@ export default function Carousel() {
 				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
 					<StaticImage
 						className="carousel-image"
-						src='../images/Carousel/slide2.webp'
+						src="../images/Carousel/slide2.webp"
 						alt="This is the second Image"
 					/>
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={2}>
 					<StaticImage
 						className="carousel-image"
-						src='../images/Carousel/slide3.webp'
+						src="../images/Carousel/slide3.webp"
 						alt="This is the third Image"
 					/>
 				</Slide>

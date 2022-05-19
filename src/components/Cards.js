@@ -1,39 +1,9 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import AnimatedButton from './AnimatedButton';
 import { FiArrowRight } from 'react-icons/fi';
 
 export default function Cards() {
-	const data = useStaticQuery(graphql`
-		query {
-			card1: file(relativePath: { eq: "Cards/card1.webp" }) {
-				id
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-			card2: file(relativePath: { eq: "Cards/card2.webp" }) {
-				id
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-			card3: file(relativePath: { eq: "Cards/card3.webp" }) {
-				id
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-			card4: file(relativePath: { eq: "Cards/card4.webp" }) {
-				id
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-		}
-	`);
 	return (
 		<div>
 			<div>
@@ -41,9 +11,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<GatsbyImage
+								<StaticImage
 									className="card__box-image"
-									image={data.card1.childImageSharp.gatsbyImageData}
+									src="../images/Cards/card1.webp"
 									alt="This is the first card"
 								/>
 								<AnimatedButton>
@@ -69,9 +39,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<GatsbyImage
+								<StaticImage
 									className="card__box-image"
-									image={data.card2.childImageSharp.gatsbyImageData}
+									src="../images/Cards/card2.webp"
 									alt="This is the second card"
 								/>
 								<AnimatedButton>
@@ -99,9 +69,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<GatsbyImage
+								<StaticImage
 									className="card__box-image"
-									image={data.card3.childImageSharp.gatsbyImageData}
+									src="../images/Cards/card3.webp"
 									alt="This is the third card"
 								/>
 								<AnimatedButton>
@@ -129,9 +99,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<GatsbyImage
+								<StaticImage
 									className="card__box-image"
-									image={data.card4.childImageSharp.gatsbyImageData}
+									src="../images/Cards/card4.webp"
 									alt="This is the fourth card"
 								/>
 								<AnimatedButton>
