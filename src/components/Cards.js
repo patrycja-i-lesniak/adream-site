@@ -60,12 +60,14 @@ export default function Cards() {
 							</div>
 
 							<div className="card__content">
-								<div className="card__yellow-box" />
-								<div className="card__info">
-									<h3 className="card__h3">Biuro</h3>
-									<div className="card__text">
-										<div className="card__line" />
-										<p className="card__paragraph">od 1000 zł/msc</p>
+								<div className="card__content-yellow-box" />
+								<div className="card__content-info">
+									<h3 className="card__content-info-h3">Biuro</h3>
+									<div className="card__content-info-text">
+										<div className="card__content-info-text-line" />
+										<p className="card__content-info-text-paragraph">
+											od 1000 zł/msc
+										</p>
 									</div>
 								</div>
 							</div>
@@ -86,14 +88,16 @@ export default function Cards() {
 							</div>
 
 							<div className="card__content">
-								<div className="card__yellow-box" />
-								<div className="card__info">
-									<h3 className="card__h3">
+								<div className="card__content-yellow-box" />
+								<div className="card__content-info">
+									<h3 className="card__content-info-h3">
 										Lorem<br />ipsum
 									</h3>
-									<div className="card__text">
-										<div className="card__line" />
-										<p className="card__paragraph">od 500 zł/msc</p>
+									<div className="card__content-info-text">
+										<div className="card__content-info-text-line" />
+										<p className="card__content-info-text-paragraph">
+											od 500 zł/msc
+										</p>
 									</div>
 								</div>
 							</div>
@@ -114,14 +118,16 @@ export default function Cards() {
 							</div>
 
 							<div className="card__content card__bottom">
-								<div className="card__yellow-box " />
-								<div className="card__info">
-									<h3 className="card__h3">
+								<div className="card__content-yellow-box " />
+								<div className="card__content-info">
+									<h3 className="card__content-info-h3">
 										Biuro <br /> lorem
 									</h3>
-									<div className="card__text">
-										<div className="card__line" />
-										<p className="card__paragraph">od 100 zł/h</p>
+									<div className="card__content-info-text">
+										<div className="card__content-info-text-line" />
+										<p className="card__content-info-text-paragraph">
+											od 100 zł/h
+										</p>
 									</div>
 								</div>
 							</div>
@@ -142,14 +148,16 @@ export default function Cards() {
 							</div>
 
 							<div className="card__content card__bottom">
-								<div className="card__yellow-box" />
-								<div className="card__info">
-									<h3 className="card__h3">
+								<div className="card__content-yellow-box" />
+								<div className="card__content-info">
+									<h3 className="card__content-info-h3">
 										Biuro lorem ipsum <br />Lorem
 									</h3>
-									<div className="card__text">
-										<div className="card__line" />
-										<p className="card__paragraph">od 100 zł/h</p>
+									<div className="card__content-info-text">
+										<div className="card__content-info-text-line" />
+										<p className="card__content-info-text-paragraph">
+											od 100 zł/h
+										</p>
 									</div>
 								</div>
 							</div>
