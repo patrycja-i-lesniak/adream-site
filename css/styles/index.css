@@ -2087,7 +2087,12 @@ body {
 }
 @media (max-width: 992px) {
   .news-container {
-    padding-top: 40px;
+    padding-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .news-container {
+    padding-top: 20px;
   }
 }
 .news-container .news-h1 {
@@ -2099,6 +2104,7 @@ body {
   .news-container .news-h1 {
     padding: 40px;
     font-size: var(--unnamed-font-size-48);
+    margin: 0;
   }
 }
 .news-container .news-wrapper {
