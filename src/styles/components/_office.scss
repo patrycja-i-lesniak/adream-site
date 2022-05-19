@@ -29,8 +29,9 @@
 				text-align: left;
 				z-index: 3;
 				margin-top: 144px;
-				@media (max-width: 576px) {
+				@media (max-width: 768px) {
 					margin-top: 80px;
+					max-width: 300px
 				}
 			}
 			.office-graphic-svg {
@@ -44,6 +45,7 @@
 				}
 				@media (max-width: 1400px) {
 					width: 190px;
+					margin: 25px 175px -30px
 				}
 			}
 			.office-content-line {
