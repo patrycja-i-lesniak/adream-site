@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import AnimatedButton from './AnimatedButton';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -11,33 +11,25 @@ export default function Cards() {
 			card1: file(relativePath: { eq: "Cards/shutterstock_1877634640@2x.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 770) {
-						...GatsbyImageSharpFluid
-					}
+					gatsbyImageData
 				}
 			}
 			card2: file(relativePath: { eq: "Cards/shutterstock_1723055614@2x.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 770) {
-						...GatsbyImageSharpFluid
-					}
+					gatsbyImageData
 				}
 			}
 			card3: file(relativePath: { eq: "Cards/shutterstock_1677941275@2x.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 770) {
-						...GatsbyImageSharpFluid
-					}
+					gatsbyImageData
 				}
 			}
 			card4: file(relativePath: { eq: "Cards/shutterstock_1433594243@2x.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 770) {
-						...GatsbyImageSharpFluid
-					}
+					gatsbyImageData
 				}
 			}
 		}
@@ -49,9 +41,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<Img
+								<GatsbyImage
 									className="card__box-image"
-									fluid={data.card1.childImageSharp.fluid}
+									image={data.card1.childImageSharp.gatsbyImageData}
 									alt="This is the first card"
 								/>
 								<AnimatedButton>
@@ -77,9 +69,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<Img
+								<GatsbyImage
 									className="card__box-image"
-									fluid={data.card2.childImageSharp.fluid}
+									image={data.card2.childImageSharp.gatsbyImageData}
 									alt="This is the second card"
 								/>
 								<AnimatedButton>
@@ -107,9 +99,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<Img
+								<GatsbyImage
 									className="card__box-image"
-									fluid={data.card3.childImageSharp.fluid}
+									image={data.card3.childImageSharp.gatsbyImageData}
 									alt="This is the third card"
 								/>
 								<AnimatedButton>
@@ -137,9 +129,9 @@ export default function Cards() {
 					<div className="col-12-xs col-6-lg">
 						<div className="card__box">
 							<div className="card__box-zoom">
-								<Img
+								<GatsbyImage
 									className="card__box-image"
-									fluid={data.card4.childImageSharp.fluid}
+									image={data.card4.childImageSharp.gatsbyImageData}
 									alt="This is the fourth card"
 								/>
 								<AnimatedButton>

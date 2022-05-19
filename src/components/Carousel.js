@@ -3,7 +3,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image';
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 
 export default function Carousel() {
@@ -12,25 +12,19 @@ export default function Carousel() {
 			slide1: file(relativePath: { eq: "Carousel/slide1.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 1920) {
-						...GatsbyImageSharpFluid
-					}
+					gatsbyImageData
 				}
 			}
 			slide2: file(relativePath: { eq: "Carousel/slide2.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 1920) {
-						...GatsbyImageSharpFluid
-					}
+					gatsbyImageData
 				}
 			}
 			slide3: file(relativePath: { eq: "Carousel/slide3.webp" }) {
 				id
 				childImageSharp {
-					fluid(maxWidth: 1920) {
-						...GatsbyImageSharpFluid
-					}
+						gatsbyImageData
 				}
 			}
 		}
@@ -42,29 +36,29 @@ export default function Carousel() {
 			naturalSlideHeight={941}
 			totalSlides={3}
 			infinite
-			interval={10000}
+			interval={5000}
 			isPlaying={true}
 		>
 			<Slider className="carousel-slider" classNameAnimation="fade-animation">
 				<Slide classNameHidden="hide" classNameVisible="show" index={0}>
-					<Img
+					<GatsbyImage
 						className="carousel-image"
-						fluid={slide1.childImageSharp.fluid}
+						image={slide1.childImageSharp.gatsbyImageData}
 						alt="This is the first Image"
 					/>
 				</Slide>
 
 				<Slide classNameHidden="hide" classNameVisible="show" index={1}>
-					<Img
+					<GatsbyImage
 						className="carousel-image"
-						fluid={slide2.childImageSharp.fluid}
+						image={slide2.childImageSharp.gatsbyImageData}
 						alt="This is the second Image"
 					/>
 				</Slide>
 				<Slide classNameHidden="hide" classNameVisible="show" index={2}>
-					<Img
+					<GatsbyImage
 						className="carousel-image"
-						fluid={slide3.childImageSharp.fluid}
+						image={slide3.childImageSharp.gatsbyImageData}
 						alt="This is the third Image"
 					/>
 				</Slide>
