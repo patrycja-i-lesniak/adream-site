@@ -2220,6 +2220,7 @@ body {
 @media (max-width: 576px) {
   .office .office-wrapper .office-content .office-content-h1 {
     margin-top: 80px;
+    max-width: 300px;
   }
 }
 .office .office-wrapper .office-content .office-graphic-svg {
@@ -2237,6 +2238,7 @@ body {
 @media (max-width: 1400px) {
   .office .office-wrapper .office-content .office-graphic-svg {
     width: 190px;
+    margin: 25px 175px -30px;
   }
 }
 .office .office-wrapper .office-content .office-content-line {
