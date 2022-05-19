@@ -38,7 +38,7 @@ export default function Carousel() {
 			naturalSlideHeight={941}
 			totalSlides={3}
 			infinite
-			interval={5000}
+			interval={10000}
 			isPlaying={true}
 		>
 			<Slider className="carousel-slider" classNameAnimation="fade-animation">
