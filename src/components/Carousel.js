@@ -31,7 +31,6 @@ export default function Carousel() {
 		}
 	`);
 
-	console.log(carousel.edges[0].node.publicURL)
 	return (
 		<CarouselProvider
 			className="carousel-wrapper"
