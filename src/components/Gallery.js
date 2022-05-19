@@ -141,7 +141,7 @@ export default function Gallery() {
 								<div className="white-box" style={{ width: '600px' }} />
 							</div>
 						</div>
-						<div class="double" style={{ gap: '30px' }}>
+						<div className="double" style={{ gap: '30px' }}>
 							<div className="card ">
 								<a href={featured.edges[3].node.publicURL} data-attribute="SRL">
 									<div className="gallery-zoom">
