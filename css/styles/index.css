@@ -1291,6 +1291,12 @@ body {
   right: 175.5px;
   z-index: 999;
 }
+@media (max-width: 520px) {
+  .gallery .gallery-h1 {
+    right: unset;
+    left: 20px;
+  }
+}
 .gallery .gallery-line {
   border: 10px solid var(--unnamed-color-000000);
   width: 450px;

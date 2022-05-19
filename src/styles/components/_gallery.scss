@@ -10,6 +10,10 @@
 		top: 114px;
 		right: 175.5px;
 		z-index: 999;
+		@media (max-width: 520px) {
+			right: unset;
+			left: 20px
+		}
 	}
 
 	.gallery-line {
