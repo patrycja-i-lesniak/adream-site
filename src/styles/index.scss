@@ -3,17 +3,20 @@
 
 // base & layout
 @import 'base';
+@import 'breakpoints';
+@import 'grid';
 
 // components
-@import 'animated-button';
-@import 'box';
-@import 'form';
-@import 'footer';
-@import 'gallery';
-@import 'header';
-@import 'carousel';
-@import 'iconBox';
-@import 'layout';
-@import 'navbar';
-@import 'news';
-@import 'office';
+@import 'components/animated-button';
+@import 'components/cards';
+@import 'components/form';
+@import 'components/footer';
+@import 'components/gallery';
+@import 'components/header';
+@import 'components/carousel';
+@import 'components/iconBox';
+@import 'components/layout';
+@import 'components/navbar';
+@import 'components/news';
+@import 'components/office';
+@import 'components/location-article';
