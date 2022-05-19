@@ -8,25 +8,25 @@ import { FiArrowRight } from 'react-icons/fi';
 export default function Cards() {
 	const data = useStaticQuery(graphql`
 		query {
-			card1: file(relativePath: { eq: "Cards/shutterstock_1877634640@2x.webp" }) {
+			card1: file(relativePath: { eq: "Cards/card1.webp" }) {
 				id
 				childImageSharp {
 					gatsbyImageData
 				}
 			}
-			card2: file(relativePath: { eq: "Cards/shutterstock_1723055614@2x.webp" }) {
+			card2: file(relativePath: { eq: "Cards/card2.webp" }) {
 				id
 				childImageSharp {
 					gatsbyImageData
 				}
 			}
-			card3: file(relativePath: { eq: "Cards/shutterstock_1677941275@2x.webp" }) {
+			card3: file(relativePath: { eq: "Cards/card3.webp" }) {
 				id
 				childImageSharp {
 					gatsbyImageData
 				}
 			}
-			card4: file(relativePath: { eq: "Cards/shutterstock_1433594243@2x.webp" }) {
+			card4: file(relativePath: { eq: "Cards/card4.webp" }) {
 				id
 				childImageSharp {
 					gatsbyImageData
