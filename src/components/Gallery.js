@@ -91,7 +91,6 @@ export default function Gallery() {
 										className="gallery-image"
 										alt="This is the 1 photo"
 										src="../images/Gallery/thumbs/thumb1.webp"
-										// style={({ height: '888px' }, { width: '625px' })}
 									/>
 								</div>
 							</a>
@@ -138,7 +137,7 @@ export default function Gallery() {
 								</a>
 							</div>
 							<div className="card">
-								<div className="white-box" style={{ width: '600px' }} />
+								<div className="white-box" style={{ width: '660px' }} />
 							</div>
 						</div>
 						<div className="double" style={{ gap: '30px' }}>

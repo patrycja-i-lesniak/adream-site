@@ -1388,8 +1388,9 @@ body {
   height: 100%;
 }
 .gallery .scrolling-wrapper .card .white-box {
-  max-width: 460px;
-  max-height: 290px;
+  background-color: var(--unnamed-color-FFFFFF);
+  width: 450px;
+  height: 290px;
 }
 .gallery .scrolling-wrapper .double {
   display: flex;
