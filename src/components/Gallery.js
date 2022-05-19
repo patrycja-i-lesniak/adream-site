@@ -64,7 +64,6 @@ export default function Gallery() {
 		},
 		caption: {
 			captionColor: '#FFFFFF',
-			captionFontSize: 20,
 			captionFontFamily: 'Poppins, sans-serif',
 			captionFontWeight: '400',
 			captionTextTransform: 'uppercase'
