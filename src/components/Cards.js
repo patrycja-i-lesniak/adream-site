@@ -47,10 +47,10 @@ export default function Cards() {
 			<div>
 				<div className="row column-gap-1 justify-center ">
 					<div className="col-12-xs col-6-lg">
-						<div className="card">
-							<div className="card__zoom">
+						<div className="card__box">
+							<div className="card__box-zoom">
 								<Img
-									className="card__image"
+									className="card__box-image"
 									fluid={data.card1.childImageSharp.fluid}
 									alt="This is the first card"
 								/>
@@ -59,13 +59,13 @@ export default function Cards() {
 								</AnimatedButton>
 							</div>
 
-							<div className="card__content">
-								<div className="card__content-yellow-box" />
-								<div className="card__content-info">
-									<h3 className="card__content-info-h3">Biuro</h3>
-									<div className="card__content-info-text">
-										<div className="card__content-info-text-line" />
-										<p className="card__content-info-text-paragraph">
+							<div className="card__box-content">
+								<div className="card__box-content-yellow-box" />
+								<div className="card__box-content-info">
+									<h3 className="card__box-content-info-h3">Biuro</h3>
+									<div className="card__box-content-info-text">
+										<div className="card__box-content-info-text-line" />
+										<p className="card__box-content-info-text-paragraph">
 											od 1000 zł/msc
 										</p>
 									</div>
@@ -75,10 +75,10 @@ export default function Cards() {
 					</div>
 
 					<div className="col-12-xs col-6-lg">
-						<div className="card ">
-							<div className="card__zoom">
+						<div className="card__box">
+							<div className="card__box-zoom">
 								<Img
-									className="card__image"
+									className="card__box-image"
 									fluid={data.card2.childImageSharp.fluid}
 									alt="This is the second card"
 								/>
@@ -87,15 +87,15 @@ export default function Cards() {
 								</AnimatedButton>
 							</div>
 
-							<div className="card__content">
-								<div className="card__content-yellow-box" />
-								<div className="card__content-info">
-									<h3 className="card__content-info-h3">
+							<div className="card__box-content">
+								<div className="card__box-content-yellow-box" />
+								<div className="card__box-content-info">
+									<h3 className="card__box-content-info-h3">
 										Lorem<br />ipsum
 									</h3>
-									<div className="card__content-info-text">
-										<div className="card__content-info-text-line" />
-										<p className="card__content-info-text-paragraph">
+									<div className="card__box-content-info-text">
+										<div className="card__box-content-info-text-line" />
+										<p className="card__box-content-info-text-paragraph">
 											od 500 zł/msc
 										</p>
 									</div>
@@ -105,10 +105,10 @@ export default function Cards() {
 					</div>
 
 					<div className="col-12-xs col-6-lg">
-						<div className="card ">
-							<div className="card__zoom">
+						<div className="card__box">
+							<div className="card__box-zoom">
 								<Img
-									className="card__image"
+									className="card__box-image"
 									fluid={data.card3.childImageSharp.fluid}
 									alt="This is the third card"
 								/>
@@ -117,15 +117,15 @@ export default function Cards() {
 								</AnimatedButton>
 							</div>
 
-							<div className="card__content card__bottom">
-								<div className="card__content-yellow-box " />
-								<div className="card__content-info">
-									<h3 className="card__content-info-h3">
+							<div className="card__box-content bottom">
+								<div className="card__box-content-yellow-box " />
+								<div className="card__box-content-info">
+									<h3 className="card__box-content-info-h3">
 										Biuro <br /> lorem
 									</h3>
-									<div className="card__content-info-text">
-										<div className="card__content-info-text-line" />
-										<p className="card__content-info-text-paragraph">
+									<div className="card__box-content-info-text">
+										<div className="card__box-content-info-text-line" />
+										<p className="card__box-content-info-text-paragraph">
 											od 100 zł/h
 										</p>
 									</div>
@@ -135,10 +135,10 @@ export default function Cards() {
 					</div>
 
 					<div className="col-12-xs col-6-lg">
-						<div className="card ">
-							<div className="card__zoom">
+						<div className="card__box">
+							<div className="card__box-zoom">
 								<Img
-									className="card__image"
+									className="card__box-image"
 									fluid={data.card4.childImageSharp.fluid}
 									alt="This is the fourth card"
 								/>
@@ -147,15 +147,15 @@ export default function Cards() {
 								</AnimatedButton>
 							</div>
 
-							<div className="card__content card__bottom">
-								<div className="card__content-yellow-box" />
-								<div className="card__content-info">
-									<h3 className="card__content-info-h3">
+							<div className="card__box-content bottom">
+								<div className="card__box-content-yellow-box" />
+								<div className="card__box-content-info">
+									<h3 className="card__box-content-info-h3">
 										Biuro lorem ipsum <br />Lorem
 									</h3>
-									<div className="card__content-info-text">
-										<div className="card__content-info-text-line" />
-										<p className="card__content-info-text-paragraph">
+									<div className="card__box-content-info-text">
+										<div className="card__box-content-info-text-line" />
+										<p className="card__box-content-info-text-paragraph">
 											od 100 zł/h
 										</p>
 									</div>

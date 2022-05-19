@@ -12,25 +12,25 @@
 		padding: 124px 175px 0;
 	}
 
-	.card {
+	.card__box {
 		width: 100%;
 		position: relative;
 
-		&__zoom {
+		&-zoom {
 			overflow: hidden;
 
-			.card__image {
+			.card__box-image {
 				transition: transform .5s ease;
 			}
 
 			&:hover {
-				.card__image {
+				.card__box-image {
 					transform: scale(1.1);
 				}
 			}
 		}
 
-		&__content {
+		&-content {
 			display: flex;
 			flex-direction: column;
 			padding: 15px;
@@ -55,7 +55,7 @@
 				padding: 25px;
 			}
 
-			&.card__bottom {
+			&.bottom {
 				top: 28px;
 				bottom: unset;
 
