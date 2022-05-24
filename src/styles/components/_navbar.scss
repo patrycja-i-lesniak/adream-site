@@ -1,4 +1,4 @@
-.navbar-container {
+.navbar__container {
 	margin: 0 auto;
 	display: grid;
 	position: absolute;
@@ -31,8 +31,8 @@
 		padding: 0 20px;
 	}
 
-	.navbar-logo {
-		.navbar-logo-h2 {
+	.navbar__logo {
+		.navbar__logo-h2 {
 			margin: 0;
 			text-transform: uppercase;
 			color: var(--unnamed-color-FFFFFF);
@@ -52,7 +52,7 @@
 			}
 		}
 	}
-	.navbar-links {
+	.navbar__links {
 		padding: 5px 0 0 183px;
 		display: grid;
 		grid-template-columns: repeat(5, auto);
@@ -67,20 +67,21 @@
 			padding: 5px 0 0 80px;
 			grid-gap: 20px;
 		}
-		// @media (max-width: 1200px) {
-		// 	padding: 5px 0 0 30px;
-		// 	grid-gap: 20px;
-		// }
+		
 		@media (max-width: 768px) {
 			display: none;
 		}
 
-		.navbar-link {
+		.navbar__link {
 			color: var(--unnamed-color-FFFFFF);
 			text-decoration: none;
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 50px;
 			position: relative;
+
+			@include lg {
+				font-size: 16px;	
+			}
 
 			&::after {
 				content: "";
@@ -98,7 +99,7 @@
 				background: #ffffff;
 			}
 
-			&.navbar-break {
+			&.break {
 				padding-left: 54px;
 				@media (max-width: 1400px) {
 					padding-left: 0;
@@ -107,7 +108,7 @@
 		}
 	}
 
-	.navbar-socials {
+	.navbar__socials {
 		display: grid;
 		grid-template-columns: 28px 28px;
 		gap: 20px;
@@ -121,7 +122,7 @@
 		}
 	}
 
-	.navbar-hamburger {
+	.navbar__hamburger {
 		font-size: 30px;
 		color: var(--unnamed-color-FFFFFF);
 
