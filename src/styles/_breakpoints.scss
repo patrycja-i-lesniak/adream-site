@@ -1,6 +1,15 @@
 /*Breakpoints */
 
-$breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px, xxxl: 1920px);
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl:1400px,
+	xxxl:1600px,
+	xxxxl: 1920px
+);
 
 @mixin xs {
 	@media (min-width: map-get($breakpoints, "xs")) {
@@ -43,6 +52,11 @@ $breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px, 
 		@content;
 	}
 }
+@mixin xxxxl {
+	@media (min-width: map-get($breakpoints, "xxxxl")) {
+		@content;
+	}
+}
 
 @mixin breakpoint($bp: 0) {
 	@media (min-width: $bp) {
@@ -66,7 +80,10 @@ $breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px, 
 	@include xl {
 		color: purple;
 	}
-	@include xxl {
+	@include xxxl {
 		color: pink;
+	}
+	@include xxxl {
+		color: yellow;
 	}
 }
