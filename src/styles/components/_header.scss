@@ -4,13 +4,15 @@
 
 		.header__textbox {
 			position: absolute;
-			left: 20px;
-			top: 100px;
+			top: 80px;
 			z-index: 1;
 			display: flex;
 			flex-direction: column;
+			align-items: flex-end;
+			padding-right: 20px;
 			@include sm {
-				top: 170px;
+				align-items: flex-start;
+				top: 150px;
 				left: 40px;
 			}
 			@include md {
@@ -27,6 +29,10 @@
 				top: 360px;
 			}
 			@include xxxl {
+				top:440px;
+				left: 175px;
+			}
+			@include xxxxl {
 				top: 560px;
 				left: 175px;
 			}
@@ -40,6 +46,7 @@
 				letter-spacing: 0.3px;
 
 				@include sm {
+					text-align: left;
 					font-size: 5vw;
 					padding-bottom: 2vw;
 				}
@@ -59,8 +66,11 @@
 				font-size: 3.5vw;
 				line-height: 5vw;
 				max-width: 80%;
+				text-align: right;
+				
 
 				@include sm {
+					text-align: left;
 					font-size: 3vw;
 				}
 				@include lg {
