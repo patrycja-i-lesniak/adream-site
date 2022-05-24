@@ -1,12 +1,7 @@
 @use "sass:math";
 
 $grid-columns: 12;
-$grid-column-gaps: (
-  "0": 0,
-  "1": 14px,
-  "2": 20px,
-  "3": 30px,
-);
+$grid-column-gaps: ("0": 0, "1": 14px, "2": 20px, "3": 30px);
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // base layout classes
@@ -24,20 +19,20 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // grid gaps
 @each $key, $val in $grid-column-gaps {
-  .column-gap-#{$key} > * {
-    padding: $val;
-  }
-  .column-gap-#{$key} {
-    margin-left: -$val;
-    margin-right: -$val;
-  }
+	.column-gap-#{$key} > * {
+		padding: $val;
+	}
+	.column-gap-#{$key} {
+		margin-left: -$val;
+		margin-right: -$val;
+	}
 }
 
 // justify content classes
 @each $val in $layout-values {
-  .justify-#{$val} {
-    justify-content: $val;
-  }
+	.justify-#{$val} {
+		justify-content: $val;
+	}
 }
 
 // col classes
@@ -91,9 +86,20 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 	}
 }
 
-@include xxl {
+@include xxxl {
 	@for $i from 1 through $grid-columns {
-		.col-#{$i}-xxl {
+		.col-#{$i}-xxxl {
+			box-sizing: border-box;
+			flex-grow: 0;
+			width: math.div($i * 100%, $grid-columns);
+		}
+	}
+}
+
+
+@include xxxxl {
+	@for $i from 1 through $grid-columns {
+		.col-#{$i}-xxxl {
 			box-sizing: border-box;
 			flex-grow: 0;
 			width: math.div($i * 100%, $grid-columns);
