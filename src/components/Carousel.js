@@ -43,7 +43,7 @@ export default function Carousel() {
 
 	return (
 		<CarouselProvider
-			className="carousel-wrapper"
+			className="carousel__wrapper"
 			id="carousel"
 			naturalSlideWidth={1920}
 			naturalSlideHeight={941}
@@ -54,7 +54,7 @@ export default function Carousel() {
 			visibleSlides={1}
 		>
 			<Slider
-				className="carousel-slider"
+				className="carousel__slider"
 				classNameAnimation="fade-animation"
 				aria-label="slider"
 			>
@@ -102,7 +102,7 @@ export default function Carousel() {
 
 			<ButtonBack
 				id="restart-button"
-				className="carousel-back-button"
+				className="carousel__back-button"
 				aria-label="button left"
 				onClick={handleToggle}
 			>
@@ -113,25 +113,28 @@ export default function Carousel() {
 			<ButtonNext
 				onClick={handleToggle}
 				id="restart-button"
-				className="carousel-next-button"
+				className="carousel__next-button"
 				aria-label="button right"
 			>
 				<span>
-					<FiArrowRight className="carousel-arrow-right" />
+					<FiArrowRight className="carousel__arrow-right" />
 				</span>
 			</ButtonNext>
-			<h4 className="carousel-current">0{currentSlide}</h4>
-			<h4 className="carousel-total">0{totalSlides}</h4>
-			<div className="round-time-bar-back" />
+			<div className='carousel__progressbar'>
+				<h4 className="carousel__current">0{currentSlide}</h4>
+			<h4 className="carousel__total">0{totalSlides}</h4>
+			<div className="carousel__bar-background" />
 
 			<div
 				// ref={ref}
 				id="bar"
-				className={isActive ? 'round-time-bar' : null}
+				className={isActive ? 'carousel__bar' : null}
 				data-style="smooth"
 			>
 				<div />
 			</div>
+			</div>
+			
 		</CarouselProvider>
 	);
 }

@@ -1,5 +1,5 @@
-.carousel-wrapper {
-	.carousel-slider {
+.carousel__wrapper {
+	.carousel__slider {
 		position: relative;
 		img {
 			filter: brightness(61%);
@@ -20,19 +20,7 @@
 		}
 	}
 
-	.carousel-total,
-	.carousel-current {
-		color: var(--unnamed-color-FFFFFF);
-		position: absolute;
-		bottom: 21px;
-		left: 602px;
-	}
-
-	.carousel-current {
-		left: 335px;
-	}
-
-	.carousel-next-button {
+	.carousel__next-button {
 		position: absolute;
 		bottom: 0;
 		left: 160px;
@@ -47,11 +35,11 @@
 		span {
 			position: relative;
 
-			.carousel-arrow-right {
+			.carousel__arrow-right {
 				color: var(--unnamed-color-000000);
 				font-size: 60px;
 
-				@media (max-width: 1400px) {
+				@media (max-width: 1600px) {
 					padding-top: 5px;
 					font-size: 45px;
 				}
@@ -77,14 +65,14 @@
 		}
 
 		&:hover {
-			.carousel-arrow-right {
+			.carousel__arrow-right {
 				color: var(--unnamed-color-FFFFFF);
 			}
 			&::after {
 				width: 100%;
 			}
 		}
-		@media (max-width: 1400px) {
+		@media (max-width: 1600px) {
 			bottom: 0px;
 			width: 90px;
 			height: 90px;
@@ -108,7 +96,7 @@
 		}
 	}
 
-	.carousel-back-button {
+	.carousel__back-button {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -126,7 +114,7 @@
 			.carousel-arrow-left {
 				color: var(--unnamed-color-000000);
 				font-size: 60px;
-				@media (max-width: 1400px) {
+				@media (max-width: 1600px) {
 					padding-top: 5px;
 					font-size: 45px;
 				}
@@ -161,7 +149,7 @@
 			}
 		}
 
-		@media (max-width: 1400px) {
+		@media (max-width: 1600px) {
 			bottom: 0px;
 			width: 100px;
 			height: 90px;
@@ -183,43 +171,98 @@
 			display: none;
 		}
 	}
-}
 
-.round-time-bar-back {
-	position: absolute;
-	left: 375px;
-	bottom: 56px;
-	overflow: hidden;
-	width: 207px;
-	height: 6px;
-	background-color: var(--unnamed-color-000000);
-	z-index: 2;
-}
-.round-time-bar {
-	position: absolute;
-	left: 375px;
-	bottom: 56px;
+	.carousel__progressbar {
+		position: absolute;
+		@include lg {
+			bottom: 46px;
+			left: 275px;
+		}
 
-	overflow: hidden;
-	width: 207px;
-	z-index: 3;
-}
+		@include xxxl {
+			bottom: 62px;
+			left: 375px;
+		}
+	}
 
-.round-time-bar div {
-	height: 6px;
-	// animation: roundtime 10s steps(10) forwards;
-	transform-origin: left center;
-	background: var(--unnamed-color-FFFFFF);
-}
+	.carousel__total,
+	.carousel__current {
+		color: var(--unnamed-color-FFFFFF);
+		position: absolute;
+		bottom: -40px;
+		left: 220px;
 
-.round-time-bar[data-style="smooth"] div {
-	animation: roundtime 10s linear forwards;
-	animation-iteration-count: infinite;
-	animation-direction: reverse;
-}
+		// @include lg {
+		// 	left: 482px;
 
-@keyframes roundtime {
-	to {
-		transform: scaleX(0);
+		// }
+
+		// @include xl {
+
+		// 	left: 602px;
+		// }
+	}
+
+	.carousel__current {
+		left: -40px;
+		// @include lg {
+		// 	left: 215px;
+		// }
+	}
+
+	.carousel__bar-background {
+		position: absolute;
+		// left: 375px;
+		// bottom: 56px;
+		overflow: hidden;
+		width: 207px;
+		height: 6px;
+		background-color: var(--unnamed-color-000000);
+		z-index: 2;
+
+		// @include lg {
+		// 	left: 255px;
+
+		// }
+
+		// @include xl {
+		// 	left: 375px;
+
+		// }
+	}
+	.carousel__bar {
+		position: absolute;
+		// left: 375px;
+
+		overflow: hidden;
+		width: 207px;
+		z-index: 3;
+		// @include lg {
+		// 	left: 255px;
+
+		// }
+		// @include xl {
+		// 	left: 375px;
+
+		// }
+	}
+
+	.carousel__bar div {
+		height: 6px;
+		animation: roundtime 10s steps(10) forwards;
+		transform-origin: left center;
+		background: var(--unnamed-color-FFFFFF);
+	}
+
+	.carousel__bar[data-style="smooth"] div {
+		animation: roundtime 10s linear forwards;
+		animation-iteration-count: infinite;
+		animation-direction: reverse;
+	}
+
+	@keyframes roundtime {
+		to {
+			transform: scaleX(0);
+		}
 	}
 }
