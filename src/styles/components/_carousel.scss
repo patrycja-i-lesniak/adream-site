@@ -21,16 +21,36 @@
 	}
 
 	.carousel__next-button {
+		// display: none;
+		// @include sm {
+		display: block;
 		position: absolute;
-		bottom: 0;
-		left: 160px;
+		bottom: 470px;
+		width: 50px;
+		height: 50px;
+		left: 60px;
 		z-index: 999;
 		background-color: var(--unnamed-color-FFFFFF);
-		width: 145px;
-		height: 118px;
 		border: none;
 		padding: 0;
 		transition: all .35s ease-in-out;
+		// }
+
+		@include md {
+			width: 70px;
+			height: 70px;
+			left: 80px;
+		}
+
+		@include lg {
+			bottom: 0;
+		}
+
+		@include xl {
+			left: 160px;
+			height: 118px;
+			width: 145px;
+		}
 
 		span {
 			position: relative;
@@ -39,11 +59,7 @@
 				color: var(--unnamed-color-000000);
 				font-size: 60px;
 
-				@media (max-width: 1600px) {
-					padding-top: 5px;
-					font-size: 45px;
-				}
-				@media (max-width: 992px) {
+				@media (max-width: 1200px) {
 					font-size: 35px;
 				}
 				@media (max-width: 768px) {
@@ -68,45 +84,41 @@
 			.carousel__arrow-right {
 				color: var(--unnamed-color-FFFFFF);
 			}
+
 			&::after {
 				width: 100%;
 			}
 		}
-		@media (max-width: 1600px) {
-			bottom: 0px;
-			width: 90px;
-			height: 90px;
-			left: 100px;
-		}
-
-		@media (max-width: 992px) {
-			bottom: 360px;
-			width: 70px;
-			height: 70px;
-			left: 80px;
-		}
-		@media (max-width: 768px) {
-			width: 50px;
-			height: 50px;
-			left: 60px;
-		}
-
-		@media (max-width: 576px) {
-			display: none;
-		}
 	}
 
 	.carousel__back-button {
+		// display: none;
+		// @include sm {
+		display: block;
 		position: absolute;
-		bottom: 0;
-		left: 0;
+		bottom: 470px;
+		width: 60px;
+		height: 50px;
+		left: 0px;
 		z-index: 999;
 		background-color: var(--unnamed-color-FFFFFF);
-		width: 160px;
-		height: 118px;
 		border: none;
 		padding: 0;
 		transition: all .35s ease-in-out;
+		// }
+
+		@include md {
+			width: 80px;
+			height: 70px;
+			left: 0;
+		}
+		@include lg {
+			bottom: 0;
+		}
+		@include xl {
+			width: 160px;
+			height: 118px;
+		}
 
 		span {
 			position: relative;
@@ -114,11 +126,8 @@
 			.carousel-arrow-left {
 				color: var(--unnamed-color-000000);
 				font-size: 60px;
-				@media (max-width: 1600px) {
-					padding-top: 5px;
-					font-size: 45px;
-				}
-				@media (max-width: 992px) {
+
+				@media (max-width: 1200px) {
 					font-size: 35px;
 				}
 				@media (max-width: 768px) {
@@ -148,40 +157,30 @@
 				width: 100%;
 			}
 		}
-
-		@media (max-width: 1600px) {
-			bottom: 0px;
-			width: 100px;
-			height: 90px;
-		}
-
-		@media (max-width: 992px) {
-			bottom: 360px;
-			width: 80px;
-			height: 70px;
-		}
-
-		@media (max-width: 768px) {
-			width: 60px;
-			height: 50px;
-		}
-
-		@media (max-width: 576px) {
-			// bottom: 440px;
-			display: none;
-		}
 	}
 
 	.carousel__progressbar {
+		display: block;
 		position: absolute;
-		@include lg {
-			bottom: 46px;
-			left: 275px;
+		bottom: 500px;
+		right: 150px;
+		@include sm {
+			right: 210px;
 		}
 
-		@include xxxl {
-			bottom: 62px;
+		@include md {
+			bottom: 510px;
+			right: unset;
+			left: 220px;
+		}
+
+		@include lg {
+			left: 240px;
+			bottom: 40px;
+		}
+		@include xl {
 			left: 375px;
+			bottom: 60px;
 		}
 	}
 
@@ -189,62 +188,57 @@
 	.carousel__current {
 		color: var(--unnamed-color-FFFFFF);
 		position: absolute;
-		bottom: -40px;
-		left: 220px;
+		bottom: -35px;
+		left: 115px;
+		font-size: 14px;
 
-		// @include lg {
-		// 	left: 482px;
+		@include sm {
+			left: 165px;
+			font-size: var(--unnamed-font-size-18);
+			bottom: -40px;
+			
+		}
 
-		// }
-
-		// @include xl {
-
-		// 	left: 602px;
-		// }
+		@include lg {
+			left: 220px;
+		}
+		@include xxl{
+			left: 230px;
+			bottom: -40px;
+		}
 	}
 
 	.carousel__current {
 		left: -40px;
-		// @include lg {
-		// 	left: 215px;
-		// }
 	}
 
 	.carousel__bar-background {
 		position: absolute;
-		// left: 375px;
-		// bottom: 56px;
+		left: 0;
 		overflow: hidden;
-		width: 207px;
+		width: 100px;
 		height: 6px;
 		background-color: var(--unnamed-color-000000);
 		z-index: 2;
+		@include sm {
+			width: 150px;
+		}
 
-		// @include lg {
-		// 	left: 255px;
-
-		// }
-
-		// @include xl {
-		// 	left: 375px;
-
-		// }
+		@include lg {
+			width: 207px;
+		}
 	}
 	.carousel__bar {
 		position: absolute;
-		// left: 375px;
-
 		overflow: hidden;
-		width: 207px;
+		width: 100px;
 		z-index: 3;
-		// @include lg {
-		// 	left: 255px;
-
-		// }
-		// @include xl {
-		// 	left: 375px;
-
-		// }
+		@include sm {
+			width: 150px;
+		}
+		@include lg {
+			width: 207px;
+		}
 	}
 
 	.carousel__bar div {
