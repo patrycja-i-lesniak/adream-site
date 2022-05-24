@@ -21,8 +21,6 @@
 	}
 
 	.carousel__next-button {
-		// display: none;
-		// @include sm {
 		display: block;
 		position: absolute;
 		bottom: 470px;
@@ -34,7 +32,6 @@
 		border: none;
 		padding: 0;
 		transition: all .35s ease-in-out;
-		// }
 
 		@include md {
 			width: 70px;
@@ -56,14 +53,13 @@
 			position: relative;
 
 			.carousel__arrow-right {
+				font-size: 25px;
 				color: var(--unnamed-color-000000);
-				font-size: 60px;
-
-				@media (max-width: 1200px) {
+				@include md {
 					font-size: 35px;
 				}
-				@media (max-width: 768px) {
-					font-size: 25px;
+				@include xl {
+					font-size: 60px;
 				}
 			}
 		}
@@ -92,8 +88,6 @@
 	}
 
 	.carousel__back-button {
-		// display: none;
-		// @include sm {
 		display: block;
 		position: absolute;
 		bottom: 470px;
@@ -105,7 +99,6 @@
 		border: none;
 		padding: 0;
 		transition: all .35s ease-in-out;
-		// }
 
 		@include md {
 			width: 80px;
@@ -124,14 +117,13 @@
 			position: relative;
 
 			.carousel-arrow-left {
+				font-size: 25px;
 				color: var(--unnamed-color-000000);
-				font-size: 60px;
-
-				@media (max-width: 1200px) {
+				@include md {
 					font-size: 35px;
 				}
-				@media (max-width: 768px) {
-					font-size: 25px;
+				@include xl {
+					font-size: 60px;
 				}
 			}
 		}
@@ -196,13 +188,12 @@
 			left: 165px;
 			font-size: var(--unnamed-font-size-18);
 			bottom: -40px;
-			
 		}
 
 		@include lg {
 			left: 220px;
 		}
-		@include xxl{
+		@include xxl {
 			left: 230px;
 			bottom: -40px;
 		}
