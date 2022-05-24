@@ -1,132 +1,84 @@
 .header {
-	.header-wrapper {
-		max-width: 1920px;
-		max-height: 941px;
-		height: 100%;
-		padding-bottom: 0;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 1fr;
+	.header__wrapper {
 		position: relative;
 
-		@media (max-width: 576px) {
-			grid-template-rows: auto auto;
-			// gap: 20px;
-			// padding-bottom: 20px;
-		}
-
-		.header-text-wrapper {
+		.header__textbox {
+			position: absolute;
+			left: 20px;
+			top: 100px;
+			z-index: 1;
 			display: flex;
 			flex-direction: column;
-			position: absolute;
-			left: 175px;
-			bottom: 170px;
-			gap: 34px;
-			z-index: 9999;
-
-			@media (max-width: 1700px) {
-				left: 120px;
-			}
-
-			@media (max-width: 1400px) {
-				bottom: 140px;
-				left: 50px;
-				gap: 3vw;
-			}
-			@media (max-width: 992px) {
-				gap: 1.5vw;
+			@include sm {
+				top: 170px;
 				left: 40px;
-				bottom: 450px;
 			}
-			@media (max-width: 768px) {
-				bottom: 420px;
+			@include md {
+				top: 190px;
+			}
+			@include lg {
+				top: 270px;
+			}
+			@include xl {
+				top: 310px;
+				left: 100px;
+			}
+			@include xxl {
+				top: 360px;
+			}
+			@include xxxl {
+				top: 560px;
+				left: 175px;
 			}
 
-			@media (max-width: 576px) {
-				left: 20px;
-				bottom: 410px;
-			}
-
-			.header-text-h1 {
+			.header__text-h1 {
+				color: var(--unnamed-color-FFFFFF);
 				margin: 0;
-				letter-spacing: 0.3px;
+				font-size: 6vw;
+				padding-bottom: 1vw;
 				line-height: 0;
-				color: var(--unnamed-color-FFFFFF);
+				letter-spacing: 0.3px;
 
-				@media (max-width: 1400px) {
+				@include sm {
 					font-size: 5vw;
+					padding-bottom: 2vw;
 				}
-
-				@media (max-width: 992px) {
-					font-size: 5vw;
+				@include lg {
+				}
+				@include xxl {
+					font-weight: var(--unnamed-font-weight-bold);
+					font-size: var(--unnamed-font-size-65);
+				}
+				@include xxxl {
+					padding-bottom: 18px;
 				}
 			}
-			.header-text-h2 {
-				margin: 0;
-				padding-top: 20px;
-				line-height: 77px;
+			.header__text-h2 {
+				color: var(--unnamed-color-FFFFFF);
 				font-weight: normal;
-				color: var(--unnamed-color-FFFFFF);
-				letter-spacing: -0.15px;
-				max-width: 880px;
+				font-size: 3.5vw;
+				line-height: 5vw;
+				max-width: 80%;
 
-				@media (max-width: 1700px) {
-					font-size: 2.4vw;
-					max-width: 740px;
-					line-height: 3.8vw;
+				@include sm {
+					font-size: 3vw;
 				}
-
-				@media (max-width: 1400px) {
+				@include lg {
+					font-size: 2.5vw;
+					line-height: 4vw;
 					max-width: 600px;
-					font-size: 2.3vw;
-					line-height: 3.5vw;
-				}
-				@media (max-width: 1200px) {
-					max-width: 500px;
 				}
 
-				@media (max-width: 992px) {
-					line-height: 3.7vw;
+				@include xl {
 					font-size: 2.6vw;
-					max-width: 540px;
+					line-height: 4vw;
+					max-width: 800px;
 				}
-				@media (max-width: 768px) {
-					max-width: 370px;
+				@include xxxl {
+					max-width: 920px;
+					font-size: var(--unnamed-font-size-48);
+					line-height: 78px;
 				}
-
-				@media (max-width: 576px) {
-					max-width: 300px;
-				}
-
-				@media (max-width: 450px) {
-					max-width: 220px;
-				}
-			}
-		}
-
-		.header-progress-bar {
-			position: absolute;
-			width: 290px;
-			height: 19px;
-			bottom: 50px;
-			left: 335px;
-			z-index: 99999999;
-			@media (max-width: 1400px) {
-				left: 220px;
-				bottom: 40px;
-			}
-
-			@media (max-width: 992px) {
-				left: 180px;
-				bottom: 385px;
-			}
-				@media (max-width: 768px) {
-				left: 140px;
-				bottom: 375px;
-			}
-
-			@media (max-width: 576px) {
-				display: none;
 			}
 		}
 	}

@@ -6,11 +6,11 @@ import Carousel from './Carousel';
 export default function Header() {
 	return (
 		<div className="header">
-			<div className="header-wrapper">
+			<div className="header__wrapper">
 				<Carousel />
-				<div className="header-text-wrapper">
-					<h1 className="header-text-h1">Firma</h1>
-					<h2 className="header-text-h2">
+				<div className="header__textbox">
+					<h1 className="header__text-h1">Firma</h1>
+					<h2 className="header__text-h2">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor
 					</h2>
 				</div>
