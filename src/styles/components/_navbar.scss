@@ -107,11 +107,20 @@
 			grid-template-columns: 28px 28px;
 			gap: 20px;
 			padding-right: 100px;
-			color: red;
+			
 		}
 		@include xxl {
 			padding-right: 177px;
 		}
+	}
+
+	.navbar__link {
+		transition: transform .5s ease;
+			&:hover {
+				.navbar__icon {
+					transform: scale(1.2);
+				}
+			}
 	}
 
 	.navbar__hamburger {

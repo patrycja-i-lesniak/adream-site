@@ -32,10 +32,10 @@ export default function Navbar() {
 			</div>
 			<div className="navbar__socials">
 				<Link className="navbar__link" to="/">
-					<StaticImage src="../static/facebook.png" alt="facebook" />
+					<StaticImage className='navbar__icon' src="../static/facebook.png" alt="facebook" />
 				</Link>
 				<Link className="navbar__link" to="/">
-					<StaticImage src="../static/instagram.png" alt="instagram" />
+					<StaticImage className='navbar__icon' src="../static/instagram.png" alt="instagram" />
 				</Link>
 			</div>
 			<div>
