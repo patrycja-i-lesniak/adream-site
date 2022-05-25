@@ -51,19 +51,17 @@ export default function Form() {
 						aria-describedby="text input"
 					/>
 					<div className="form__checkbox">
-						<label>
-							<input
-								type="checkbox"
-								name="checkbox"
-								required
-								className="form__check-input"
-								id="check"
-							/>
-						</label>
-						<div>
+						<input
+							type="checkbox"
+							name="checkbox"
+							required
+							className="form__check-input"
+							id="check"
+						/>
+						<label for="check">
 							Wyrażam dobrowolną zgodę na przetwarzanie moich danych osobowych
 							więcej...
-						</div>
+						</label>
 					</div>
 
 					<button type="submit" className="form__button" aria-label="Send button">
