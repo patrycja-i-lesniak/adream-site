@@ -10,15 +10,15 @@ The website was built as part of the recruitment task.
 
 CLICK --> [ADream site](https://adreamsite.gtsb.io/)
 
-### Currently I'm working on:
+### Currently I'm working on
 
-* rebuilding the website to make the best use of the grid in SASS
+*improvement of the progress bar operation;
 
-* using mixins for breakpoints
+*rebuilding the gallery according to the grid system
 
-* progress bar
+* rebuilding the website according to the grid system
 
-* improved gallery display
+* mobile menu
 
 ![ADreamSite homepage](/adream-site.png)
 
