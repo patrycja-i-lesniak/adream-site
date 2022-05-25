@@ -3,83 +3,83 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export default function IconBox() {
 	return (
-		<div className="icon-container">
-			<div className="icon-wrapper">
-				<div className="icon-title">
-					<h3 className="icon-h3">Lorem ipsum dolor sit amet, conse</h3>
-					<div className="icon-line" />
+		<div className="icon__container">
+			<div className="icon__wrapper">
+				<div className="icon__title">
+					<h3 className="icon__h3">Lorem ipsum dolor sit amet, conse</h3>
+					<div className="icon__line" />
 				</div>
-				<div className="icon-box">
+				<div className="icon__box">
 					<StaticImage
-						className="icon-image"
+						className="icon__image"
 						src="../static/Icons/Group 603.svg"
-						alt="icon-1"
+						alt="icon__1"
 					/>
-					<p className="icon-paragraph">Lorem ipsum</p>
+					<p className="icon__paragraph">Lorem ipsum</p>
 				</div>
 
-				<div className="icon-box">
+				<div className="icon__box">
 					<StaticImage
-						className="icon-image lower "
+						className="icon__image lower "
 						src="../static/Icons/Group 602.svg"
-						alt="icon-2"
+						alt="icon__2"
 					/>
-					<p className="icon-paragraph">Lorem ipsum </p>
+					<p className="icon__paragraph">Lorem ipsum </p>
 				</div>
 
-				<div className="icon-box">
+				<div className="icon__box">
 					<StaticImage
-						className="icon-image"
+						className="icon__image"
 						src="../static/Icons/Group 601.svg"
-						alt="icon-3"
+						alt="icon__3"
 					/>
 
-					<p className="icon-paragraph">Lorem ipsum </p>
+					<p className="icon__paragraph">Lorem ipsum </p>
 				</div>
-				<div className="icon-box">
+				<div className="icon__box">
 					<StaticImage
-						className="icon-image"
+						className="icon__image"
 						src="../static/Icons/Group 604.svg"
-						alt="icon-4"
+						alt="icon__4"
 					/>
-					<p className="icon-paragraph upper">Lorem ipsum </p>
+					<p className="icon__paragraph upper">Lorem ipsum </p>
 				</div>
-				<div className="icon-box">
+				<div className="icon__box">
 					<StaticImage
-						className="icon-image"
+						className="icon__image"
 						src="../static/Icons/Group 598.svg"
-						alt="icon-5"
+						alt="icon__5"
 					/>
-					<p className="icon-paragraph">
+					<p className="icon__paragraph">
 						Lorem ipsum dolor sit amet, conse lorem ipsum lorem
 					</p>
 				</div>
 
-				<div className="icon-box">
+				<div className="icon__box">
 					<div className='box-up'>
 
 					<StaticImage
-						className="icon-image "
+						className="icon__image "
 						src="../static/Icons/Group 599.svg"
-						alt="icon-6"
+						alt="icon__6"
 					/>
-					<p className="icon-paragraph">
+					<p className="icon__paragraph">
 						Lorem ipsum dolor sit amet, conse lorem ipsum lorem
 					</p>
 					</div>
 				</div>
 
-				<div className="icon-box">
+				<div className="icon__box">
 					<StaticImage
-						className="icon-image"
+						className="icon__image"
 						src="../static/Icons/Group 600.svg"
-						alt="icon-7"
+						alt="icon__7"
 					/>
-					<p className="icon-paragraph">Lorem ipsum dolor sit amet, conse</p>
+					<p className="icon__paragraph">Lorem ipsum dolor sit amet, conse</p>
 				</div>
 			</div>
 
-			<button className="icon-button" aria-label="more inf button">
+			<button className="icon__button" aria-label="more inf button">
 				<span>dowiedz się więcej</span>
 				<StaticImage src="../static/Icons/buttonArrow.svg" alt="button arrow" />
 			</button>
