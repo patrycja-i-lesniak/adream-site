@@ -101,7 +101,7 @@ export default function Carousel() {
 			</Slider>
 
 			<ButtonBack
-				id="restart-button"
+				id="restart-back-button"
 				className="carousel__back-button"
 				aria-label="button left"
 				onClick={handleToggle}
@@ -112,7 +112,7 @@ export default function Carousel() {
 			</ButtonBack>
 			<ButtonNext
 				onClick={handleToggle}
-				id="restart-button"
+				id="restart-next-button"
 				className="carousel__next-button"
 				aria-label="button right"
 			>
@@ -121,8 +121,8 @@ export default function Carousel() {
 				</span>
 			</ButtonNext>
 			<div className='carousel__progressbar'>
-				<h4 className="carousel__current">0{currentSlide}</h4>
-			<h4 className="carousel__total">0{totalSlides}</h4>
+				<p className="carousel__current">0{currentSlide}</p>
+			<p className="carousel__total">0{totalSlides}</p>
 			<div className="carousel__bar-background" />
 
 			<div

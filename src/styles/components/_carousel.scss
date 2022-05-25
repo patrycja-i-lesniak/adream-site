@@ -180,9 +180,11 @@
 	.carousel__current {
 		color: var(--unnamed-color-FFFFFF);
 		position: absolute;
-		bottom: -35px;
+		bottom: -30px;
 		left: 115px;
 		font-size: 14px;
+		font-weight: var(--unnamed-font-weight-bold);
+	
 
 		@include sm {
 			left: 165px;
@@ -194,8 +196,8 @@
 			left: 220px;
 		}
 		@include xxl {
-			left: 230px;
-			bottom: -40px;
+			left: 228px;
+			bottom: -36px;
 		}
 	}
 
