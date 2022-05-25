@@ -3,7 +3,11 @@ import React from 'react';
 export default function Form() {
 	return (
 		<div className="container-fluid form__container">
-			<form className="form__wrapper"action="https://formsubmit.co/patrycja.lesniak@gmail.com" method="POST">
+			<form
+				className="form__wrapper"
+				action="https://formsubmit.co/patrycja.lesniak@gmail.com"
+				method="POST"
+			>
 				<div className="mb-3">
 					<h3 className="form__h3">
 						Lorem ipsum <br />Lorem ipsum lorem ipsum
@@ -47,20 +51,22 @@ export default function Form() {
 						aria-describedby="text input"
 					/>
 					<div className="form__checkbox">
-						<input
-							type="checkbox"
-							name="checkbox"
-							required
-							className="form__check-input"
-							id="check"
-						/>
+						<label>
+							<input
+								type="checkbox"
+								name="checkbox"
+								required
+								className="form__check-input"
+								id="check"
+							/>
+						</label>
 						<div>
 							Wyrażam dobrowolną zgodę na przetwarzanie moich danych osobowych
 							więcej...
 						</div>
 					</div>
 
-					<button type="submit" className="form__button"aria-label="Send button">
+					<button type="submit" className="form__button" aria-label="Send button">
 						<span>wyślij</span>
 					</button>
 				</div>
