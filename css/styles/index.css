@@ -1836,9 +1836,10 @@ body {
 .carousel__wrapper .carousel__current {
   color: var(--unnamed-color-FFFFFF);
   position: absolute;
-  bottom: -35px;
+  bottom: -30px;
   left: 115px;
   font-size: 14px;
+  font-weight: var(--unnamed-font-weight-bold);
 }
 @media (min-width: 576px) {
   .carousel__wrapper .carousel__total,
@@ -1857,8 +1858,8 @@ body {
 @media (min-width: 1400px) {
   .carousel__wrapper .carousel__total,
 .carousel__wrapper .carousel__current {
-    left: 230px;
-    bottom: -40px;
+    left: 228px;
+    bottom: -36px;
   }
 }
 .carousel__wrapper .carousel__current {
