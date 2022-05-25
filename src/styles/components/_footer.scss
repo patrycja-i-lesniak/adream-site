@@ -116,6 +116,10 @@
 					color: var(--unnamed-color-FFFFFF);
 					text-decoration: none;
 					line-height: 28px;
+					
+					&:hover {
+						color: var(--unnamed-color-FFCC48);
+					}
 					@include md {
 						font-size: 16px;
 						padding-top: 10px;
