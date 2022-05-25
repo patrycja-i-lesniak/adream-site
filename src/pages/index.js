@@ -5,7 +5,7 @@ import Cards from '../components/Cards';
 import IconBox from '../components/IconBox';
 import Office from '../components/Office';
 import News from '../components/News';
-import NewGallery from '../components/NewGallery';
+import Gallery from '../components/Gallery';
 
 export default function index({ children }) {
 	return (
@@ -14,7 +14,7 @@ export default function index({ children }) {
 			<IconBox />
 			<Office />
 			<News />
-			<NewGallery />
+			<Gallery />
 			{children}
 		</Layout>
 	);
